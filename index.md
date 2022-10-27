@@ -3,6 +3,7 @@ layout: default
 title: GDPR_Guidelines
 parent: SOPs
 nav_order: 1
+has_children: true
 ---
 <script src="https://kit.fontawesome.com/fc66878563.js" crossorigin="anonymous"></script>
 

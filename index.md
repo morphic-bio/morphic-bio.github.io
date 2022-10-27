@@ -1,7 +1,6 @@
 ---
 layout: default
-title: GDPR_Guidelines
-parent: SOPs
+title: MorPHiC
 nav_order: 1
 has_children: true
 ---

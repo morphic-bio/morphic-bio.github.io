@@ -20,6 +20,8 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+remote_theme: just-the-docs/just-the-docs
+
 jobs:
   # Build job
   build:

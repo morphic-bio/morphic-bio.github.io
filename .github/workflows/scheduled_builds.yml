@@ -1,0 +1,18 @@
+# .github/workflows/scheduled-builds.yml
+name: Trigger Site Rebuild on a CRON Schedule
+
+on:
+  schedule:
+    # Runs at 5 AM (see https://crontab.guru)
+    - cron: '* 05 * * *'
+jobs:
+  build:
+    name: Trigger Site Rebuild
+    runs-on: ubuntu-latest
+    steps:
+      - name: select new gene
+        # Randomly select a gene and post it in github
+        run: cd util && sh select_new_gene.sh
+
+      - name: add, commit and push
+        run: git commit -am "New gene of the day!" && git push origin main

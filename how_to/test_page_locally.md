@@ -2,7 +2,7 @@
 layout: default
 title: Test page locally 
 parent: How to
-grand_parent: MorPHiC
+nav_exlude: true
 ---
 
 # Before you start

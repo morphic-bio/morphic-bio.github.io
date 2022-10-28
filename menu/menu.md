@@ -1,6 +1,5 @@
 ---
 layout: default
-title: How to
+title: Menu
 has_children: true
-nav_exclude: true
 ---

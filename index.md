@@ -3,6 +3,7 @@ layout: home
 title: MorPHiC
 nav_order: 1
 has_children: true
+has_toc: false
 ---
 <script src="https://kit.fontawesome.com/fc66878563.js" crossorigin="anonymous"></script>
 

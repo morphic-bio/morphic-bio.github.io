@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: MorPHiC
 nav_order: 1
 has_children: true

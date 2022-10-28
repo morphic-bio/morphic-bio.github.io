@@ -1,5 +1,5 @@
 ---
-layout: title
+layout: default
 title: Docs
 parent: MorPHiC
 nav_order: 1

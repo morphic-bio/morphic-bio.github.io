@@ -14,3 +14,16 @@ To make it point to a new tab(Like above), just add this extra snippet of code a
 ```
 {:target="_blank"}
 ```
+
+## Add mermaid diagram
+To add a mermaid diagram, just render it within a code block:
+
+```mermaid
+A --> B
+```
+
+## Add a picture
+
+### Change picture size
+
+### Change picture location

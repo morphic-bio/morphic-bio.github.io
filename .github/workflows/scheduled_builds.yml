@@ -15,5 +15,9 @@ jobs:
       - name: select new gene
         # Randomly select a gene and post it in github
         run: cd $GITHUB_WORKSPACE/util && sh select_new_gene.sh
+      - name: Config user
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - name: add, commit and push
         run: git commit -am "New gene of the day!" && git push origin main

@@ -4,15 +4,18 @@ name: Trigger Site Rebuild on a CRON Schedule
 on:
   schedule:
     # Runs at 5 AM (see https://crontab.guru)
-    - cron: '25 * * * *'
+    - cron: '*/5 * * * *'
 jobs:
-  build:
-    name: Trigger Site Rebuild
+  job1:
+    name: Checkout repo and choose gene
     runs-on: ubuntu-latest
     steps:
+      - name: checkout repository
+        uses: actions/checkout@v3
+        with:
+          path: main
       - name: select new gene
         # Randomly select a gene and post it in github
         run: cd util && sh select_new_gene.sh
-
       - name: add, commit and push
-        run: git commit -am "New gene of the day!" && git push origin main
+        run: cd .. && git commit -am "New gene of the day!" && git push origin main

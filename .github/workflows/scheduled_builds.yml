@@ -16,6 +16,6 @@ jobs:
           path: main
       - name: select new gene
         # Randomly select a gene and post it in github
-        run: cd $GITHUB_WORKSPACE/homepage/util && sh select_new_gene.sh
+        run: cd $GITHUB_WORKSPACE/util && sh select_new_gene.sh
       - name: add, commit and push
         run: cd .. && git commit -am "New gene of the day!" && git push origin main

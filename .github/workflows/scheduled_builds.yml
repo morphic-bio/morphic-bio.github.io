@@ -1,9 +1,9 @@
 # .github/workflows/scheduled-builds.yml
-name: Trigger Site Rebuild on a CRON Schedule
+name: Select a new gene
 
 on:
   schedule:
-    # Runs at 5 AM (see https://crontab.guru)
+    # Runs at 4 AM (see https://crontab.guru)
     - cron: '0 4 * * *'
 jobs:
   job1:

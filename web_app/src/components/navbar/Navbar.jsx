@@ -10,13 +10,14 @@ const Navbar = () => {
     <div className="morphic__navbar">
       <div className="morphic__navbar-links">
         <div className="morphic__navbar-links_logo">
-          <img src={logo} />
+          <a href="#wmorphic"><img src={logo} /></a>
         </div>
         <div className="morphic__navbar-links_container">
           <p><a href="#home">Home</a></p>
-          <p><a href="#wmorphic">What is MorPhiC</a></p>
-          <p><a href="#features">Publications</a></p>
-          <p><a href="#blog">Contact</a></p>
+          <p><a href="#events">Events</a></p>
+          <p><a href="#data">Data</a></p>
+          <p><a href="#blog">Publications</a></p>
+          <p><a href="#contact">Contact</a></p>
         </div>
       </div>
       <div className="morphic__navbar-sign">
@@ -31,10 +32,10 @@ const Navbar = () => {
         <div className="morphic__navbar-menu_container scale-up-center">
           <div className="morphic__navbar-menu_container-links">
             <p><a href="#home">Home</a></p>
-            <p><a href="#wmorphic">What is morphic?</a></p>
-            <p><a href="#possibility">Open AI</a></p>
-            <p><a href="#features">Case Studies</a></p>
-            <p><a href="#blog">Library</a></p>
+            <p><a href="#events">Events</a></p>
+            <p><a href="#data">Data</a></p>
+            <p><a href="#blog">Publications</a></p>
+            <p><a href="#contact">Contact</a></p>
           </div>
           <div className="morphic__navbar-menu_container-links-sign">
             <p>Sign in</p>

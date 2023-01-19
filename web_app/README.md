@@ -1,2 +1,2 @@
-# Mockup Website for Morphic Consortium Project website: 
-
+# Mockup Website for Morphic Consortium
+# https://morphic-bio.github.io/

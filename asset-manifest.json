@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/morphic-bio.github.io/static/css/main.a57d51a0.css",
-    "main.js": "/morphic-bio.github.io/static/js/main.b6dca249.js",
-    "static/media/humanGenome.png": "/morphic-bio.github.io/static/media/humanGenome.35a596b0192a34cfc67f.png",
-    "static/media/blog02.jpg": "/morphic-bio.github.io/static/media/blog02.9cd1458be3ea9bba9b6f.jpg",
-    "static/media/logo.png": "/morphic-bio.github.io/static/media/logo.ee23bea85da8bc635154.png",
-    "static/media/blog01.jpeg": "/morphic-bio.github.io/static/media/blog01.d90e4f4ddec93687eff9.jpeg",
-    "static/media/blog03.jpg": "/morphic-bio.github.io/static/media/blog03.fa03ca19cc7c4944650a.jpg",
-    "static/media/MorphicLogo.png": "/morphic-bio.github.io/static/media/MorphicLogo.66de56e25986787c3e8e.png",
-    "index.html": "/morphic-bio.github.io/index.html",
-    "main.a57d51a0.css.map": "/morphic-bio.github.io/static/css/main.a57d51a0.css.map",
-    "main.b6dca249.js.map": "/morphic-bio.github.io/static/js/main.b6dca249.js.map"
+    "main.css": "/static/css/main.a57d51a0.css",
+    "main.js": "/static/js/main.4a80ef91.js",
+    "static/media/humanGenome.png": "/static/media/humanGenome.35a596b0192a34cfc67f.png",
+    "static/media/blog02.jpg": "/static/media/blog02.9cd1458be3ea9bba9b6f.jpg",
+    "static/media/logo.png": "/static/media/logo.ee23bea85da8bc635154.png",
+    "static/media/blog01.jpeg": "/static/media/blog01.d90e4f4ddec93687eff9.jpeg",
+    "static/media/blog03.jpg": "/static/media/blog03.fa03ca19cc7c4944650a.jpg",
+    "static/media/MorphicLogo.png": "/static/media/MorphicLogo.66de56e25986787c3e8e.png",
+    "index.html": "/index.html",
+    "main.a57d51a0.css.map": "/static/css/main.a57d51a0.css.map",
+    "main.4a80ef91.js.map": "/static/js/main.4a80ef91.js.map"
   },
   "entrypoints": [
     "static/css/main.a57d51a0.css",
-    "static/js/main.b6dca249.js"
+    "static/js/main.4a80ef91.js"
   ]
 }

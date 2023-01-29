@@ -1,5 +1,5 @@
 import React from 'react';
-import { Footer, Blog, Whatmorphic, Header } from './containers';
+import { Footer, Blog, Whatmorphic, Header, Map } from './containers';
 import { Navbar } from './components';
 
 import './App.css';
@@ -11,6 +11,7 @@ const App = () => (
       <Header />
     </div>
     <Whatmorphic />
+    <Map />
     <Blog />
     <Footer />
   </div>

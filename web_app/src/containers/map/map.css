@@ -1,0 +1,38 @@
+.morphic__map-container img {
+    width: 1247px;
+    width: 100%;
+    height: auto;
+}
+
+.morphic__map-contianer area {
+    background-color: blue;
+}
+
+.morphic__map-description {
+    background-color: #031B34;
+    color: white;
+}
+.lab-overview {
+    padding: 1rem 1.5rem;
+}
+
+.morphic__map-description h4, .morphic__map-description h3 {
+    padding-top: 1rem;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.04em;
+}
+
+.morphic__map-description p, .morphic__map-description a {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-text);
+}
+
+.morphic__map-description p, .morphic__map-description a {
+    padding: 0.5rem;
+}

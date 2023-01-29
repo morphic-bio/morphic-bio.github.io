@@ -6,6 +6,7 @@
 .morphic__blog-heading {
     width: 100%;
     text-align: left;
+    display: flex;
 
     margin-bottom: 5rem;
 }

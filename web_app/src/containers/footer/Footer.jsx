@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/MorphicLogo.png';
+import logo from '../../assets/morphic_logo2.png';
 import './footer.css';
 
 const Footer = () => (

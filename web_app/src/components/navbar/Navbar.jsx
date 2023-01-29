@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../../assets/MorphicLogo.png';
+import logo from '../../assets/morphic_logo2.png';
 import './navbar.css';
 
 const Navbar = () => {

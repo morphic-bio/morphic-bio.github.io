@@ -213,7 +213,7 @@ const Map = () => {
               <h4>NIH RePORTER</h4>
               <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10518318" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/1051831</a>
               <h4>Contact PI/Project Leader</h4>
-              <p>Luke Gilbert, Associate Professor</p>
+              <p>Luke Gilbert</p>
             </div>
           )}
           {(isUW && (!isFullUWDesc)) && (
@@ -253,7 +253,7 @@ const Map = () => {
               <h4>NIH RePORTER</h4>
               <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10518021" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10518021</a>
               <h4>Contact PI/Project Leader</h4>
-              <p>HUANGFU, DANWEI</p>
+              <p>Huangfu, Danwei</p>
             </div>
           )}
           {isUMiami && (!isFullUMiamiDesc) && (
@@ -273,7 +273,7 @@ const Map = () => {
               <h4>NIH RePORTER</h4>
               <a href="https://reporter.nih.gov/project-details/10519442" target="_blank" rel="noreferrer">https://reporter.nih.gov/project-details/10519442</a>
               <h4>Contact PI/Project Leader</h4>
-              <p>Helen Parkinson</p>
+              <p>Tony Burdett, Helen Parkinson</p>
             </div>
           )}
           {isQMUL && (!isFullQMULDesc) && (
@@ -283,7 +283,7 @@ const Map = () => {
               <h4>NIH RePORTER</h4>
               <a href="https://reporter.nih.gov/search/0Vl49Afb50KdwhUX5tzEEw/project-details/10519442" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/0Vl49Afb50KdwhUX5tzEEw/project-details/10519442</a>
               <h4>Contact PI/Project Leader</h4>
-              <p>Pilar Cacheiro</p>
+              <p>Damian Smedley</p>
             </div>
           )}
 
@@ -295,7 +295,7 @@ const Map = () => {
               <h4>NIH RePORTER</h4>
               <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10518318" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/1051831</a>
               <h4>Contact PI/Project Leader</h4>
-              <p>Luke Gilbert, Associate Professor</p>
+              <p>Luke Gilbert</p>
               <h4>Description</h4>
               <p>Mapping the function of every gene in human cells will enable us to begin to define how gene expression programs impart specialized and adaptive human cellular functions required for life. The innovative approach proposed here combines CRISPRoff, a cutting-edge genetic manipulation technology, with comprehensive single cell molecular phenotyping approaches in a classic model of human development, which will allow us to study the effects of specific genes in a biologically meaningful way to yield new insights that are broadly applicable across cell types and disease areas. Specifically, we will characterize at single cell resolution in space and time the function of human transcription factors and epigenetic regulators in early developmental cell fate transitions.</p>
             </div>
@@ -343,7 +343,7 @@ const Map = () => {
               <h4>NIH RePORTER</h4>
               <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10518021" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10518021</a>
               <h4>Contact PI/Project Leader</h4>
-              <p>HUANGFU, DANWEI</p>
+              <p>Huangfu, Danwei</p>
               <h4>Description</h4>
               <p></p>
             </div>
@@ -367,7 +367,7 @@ const Map = () => {
               <h4>NIH RePORTER</h4>
               <a href="https://reporter.nih.gov/project-details/10519442" target="_blank" rel="noreferrer">https://reporter.nih.gov/project-details/10519442</a>
               <h4>Contact PI/Project Leader</h4>
-              <p>Helen Parkinson</p>
+              <p>Tony Burdett, Helen Parkinson</p>
               <h4>Description</h4>
               <p>The pilot phase of the Molecular and Cellular Phenotypes of Null Alleles in Cells (MorPhiC) program will study the feasibility, scalability, required scope, and utility of such a catalogue to characterize phenotypes associated with genes in tissue- and disease-relevant human cellular model systems. The proposed MorPhiC Data Resource and Administrative Coordinating Center (DRACC) will enable and support the MorPhiC research consortium by providing the highest quality FAIR (findable, accessible, interoperable, reusable) MorPhiC data resource, analyzing, annotating, and disseminating Morphic data, integrating external data/information, and serving as an administrative and coordination center. These functions will be fulfilled in close cooperation and collaborating with the Data Production Research and Development Centers (DPCs) and the Data Analysis and Validation Centers (DAVs) to support rigorous data standards, rich metadata annotations, the highest data and software quality, and reproducibility and portability of data processing and -analysis tools. Members of our team have previously served in leadership positions of several national and international research consortia, including the Human Cell Atlas (HCA), Knockout Mouse Program (KOMP), Genome-Wide Association Studies (GWAS) Catalog, Library of Integrated Network-based Cellular Signatures (LINCS), Illuminating the Druggable Genome (IDG), Big Data to Knowledge (BD2K), and Monarch Initiative. Our team has the technological, scientific, and administrative expertise to successfully operate the Center and complete the Center and Consortium critical functions and deliverables via Specific Aims to 1) Establish and operate the Center, 2) Deploy a state-of-the-art infrastructure to manage data across the entire life cycle, 3) Collate, converge, and deploy cloud-enabled analysis techniques, models and data processing protocols, 4) Create and deploy the MorPhiC Web Portal to provide global access to MorPhiC data, 5) Map and integrate external data sources, and 6) Administer and coordinate the Consortium. Successful completion of these Aims will enable the assessment of feasibility, scalability, required scope, and utility of a MorPhiC Catalogue with the prospect to massively scale the functional characterization of every human gene via phenotype mapping in relevant human model systems.</p>
             </div>
@@ -379,7 +379,7 @@ const Map = () => {
               <h4>NIH RePORTER</h4>
               <a href="https://reporter.nih.gov/search/0Vl49Afb50KdwhUX5tzEEw/project-details/10519442" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/0Vl49Afb50KdwhUX5tzEEw/project-details/10519442</a>
               <h4>Contact PI/Project Leader</h4>
-              <p>Pilar Cacheiro</p>
+              <p>Damian Smedley</p>
               <h4>Description</h4>
               <p>Professor Smedley’s research focusses on utilising clinical and model organism phenotype data to better understand human disease.</p>
             </div>

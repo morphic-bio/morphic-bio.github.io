@@ -102,15 +102,23 @@ const Map = () => {
       setIsFullDesc(!isFullDesc)
 
       setIsFullUWDesc(false)
-      showFullNWUCDesc(false)
+      setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
+      setIsFullSloanKetteringDesc(false)
+      setIsFullUMiamiDesc(false)
+      setIsFullEBIDesc(false)
+      setIsFullQMULDesc(false)
     }
     const showFullUWDesc = (event) => {
       setIsFullUWDesc(!isFullUWDesc)
 
       setIsFullDesc(false)
-      showFullNWUCDesc(false)
+      setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
+      setIsFullSloanKetteringDesc(false)
+      setIsFullUMiamiDesc(false)
+      setIsFullEBIDesc(false)
+      setIsFullQMULDesc(false)
     }
     const showFullNWUCDesc = (event) => {
       setIsFullNWUCDesc(!isFullNWUCDesc)
@@ -118,6 +126,10 @@ const Map = () => {
       setIsFullUWDesc(false)
       setIsFullDesc(false)
       setIsFullJacksonLabDesc(false)
+      setIsFullSloanKetteringDesc(false)
+      setIsFullUMiamiDesc(false)
+      setIsFullEBIDesc(false)
+      setIsFullQMULDesc(false)
     }
     const showFullJacksonLabDesc = (event) => {
       setIsFullJacksonLabDesc(!isFullJacksonLabDesc)
@@ -128,19 +140,52 @@ const Map = () => {
       setIsFullSloanKetteringDesc(false)
       setIsFullUMiamiDesc(false)
       setIsFullEBIDesc(false)
+      setIsFullQMULDesc(false)
     }
     const showFullSloanKetteringDesc = (event) => {
       setIsFullSloanKetteringDesc(!isFullSloanKetteringDesc)
 
+      setIsFullUWDesc(false)
+      setIsFullDesc(false)
+      setIsFullNWUCDesc(false)
+      setIsFullJacksonLabDesc(false)
+      setIsFullUMiamiDesc(false)
+      setIsFullEBIDesc(false)
+      setIsFullQMULDesc(false)
+
     }
     const showFullUMiamiDesc = (event) => {
       setIsFullUMiamiDesc(!isFullUMiamiDesc)
+
+      setIsFullUWDesc(false)
+      setIsFullDesc(false)
+      setIsFullNWUCDesc(false)
+      setIsFullJacksonLabDesc(false)
+      setIsFullSloanKetteringDesc(false)
+      setIsFullEBIDesc(false)
+      setIsFullQMULDesc(false)
     }
     const showFullEBIDesc = (event) => {
       setIsFullEBIDesc(!isFullEBIDesc)
+
+      setIsFullUWDesc(false)
+      setIsFullDesc(false)
+      setIsFullNWUCDesc(false)
+      setIsFullJacksonLabDesc(false)
+      setIsFullSloanKetteringDesc(false)
+      setIsFullUMiamiDesc(false)
+      setIsFullQMULDesc(false)
     }
     const showFullQMULDesc = (event) => {
       setIsFullQMULDesc(!isFullQMULDesc)
+
+      setIsFullUWDesc(false)
+      setIsFullDesc(false)
+      setIsFullNWUCDesc(false)
+      setIsFullJacksonLabDesc(false)
+      setIsFullSloanKetteringDesc(false)
+      setIsFullUMiamiDesc(false)
+      setIsFullEBIDesc(false)
     }
   
     return (
@@ -234,9 +279,9 @@ const Map = () => {
           {isQMUL && (!isFullQMULDesc) && (
             <div className="lab-overview">
               <h4>NIH Grant Number</h4>
-              <p></p>
+              <p>U24HG012674</p>
               <h4>NIH RePORTER</h4>
-              <a href="" target="_blank" rel="noreferrer"></a>
+              <a href="https://reporter.nih.gov/search/0Vl49Afb50KdwhUX5tzEEw/project-details/10519442" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/0Vl49Afb50KdwhUX5tzEEw/project-details/10519442</a>
               <h4>Contact PI/Project Leader</h4>
               <p>Pilar Cacheiro</p>
             </div>
@@ -330,9 +375,9 @@ const Map = () => {
           {isFullQMULDesc && (
             <div className="lab-overview">
               <h4>NIH Grant Number</h4>
-              <p></p>
+              <p>U24HG012674</p>
               <h4>NIH RePORTER</h4>
-              <a href="" target="_blank" rel="noreferrer"></a>
+              <a href="https://reporter.nih.gov/search/0Vl49Afb50KdwhUX5tzEEw/project-details/10519442" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/0Vl49Afb50KdwhUX5tzEEw/project-details/10519442</a>
               <h4>Contact PI/Project Leader</h4>
               <p>Pilar Cacheiro</p>
               <h4>Description</h4>

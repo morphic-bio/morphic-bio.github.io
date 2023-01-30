@@ -24,6 +24,12 @@ const Map = () => {
 
     const [ isFullDesc, setIsFullDesc ] = useState(false)
     const [ isFullUWDesc, setIsFullUWDesc ] = useState(false)
+    const [ isFullNWUCDesc, setIsFullNWUCDesc ] = useState(false)
+    const [ isFullJacksonLabDesc, setIsFullJacksonLabDesc ] = useState(false)
+    const [ isFullSloanKetteringDesc, setIsFullSloanKetteringDesc ] = useState(false)
+    const [ isFullUMiamiDesc, setIsFullUMiamiDesc ] = useState(false)
+    const [ isFullEBIDesc, setIsFullEBIDesc ] = useState(false)
+    const [ isFullQMULDesc, setIsFullQMULDesc ] = useState(false)
 
     const [ gilbertLabOverview, setGilbertLabOverview ] = useState("")
 
@@ -94,11 +100,47 @@ const Map = () => {
     
     const showFullUCSFDesc = (event) => {
       setIsFullDesc(!isFullDesc)
+
       setIsFullUWDesc(false)
+      showFullNWUCDesc(false)
+      setIsFullJacksonLabDesc(false)
     }
     const showFullUWDesc = (event) => {
       setIsFullUWDesc(!isFullUWDesc)
+
       setIsFullDesc(false)
+      showFullNWUCDesc(false)
+      setIsFullJacksonLabDesc(false)
+    }
+    const showFullNWUCDesc = (event) => {
+      setIsFullNWUCDesc(!isFullNWUCDesc)
+
+      setIsFullUWDesc(false)
+      setIsFullDesc(false)
+      setIsFullJacksonLabDesc(false)
+    }
+    const showFullJacksonLabDesc = (event) => {
+      setIsFullJacksonLabDesc(!isFullJacksonLabDesc)
+
+      setIsFullUWDesc(false)
+      setIsFullDesc(false)
+      setIsFullNWUCDesc(false)
+      setIsFullSloanKetteringDesc(false)
+      setIsFullUMiamiDesc(false)
+      setIsFullEBIDesc(false)
+    }
+    const showFullSloanKetteringDesc = (event) => {
+      setIsFullSloanKetteringDesc(!isFullSloanKetteringDesc)
+
+    }
+    const showFullUMiamiDesc = (event) => {
+      setIsFullUMiamiDesc(!isFullUMiamiDesc)
+    }
+    const showFullEBIDesc = (event) => {
+      setIsFullEBIDesc(!isFullEBIDesc)
+    }
+    const showFullQMULDesc = (event) => {
+      setIsFullQMULDesc(!isFullQMULDesc)
     }
   
     return (
@@ -107,12 +149,12 @@ const Map = () => {
             <map name="moreinfo">
                 <area shape="rect" coords="0,80,200,160" href="#whatmorphic" alt="UW Yeung Lab" onClick={showFullUWDesc} onMouseEnter={showUWOverview} onMouseLeave={hideUWOverview} />
                 <area shape="rect" coords={ height !== 0 && width !== 0 ? "0," + 0.5 * height + "," + 0.18 * width + "," + 0.74 * height : "0,230,220,340"} href="#whatmorphic" onClick={showFullUCSFDesc} onMouseEnter={showGilbertLabOverview} onMouseLeave={hideGilbertLabOverview} alt="Gilbert Lab" />
-                <area shape="rect" coords="265,165,395,270" href="#whatmorphic" alt="NORTHWESTERN UNIVERSITY AT CHICAGO" onMouseEnter={showNWUCOverview} onMouseLeave={hideNWUCOverview} />
-                <area shape="rect" coords="470,170,630,220" href="#whatmorphic" alt="JACKSON LABORATORY"  onMouseEnter={showJacksonLabOverview} onMouseLeave={hideJacksonLabOverview} />
-                <area shape="rect" coords="435,250,640,310" href="#whatmorphic" alt="SLOAN-KETTERING INST CAN RESEARCH" onMouseEnter={showSloanKetteringOverview} onMouseLeave={hideSloanKetteringOverview} />
-                <area shape="rect" coords="435,395,600,455" href="#whatmorphic" alt="University of Miami Miller School of Medicine Schürer Lab" onMouseEnter={showUMiamiOverview} onMouseLeave={hideUMiamiOverview}  />
-                <area shape="rect" coords="1065,0,1245,65" href="#whatmorphic" alt="Samples Phenotypes and Ontologies Team, EBI" onMouseEnter={showEBIOverview} onMouseLeave={hideEBIOverview} />
-                <area shape="rect" coords="1065,100,1245,165" href="#whatmorphic" alt="Queen Mary University of London" onMouseEnter={showQMULOverview} onMouseLeave={hideQMULOverview} />
+                <area shape="rect" coords="265,165,395,270" href="#whatmorphic" alt="NORTHWESTERN UNIVERSITY AT CHICAGO" onClick={showFullNWUCDesc} onMouseEnter={showNWUCOverview} onMouseLeave={hideNWUCOverview} />
+                <area shape="rect" coords="470,170,630,220" href="#whatmorphic" alt="JACKSON LABORATORY" onClick={showFullJacksonLabDesc}  onMouseEnter={showJacksonLabOverview} onMouseLeave={hideJacksonLabOverview} />
+                <area shape="rect" coords="435,250,640,310" href="#whatmorphic" alt="SLOAN-KETTERING INST CAN RESEARCH" onClick={showFullSloanKetteringDesc} onMouseEnter={showSloanKetteringOverview} onMouseLeave={hideSloanKetteringOverview} />
+                <area shape="rect" coords="435,395,600,455" href="#whatmorphic" alt="University of Miami Miller School of Medicine Schürer Lab" onClick={showFullUMiamiDesc} onMouseEnter={showUMiamiOverview} onMouseLeave={hideUMiamiOverview}  />
+                <area shape="rect" coords="1065,0,1245,65" href="#whatmorphic" alt="Samples Phenotypes and Ontologies Team, EBI" onClick={showFullEBIDesc} onMouseEnter={showEBIOverview} onMouseLeave={hideEBIOverview} />
+                <area shape="rect" coords="1065,100,1245,165" href="#whatmorphic" alt="Queen Mary University of London" onClick={showFullQMULDesc} onMouseEnter={showQMULOverview} onMouseLeave={hideQMULOverview} />
             </map>
           <img src={morphic_map} alt="MorPhiC Consortium Map" useMap="#moreinfo" ref={elementRef}/>
         </div>
@@ -127,7 +169,6 @@ const Map = () => {
               <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10518318" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/1051831</a>
               <h4>Contact PI/Project Leader</h4>
               <p>Luke Gilbert, Associate Professor</p>
-              Hover over UCSF
             </div>
           )}
           {(isUW && (!isFullUWDesc)) && (
@@ -140,7 +181,7 @@ const Map = () => {
               <p>Ka Yee Yeung</p>
             </div>
           )}
-          {isNWUC && (
+          {isNWUC && (!isFullNWUCDesc) && (
             <div className="lab-overview">
               <h4>NIH Grant Number</h4>
               <p>UM1HG012649</p>
@@ -150,7 +191,7 @@ const Map = () => {
               <p>Adli, Mazhar</p>
             </div>
           )}
-          {isJacksonLab && (
+          {isJacksonLab && (!isFullJacksonLabDesc) && (
             <div className="lab-overview">
               <h4>NIH Grant Number</h4>
               <p>UM1HG012651</p>
@@ -160,7 +201,7 @@ const Map = () => {
               <p>Robson, Paul</p>
             </div>
           )}
-          {isSloanKettering && (
+          {isSloanKettering && (!isFullSloanKetteringDesc) && (
             <div className="lab-overview">
               <h4>NIH Grant Number</h4>
               <p>UM1HG012654</p>
@@ -170,7 +211,7 @@ const Map = () => {
               <p>HUANGFU, DANWEI</p>
             </div>
           )}
-          {isUMiami && (
+          {isUMiami && (!isFullUMiamiDesc) && (
             <div className="lab-overview">
               <h4>NIH Grant Number</h4>
               <p>U24HG012674</p>
@@ -180,7 +221,7 @@ const Map = () => {
               <p>Stephan Schürer</p>
             </div>
           )}
-          {isEBI && (
+          {isEBI && (!isFullEBIDesc) && (
             <div className="lab-overview">
               <h4>NIH Grant Number</h4>
               <p>1U24HG012674-01</p>
@@ -190,7 +231,7 @@ const Map = () => {
               <p>Helen Parkinson</p>
             </div>
           )}
-          {isQMUL && (
+          {isQMUL && (!isFullQMULDesc) && (
             <div className="lab-overview">
               <h4>NIH Grant Number</h4>
               <p></p>
@@ -200,6 +241,7 @@ const Map = () => {
               <p>Pilar Cacheiro</p>
             </div>
           )}
+
 
           {isFullDesc && (
             <div className="lab-overview">
@@ -224,6 +266,78 @@ const Map = () => {
             <h4>Description</h4>
             <p>The Yeung Lab focuses on the development of optimized methods and cloud-based software tools for the analyses of big biomedical data. Our platform Biodepot-workflow-builder (Bwb) allows biomedical scientists to create, share and reproducibly execute bioinformatics workflows in a point-and-click user interface. Bwb supports RNA-seq, DNA-seq, nanopore and image processing workflows. </p>
           </div>
+          )}
+          {isFullNWUCDesc && (
+            <div className="lab-overview">
+            <h4>NIH Grant Number</h4>
+            <p>UM1HG012649</p>
+            <h4>NIH RePORTER</h4>
+            <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517781#details" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517781#details</a>
+            <h4>Contact PI/Project Leader</h4>
+            <p>Adli, Mazhar</p>
+            <h4>Description</h4>
+            <p></p>
+          </div>
+          )}
+          {isFullJacksonLabDesc && (
+            <div className="lab-overview">
+              <h4>NIH Grant Number</h4>
+              <p>UM1HG012651</p>
+              <h4>NIH RePORTER</h4>
+              <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881</a>
+              <h4>Contact PI/Project Leader</h4>
+              <p>Robson, Paul</p>
+              <h4>Description</h4>
+              <p></p>
+            </div>
+          )}
+          {isFullSloanKetteringDesc && (
+            <div className="lab-overview">
+              <h4>NIH Grant Number</h4>
+              <p>UM1HG012654</p>
+              <h4>NIH RePORTER</h4>
+              <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10518021" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10518021</a>
+              <h4>Contact PI/Project Leader</h4>
+              <p>HUANGFU, DANWEI</p>
+              <h4>Description</h4>
+              <p></p>
+            </div>
+          )}
+          {isFullUMiamiDesc && (
+            <div className="lab-overview">
+              <h4>NIH Grant Number</h4>
+              <p>U24HG012674</p>
+              <h4>NIH RePORTER</h4>
+              <a href="https://reporter.nih.gov/search/0Vl49Afb50KdwhUX5tzEEw/project-details/10519442" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/0Vl49Afb50KdwhUX5tzEEw/project-details/10519442</a>
+              <h4>Contact PI/Project Leader</h4>
+              <p>Stephan Schürer</p>
+              <h4>Description</h4>
+              <p>Despite huge progress in understanding the biological function of every human gene, significant hurdles remain, among them to establish a systematic catalogue of cellular phenotypes associated with each gene. The pilot phase of the Molecular and Cellular Phenotypes of Null Alleles in Cells (MorPhiC) program will study the feasibility, scalability, required scope, and utility of such a catalogue. Our Data Resource and Administrative Coordinating Center (DRACC) will develop and deploy infrastructure and tools to provide the highest quality MorPhiC data resource, analyze, annotate, and disseminate MorPhiC data, integrating external data & information, and serve as an administrative and coordination center.</p>
+            </div>
+          )}
+          {isFullEBIDesc && (
+            <div className="lab-overview">
+              <h4>NIH Grant Number</h4>
+              <p>1U24HG012674-01</p>
+              <h4>NIH RePORTER</h4>
+              <a href="https://reporter.nih.gov/project-details/10519442" target="_blank" rel="noreferrer">https://reporter.nih.gov/project-details/10519442</a>
+              <h4>Contact PI/Project Leader</h4>
+              <p>Helen Parkinson</p>
+              <h4>Description</h4>
+              <p>The pilot phase of the Molecular and Cellular Phenotypes of Null Alleles in Cells (MorPhiC) program will study the feasibility, scalability, required scope, and utility of such a catalogue to characterize phenotypes associated with genes in tissue- and disease-relevant human cellular model systems. The proposed MorPhiC Data Resource and Administrative Coordinating Center (DRACC) will enable and support the MorPhiC research consortium by providing the highest quality FAIR (findable, accessible, interoperable, reusable) MorPhiC data resource, analyzing, annotating, and disseminating Morphic data, integrating external data/information, and serving as an administrative and coordination center. These functions will be fulfilled in close cooperation and collaborating with the Data Production Research and Development Centers (DPCs) and the Data Analysis and Validation Centers (DAVs) to support rigorous data standards, rich metadata annotations, the highest data and software quality, and reproducibility and portability of data processing and -analysis tools. Members of our team have previously served in leadership positions of several national and international research consortia, including the Human Cell Atlas (HCA), Knockout Mouse Program (KOMP), Genome-Wide Association Studies (GWAS) Catalog, Library of Integrated Network-based Cellular Signatures (LINCS), Illuminating the Druggable Genome (IDG), Big Data to Knowledge (BD2K), and Monarch Initiative. Our team has the technological, scientific, and administrative expertise to successfully operate the Center and complete the Center and Consortium critical functions and deliverables via Specific Aims to 1) Establish and operate the Center, 2) Deploy a state-of-the-art infrastructure to manage data across the entire life cycle, 3) Collate, converge, and deploy cloud-enabled analysis techniques, models and data processing protocols, 4) Create and deploy the MorPhiC Web Portal to provide global access to MorPhiC data, 5) Map and integrate external data sources, and 6) Administer and coordinate the Consortium. Successful completion of these Aims will enable the assessment of feasibility, scalability, required scope, and utility of a MorPhiC Catalogue with the prospect to massively scale the functional characterization of every human gene via phenotype mapping in relevant human model systems.</p>
+            </div>
+          )}
+          {isFullQMULDesc && (
+            <div className="lab-overview">
+              <h4>NIH Grant Number</h4>
+              <p></p>
+              <h4>NIH RePORTER</h4>
+              <a href="" target="_blank" rel="noreferrer"></a>
+              <h4>Contact PI/Project Leader</h4>
+              <p>Pilar Cacheiro</p>
+              <h4>Description</h4>
+              <p>Professor Smedley’s research focusses on utilising clinical and model organism phenotype data to better understand human disease.</p>
+            </div>
           )}
         </div>
       </div>

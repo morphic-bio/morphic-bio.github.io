@@ -294,6 +294,8 @@ const Map = () => {
               <p>UM1HG012660</p>
               <h4>NIH RePORTER</h4>
               <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10518318" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/1051831</a>
+              <h4>Lab Website</h4>
+              <a href="https://www.gilbertlabucsf.com/" target="_blank" rel="noreferrer">https://www.gilbertlabucsf.com/</a>
               <h4>Contact PI/Project Leader</h4>
               <p>Luke Gilbert</p>
               <h4>Description</h4>
@@ -318,10 +320,12 @@ const Map = () => {
             <p>UM1HG012649</p>
             <h4>NIH RePORTER</h4>
             <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517781#details" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517781#details</a>
+            <h4>Lab Website</h4>
+            <a href="yuelab.org" target="_blank" rel="noreferrer">yuelab.org</a>
             <h4>Contact PI/Project Leader</h4>
             <p>Adli, Mazhar</p>
             <h4>Description</h4>
-            <p></p>
+            <p>Using modern genomic technologies, machine learning, and CRISPR genome editing to identify biomarkers and pathological variants in human diseases</p>
           </div>
           )}
           {isFullJacksonLabDesc && (
@@ -330,10 +334,12 @@ const Map = () => {
               <p>UM1HG012651</p>
               <h4>NIH RePORTER</h4>
               <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881</a>
+              <h4>Lab Website</h4>
+              <a href="www.jax.org" target="_blank" rel="noreferrer">www.jax.org</a>
               <h4>Contact PI/Project Leader</h4>
-              <p>Robson, Paul</p>
+              <p>Paul Robson</p>
               <h4>Description</h4>
-              <p></p>
+              <p>Knowledge of the function of every human gene is necessary for determining the roles and relationships of genes and regulatory elements in various normal and disease-associated biological pathways and networks. In the JAX MorPhiC Data Production Center, we will leverage the state-of-the-art cellular engineering, single-cell, and metabolomics capabilities of The Jackson Laboratory to comprehensively catalog the phenotypes of 250 null mutations in human induced pluripotent stem cells differentiated into extra-embryonic and neuroectodermal lineages. By focusing on these early embryonic lineages, we will gain important insight into multiple biological processes, including neurodevelopmental disorders and those impacting later life.</p>
             </div>
           )}
           {isFullSloanKetteringDesc && (
@@ -342,10 +348,12 @@ const Map = () => {
               <p>UM1HG012654</p>
               <h4>NIH RePORTER</h4>
               <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10518021" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10518021</a>
+              <h4>Lab Website</h4>
+              <a href="https://www.mskcc.org/research/ski/labs/danwei-huangfu" target="_blank" rel="noreferrer">https://www.mskcc.org/research/ski/labs/danwei-huangfu</a>
               <h4>Contact PI/Project Leader</h4>
-              <p>Huangfu, Danwei</p>
+              <p>Danwei Huangfu</p>
               <h4>Description</h4>
-              <p></p>
+              <p>The impact of gene loss on complex phenotypes is strongly influenced by the cellular context and the genetic background. Our ultimate goal is to develop scalable knockout phenotyping strategies in many diverse genetic backgrounds using multicellular systems that are informative of complex human biology. Leverage our expertise in human pluripotent stem cell (hPSC) guided differentiation, organoid engineering, gene editing and large-scale CRISPR screening, our MSK MorPhiC center will prioritize genes affected in neurodevelopmental and metabolic disorders. We plan to investigate knockout phenotypes by prioritizing three multicellular systems, a micropattern-based gastruloid model for early tri-germ-layer differentiation, a defined neuro-glial tri-culture system, and a 3D pancreatic islet-like organoid culture. We expect to generate extensive knockout phenotyping datasets in these multicellular contexts that are informative of diverse human biology and create a rich resource of knockout hPSC lines.</p>
             </div>
           )}
           {isFullUMiamiDesc && (
@@ -354,6 +362,8 @@ const Map = () => {
               <p>U24HG012674</p>
               <h4>NIH RePORTER</h4>
               <a href="https://reporter.nih.gov/search/0Vl49Afb50KdwhUX5tzEEw/project-details/10519442" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/0Vl49Afb50KdwhUX5tzEEw/project-details/10519442</a>
+              <h4>Lab Website</h4>
+              <a href="https://umiamihealth.org/sylvester-comprehensive-cancer-center/research/labs/schürer-lab" target="_blank" rel="noreferrer">https://umiamihealth.org/sylvester-comprehensive-cancer-center/research/labs/schürer-lab</a>
               <h4>Contact PI/Project Leader</h4>
               <p>Stephan Schürer</p>
               <h4>Description</h4>
@@ -366,6 +376,8 @@ const Map = () => {
               <p>1U24HG012674-01</p>
               <h4>NIH RePORTER</h4>
               <a href="https://reporter.nih.gov/project-details/10519442" target="_blank" rel="noreferrer">https://reporter.nih.gov/project-details/10519442</a>
+              <h4>Lab Website</h4>
+              <a href="https://www.ebi.ac.uk/about/teams/samples-phenotypes-ontologies/" target="_blank" rel="noreferrer">https://www.ebi.ac.uk/about/teams/samples-phenotypes-ontologies/</a>
               <h4>Contact PI/Project Leader</h4>
               <p>Tony Burdett, Helen Parkinson</p>
               <h4>Description</h4>
@@ -378,6 +390,8 @@ const Map = () => {
               <p>U24HG012674</p>
               <h4>NIH RePORTER</h4>
               <a href="https://reporter.nih.gov/search/0Vl49Afb50KdwhUX5tzEEw/project-details/10519442" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/0Vl49Afb50KdwhUX5tzEEw/project-details/10519442</a>
+              <h4>Lab Website</h4>
+              <a href="https://www.qmul.ac.uk/whri/people/academic-staff/items/smedleydamian.html" target="_blank" rel="noreferrer">https://www.qmul.ac.uk/whri/people/academic-staff/items/smedleydamian.html</a>
               <h4>Contact PI/Project Leader</h4>
               <p>Damian Smedley</p>
               <h4>Description</h4>

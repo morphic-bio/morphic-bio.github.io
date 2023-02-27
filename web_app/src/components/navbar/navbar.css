@@ -8,20 +8,43 @@
     padding: 2rem 6rem;
 }
 
+.morphic__social {
+    position: absolute;
+    right: 6rem;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.morphic__social_list {
+    list-style: none;
+}
+
+.morphic__social_list li {
+    list-style: none;
+    padding: 0.5rem;
+}
+
 .morphic__navbar-links {
     flex: 1;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    overflow: hidden;
 }
 
 .morphic__navbar-links_logo {
     margin-right: 2rem;
 }
 
-.morphic__navbar-links_logo img {
+.morphic__navbar-links_logo .img_logo {
     width: 80%;
     height: 80%;
+    height: 4.5rem;
+}
+
+#img_logo img {
+    height: 3.5rem;
 }
 
 .morphic__navbar-links_container {
@@ -49,6 +72,17 @@
     cursor: pointer;
 }
 
+.morphic__navbar-genome a {
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
 .morphic__navbar-sign button,
 .morphic__navbar-menu_container button {
     padding: 0.5rem 1rem;
@@ -69,6 +103,7 @@
 
     display: none;
     position: relative;
+    z-index: 2;
 }
 
 .morphic__navbar-menu svg {
@@ -101,7 +136,52 @@
     display: none;
 }
 
+.morphic__navbar-dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.morphic__navbar-dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.morphic__navbar-dropdown-content p {
+    float: none;
+    padding: 1rem;
+    margin: 0;
+    text-decoration: none;
+    display: block;
+}
+
+.morphic__navbar-dropdown-content p:hover {
+    background-color: #2167b7;
+}
+
+.morphic__navbar-dropdown:hover .morphic__navbar-dropdown-content {
+    display: block;
+  }
+
+.morphic__navbar-menu_container-social {
+    padding-top: 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 @media screen and (max-width: 1050px) {
+    .morphic__social {
+        display: none;
+    }
+
+    .morphic__navbar-genome {
+        display: none;
+    }
+
     .morphic__navbar-links_container {
         display: none;
     }
@@ -114,6 +194,11 @@
 @media screen and (max-width: 700px) {
     .morphic__navbar {
         padding: 2rem 4rem;
+    }
+
+    #img_logo img {
+        height: 80%;
+        width: 80%;
     }
 }
 

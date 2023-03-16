@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine, RiTwitterFill, RiYoutubeFill, RiFacebookFill } from 'react-icons/ri';
-import logo from '../../assets/morphic_logo2.png';
+import logo from '../../assets/morphic_logo_v3.svg';
 import './navbar.css';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="morphic__nav">
+    <nav className="morphic__nav">
     <div className="morphic__navbar">
       <div className="morphic__navbar-links">
         <div className="morphic__navbar-links_logo">
-          <a id="img_logo" href="#wmorphic"><img src={logo} /></a>
+          <a id="img_logo" href="#wmorphic"><img src={logo} alt="Morphic Logo" /></a>
         </div>
         <div className="morphic__navbar-links_container">
           <p><a href="#home">Home</a></p>
@@ -40,7 +40,7 @@ const Navbar = () => {
         {toggleMenu && (
         <div className="morphic__navbar-menu_container scale-up-center">
           <div className="morphic__navbar-menu_container-links">
-            <p><a href="#home">Home</a></p>
+            <p><a href="#Home">Home</a></p>
             <p><a href="#events">Events</a></p>
             <p><a href="#data">Data</a></p>
             <p><a href="#blog">Publications</a></p>
@@ -67,7 +67,7 @@ const Navbar = () => {
           <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"><li><RiYoutubeFill color='#fff' size={18}/></li></a>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 

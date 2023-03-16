@@ -189,7 +189,7 @@ const Map = () => {
     }
   
     return (
-      <div className="morphic__map section__padding" id="map">
+      <section className="morphic__map section__padding" id="map">
         <div className="morphic__map-container">
             <map name="moreinfo">
                 <area shape="rect" coords="0,80,200,160" href="#whatmorphic" alt="UW Yeung Lab" onClick={showFullUWDesc} onMouseEnter={showUWOverview} onMouseLeave={hideUWOverview} />
@@ -201,7 +201,7 @@ const Map = () => {
                 <area shape="rect" coords="1065,0,1245,65" href="#whatmorphic" alt="Samples Phenotypes and Ontologies Team, EBI" onClick={showFullEBIDesc} onMouseEnter={showEBIOverview} onMouseLeave={hideEBIOverview} />
                 <area shape="rect" coords="1065,100,1245,165" href="#whatmorphic" alt="Queen Mary University of London" onClick={showFullQMULDesc} onMouseEnter={showQMULOverview} onMouseLeave={hideQMULOverview} />
             </map>
-          <img src={morphic_map} alt="MorPhiC Consortium Map" useMap="#moreinfo" ref={elementRef}/>
+          <img src={morphic_map} alt="MorPhiC Consortium Map with locations of all labs." useMap="#moreinfo" ref={elementRef}/>
         </div>
         <div className="morphic__map-description">
           
@@ -348,8 +348,13 @@ const Map = () => {
               <p>UM1HG012654</p>
               <h4>NIH RePORTER</h4>
               <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10518021" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10518021</a>
-              <h4>Lab Website</h4>
-              <a href="https://www.mskcc.org/research/ski/labs/danwei-huangfu" target="_blank" rel="noreferrer">https://www.mskcc.org/research/ski/labs/danwei-huangfu</a>
+              <h4>Lab Websites</h4>
+              <ul className="lab-links">
+                <li><a href="https://www.mskcc.org/research/ski/labs/danwei-huangfu" target="_blank" rel="noreferrer">https://www.mskcc.org/research/ski/labs/danwei-huangfu</a></li>
+                <li><a href="https://www.mskcc.org/research/ski/labs/lorenz-studer" target="_blank" rel="noreferrer">https://www.mskcc.org/research/ski/labs/lorenz-studer</a></li>
+                <li><a href="https://www.mskcc.org/research/ski/labs/thomas-vierbuchen" target="_blank" rel="noreferrer">https://www.mskcc.org/research/ski/labs/thomas-vierbuchen</a></li>
+                <li><a href="https://www.mskcc.org/research/ski/profile/ting-zhou" target="_blank" rel="noreferrer">https://www.mskcc.org/research/ski/profile/ting-zhou</a></li>
+              </ul>
               <h4>Contact PI/Project Leader</h4>
               <p>Danwei Huangfu</p>
               <h4>Description</h4>
@@ -399,7 +404,7 @@ const Map = () => {
             </div>
           )}
         </div>
-      </div>
+      </section>
     );
   };
   

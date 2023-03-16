@@ -7,6 +7,15 @@
     background: var(--color-footer);
 }
 
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
 .morphic__footer-heading {
     width: 100%;
     text-align: center;
@@ -22,16 +31,12 @@
 }
 
 .morphic__footer-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     border: 1px solid #fff;
-    text-align: center;
-
-    margin-bottom: 10rem;
+    background-color: transparent;
     cursor: pointer;
+
+    align-self: center;
 }
 
 .morphic__footer-btn p {
@@ -53,7 +58,7 @@
     text-align: left;
 }
 
-.morphic__footer-links div {
+.morphic__footer-links section {
     width: 250px;
     margin: 1rem;
 }
@@ -64,7 +69,6 @@
 }
 
 .morphic__footer-links_logo img {
-    width: 80%;
     height: 80%;
 
     margin-bottom: 1rem;
@@ -73,7 +77,7 @@
 .morphic__footer-links_logo p {
     font-family: var(--font-family);
     font-size: 12px;
-    line-height: 15px;
+    line-height: 1.5rem;
     color: #fff;
 }
 
@@ -102,6 +106,16 @@
     cursor: pointer;
 }
 
+.morphic__footer-social-media {
+    display: flex;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.morphic__footer-social-media a {
+    padding-right: 3rem;
+}
+
 .morphic__footer-copyright {
     margin-top: 2rem;
     text-align: center;
@@ -128,7 +142,7 @@
         line-height: 42px;
     }
 
-    .morphic__footer-links div {
+    .morphic__footer-links section {
         margin: 1rem 0;
     }
 

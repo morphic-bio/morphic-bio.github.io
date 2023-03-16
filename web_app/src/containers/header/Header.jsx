@@ -18,7 +18,7 @@ const Header = () => (
     </div>
 
     <div className="morphic__header-image">
-      <img src={genome} />
+      <img src={genome} alt="Human outline combined with DNA" />
     </div>
   </div>
 );

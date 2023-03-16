@@ -1,47 +1,54 @@
 import React from 'react';
-import logo from '../../assets/morphic_logo2.png';
+import logo from '../../assets/morphic_logo_v3.svg';
+import { RiTwitterFill, RiYoutubeFill, RiFacebookFill } from 'react-icons/ri';
 import './footer.css';
 
 const Footer = () => (
-  <div className="morphic__footer section__padding">
-    <div className="morphic__footer-heading">
-      <h1 className="gradient__text">Contact us</h1>
-    </div>
-
-    <div className="morphic__footer-btn">
-      <p>Contact</p>
-    </div>
-
-    <div className="morphic__footer-links">
-      <div className="morphic__footer-links_logo">
-        <img src={logo} alt="morphic_logo" />
-        <p>Casdasdsad1213asdasdb, <br /> All Rights Reserved</p>
+  <footer className="morphic__footer section__padding">
+    <section id="contact">
+      <div className="morphic__footer-heading">
+        <h1 className="gradient__text">Contact us</h1>
       </div>
-      <div className="morphic__footer-links_div">
-        <h4>Links</h4>
-        <p>Overons</p>
-        <p>Social Media</p>
-        <p>Counters</p>
+
+      <button className="morphic__footer-btn">
         <p>Contact</p>
-      </div>
-      <div className="morphic__footer-links_div">
+      </button>
+    </section>
+
+    <section className="morphic__footer-links">
+      <section className="morphic__footer-links_logo">
+        <img src={logo} alt="Morphic Logo" />
+        <p>Molecular Phenotypes of Null Alleles in Cells<br /> All Rights Reserved</p>
+      </section>
+      <section className="morphic__footer-links_div">
+        <h4>Links</h4>
+        <p><a href="https://www.genome.gov/" target="_blank" rel="noreferrer">genome.gov</a></p>
+        <p>Data</p>
+        <p>Publications</p>
+        <p>Social Media</p>
+      </section>
+      <section className="morphic__footer-links_div">
         <h4>Company</h4>
         <p>Terms & Conditions </p>
         <p>Privacy Policy</p>
         <p>Contact</p>
-      </div>
-      <div className="morphic__footer-links_div">
+      </section>
+      <section className="morphic__footer-links_div">
         <h4>Get in touch</h4>
-        <p>Crechterwoord K12 182 DK Alknjkcb</p>
-        <p>085-132567</p>
+        {/* <p>Crechterwoord K12 182 DK Alknjkcb</p> */}
         <p>morphicprogram@mail.nih.gov</p>
-      </div>
-    </div>
+        <div className="morphic__footer-social-media">
+          <a href="http://www.twitter.com/" target="_blank" rel="noreferrer"><RiTwitterFill color='#fff' size={18}/></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><RiFacebookFill color='#fff' size={18}/></a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"><RiYoutubeFill color='#fff' size={18}/></a>
+        </div>
+      </section>
+    </section>
 
     <div className="morphic__footer-copyright">
       <p>@2022 Morphic. All rights reserved.</p>
     </div>
-  </div>
+  </footer>
 );
 
 export default Footer;

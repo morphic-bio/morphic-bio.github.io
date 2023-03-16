@@ -36,3 +36,11 @@
 .morphic__map-description p, .morphic__map-description a {
     padding: 0.5rem;
 }
+
+.lab-links {
+    list-style-type: none;
+}
+
+.lab-links li {
+    padding-top: 0.5rem;
+}

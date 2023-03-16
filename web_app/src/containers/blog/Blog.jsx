@@ -4,7 +4,7 @@ import { blog01, blog02, blog03, blog04, blog05 } from './imports';
 import './blog.css';
 
 const Blog = () => (
-  <div className="morphic__blog section__padding" id="blog">
+  <section className="morphic__blog section__padding" id="blog">
     <div className="morphic__blog-heading">
       <h1 className="gradient__text">News</h1>
     </div>
@@ -19,7 +19,7 @@ const Blog = () => (
         <Article imgUrl={blog05} date="Nov 26, 2022" text="NIH initiative to systematically investigate and establish function of every human gene" />
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default Blog;

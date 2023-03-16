@@ -2,9 +2,9 @@ import React from 'react';
 import './article.css';
 
 const Article = ({ imgUrl, date, text }) => (
-  <div className="morphic__blog-container_article">
+  <article className="morphic__blog-container_article">
     <div className="morphic__blog-container_article-image">
-      <img src={imgUrl} alt="blog_image" />
+      <img src={imgUrl} alt="Morphic Artile Cover Image" />
     </div>
     <div className="morphic__blog-container_article-content">
       <div>
@@ -13,7 +13,7 @@ const Article = ({ imgUrl, date, text }) => (
       </div>
       <p>Read Full Article</p>
     </div>
-  </div>
+  </article>
 );
 
 export default Article;

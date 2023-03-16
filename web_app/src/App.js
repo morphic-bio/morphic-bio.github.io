@@ -6,13 +6,15 @@ import './App.css';
 
 const App = () => (
   <div className="App">
-    <div className="gradient__bg">
+    <header className="gradient__bg">
       <Navbar />
       <Header />
-    </div>
-    <Whatmorphic />
-    <Map />
-    <Blog />
+    </header>
+    <main>
+      <Whatmorphic />
+      <Map />
+      <Blog />
+    </main>
     <Footer />
   </div>
 );

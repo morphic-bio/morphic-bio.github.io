@@ -37,7 +37,7 @@ overflow: visible;
     line-height: 45px;
 }
 
-.morphic__header-content h3 {
+.morphic__header-content .morphic__sub_title {
     font-family: var(--font-family);
     color: white;
 }

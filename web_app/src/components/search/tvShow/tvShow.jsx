@@ -24,11 +24,16 @@ const Thumbnail = styled.div`
 `;
 
 const Name = styled.h3`
+  font-family: 'Manrope', sans-serif;
   font-size: 15px;
   color: #000;
   margin-left: 10px;
   flex: 2;
   display: flex;
+  max-width: 200px;
+  max-height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 const Rating = styled.span`
@@ -39,11 +44,12 @@ const Rating = styled.span`
 `;
 
 export function TvShow(props) {
-  const {key, name} = props;
+  const {key, name, omim} = props;
 
   return (
     <TvShowContainer onClick={()=>console.log("ga")}>
       <Name>{name}</Name>
+      <Name>{omim}</Name>
     </TvShowContainer>
   );
 }

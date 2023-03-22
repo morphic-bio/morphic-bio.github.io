@@ -11,6 +11,8 @@ import { useDebounce } from "../../../hooks/debounceHook";
 import axios from "axios";
 import { TvShow } from "../tvShow/tvShow";
 
+import Data from '../data/gene_list'
+
 const SearchBarContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
@@ -155,35 +157,27 @@ export function SearchBar(props) {
     if (isClickedOutside) collapseContainer();
   }, [isClickedOutside]);
 
-  const prepareSearchQuery = (query) => {
-    const url = `https://clinicaltables.nlm.nih.gov/api/ncbi_genes/v3/search?terms=${query}`;
-
-    return encodeURI(url);
-  };
-
-  const searchTvShow = async () => {
+  const searchTvShow = () => {
     if (!searchQuery || searchQuery.trim() === "") return;
 
     setLoading(true);
     setNoTvShows(false);
 
-    const URL = prepareSearchQuery(searchQuery);
-
-    const response = await axios.get(URL).catch((err) => {
-      console.log("Error: ", err);
-    });
-
-    if (response) {
-      console.log("Response: ", response.data);
-      if (response.data && response.data.length === 0) setNoTvShows(true);
-      
-      setTvShows( () => {
-        var res = Object.values(response.data[3]);
-        res.sort((a,b) => searchQuery.localeCompare(a[4].toLowerCase()) - searchQuery.localeCompare(b[4].toLowerCase()));
-        return res;
-        });
-      console.log("tv shows:" + Object.values(response.data[3]));
+    const matchedGenes = []
+    for (const [k, v] of Object.entries(Data)) {
+      if (k.toLowerCase().includes(searchQuery.toLocaleLowerCase())) {
+        matchedGenes.push(Data[k])
+      }
     }
+    // console.log("matched genes ", matchedGenes)
+
+    if (matchedGenes.length == 0) {
+      setNoTvShows(true)
+    }
+
+    setTvShows( () => {
+      return matchedGenes;
+    });
 
     setLoading(false);
   };
@@ -202,7 +196,7 @@ export function SearchBar(props) {
           <IoSearch />
         </SearchIcon>
         <SearchInput
-          placeholder="Search for Series/Shows"
+          placeholder="Search for gene"
           onFocus={expandContainer}
           ref={inputRef}
           value={searchQuery}
@@ -233,20 +227,21 @@ export function SearchBar(props) {
           )}
           {!isLoading && isEmpty && !noTvShows && (
             <LoadingWrapper>
-              <WarningMessage>Start typing to Search</WarningMessage>
+              <WarningMessage>Start typing a gene.</WarningMessage>
             </LoadingWrapper>
           )}
           {!isLoading && noTvShows && (
             <LoadingWrapper>
-              <WarningMessage>No Tv Shows or Series found!</WarningMessage>
+              <WarningMessage>No gene found.</WarningMessage>
             </LoadingWrapper>
           )}
           {!isLoading && !isEmpty && (
             <>
               {tvShows.map(( show ) => (
                 <TvShow
-                  key={show[3]}
-                  name={show[4]}
+                  key={show["hgnc_id"]}
+                  name={show["gene_symbol"]}
+                  omim={show["omim_name"]}
                 />
               ))}
             </>

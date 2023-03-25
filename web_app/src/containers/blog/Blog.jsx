@@ -10,7 +10,7 @@ const Blog = () => (
     </div>
     <div className="morphic__blog-container">
       <div className="morphic__blog-container_groupA">
-        <Article imgUrl={blog07} date="Mar 3, 2022" text="The Molecular Phenotypes of Null Alleles in Cells program seeks to identify the purpose behind every gene." link="https://physician-news.umiamihealth.org/dr-stephan-schurer-enlisted-for-important-genome-research-project/" />
+        <Article imgUrl={blog07} date="Mar 3, 2023" text="The Molecular Phenotypes of Null Alleles in Cells program seeks to identify the purpose behind every gene." link="https://physician-news.umiamihealth.org/dr-stephan-schurer-enlisted-for-important-genome-research-project/" />
       </div>
       <div className="morphic__blog-container_groupB">
         <Article imgUrl={blog06} date="Dec 5, 2022" text="Identifying How Genes Function to Better Understand Cancer with Mazhar Adli, PhD" link="https://www.feinberg.northwestern.edu/research/podcast/2022/gene-function-to-understand-cancer-adli.html" />

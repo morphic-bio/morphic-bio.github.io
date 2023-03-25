@@ -24,18 +24,16 @@ const Footer = () => (
         <h4>Links</h4>
         <p><a href="https://www.genome.gov/" target="_blank" rel="noreferrer">genome.gov</a></p>
         <p>Data</p>
-        <p>Publications</p>
         <p>Social Media</p>
       </section>
       <section className="morphic__footer-links_div">
-        <h4>Company</h4>
-        <p>Terms & Conditions </p>
-        <p>Privacy Policy</p>
-        <p>Contact</p>
+        <h4>About</h4>
+        <p>Publications</p>
+        <p>Events</p>
+        <p>Labs</p>
       </section>
       <section className="morphic__footer-links_div">
         <h4>Get in touch</h4>
-        {/* <p>Crechterwoord K12 182 DK Alknjkcb</p> */}
         <p>morphicprogram@mail.nih.gov</p>
         <div className="morphic__footer-social-media">
           <a href="http://www.twitter.com/" target="_blank" rel="noreferrer"><RiTwitterFill color='#fff' size={18}/></a>

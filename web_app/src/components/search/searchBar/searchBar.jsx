@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { IoClose, IoSearch } from "react-icons/io5";
+import { IoClose, IoSearch, IoTriangle } from "react-icons/io5";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useClickOutside } from "react-click-outside-hook";
@@ -10,6 +10,7 @@ import MoonLoader from "react-spinners/MoonLoader";
 import { useDebounce } from "../../../hooks/debounceHook";
 import axios from "axios";
 import { TvShow } from "../tvShow/tvShow";
+import { THeader } from "../tvShow/tHeader";
 
 import Data from '../data/gene_list'
 
@@ -91,7 +92,7 @@ const SearchContent = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1em;
+  padding: 0em, 1em, 1em, 1em;
   overflow-y: auto;
 `;
 
@@ -130,8 +131,14 @@ export function SearchBar(props) {
   const [isLoading, setLoading] = useState(false);
   const [tvShows, setTvShows] = useState([]);
   const [noTvShows, setNoTvShows] = useState(false);
+  const [searchCategory, setSearchCatergory] = useState("gene_symbol")
 
   const isEmpty = !tvShows || tvShows.length === 0;
+
+  const changeCategory = (event) => {
+    collapseContainer()
+    setSearchCatergory(event.target.value);
+  }
 
   const changeHandler = (e) => {
     e.preventDefault();
@@ -150,7 +157,7 @@ export function SearchBar(props) {
     setLoading(false);
     setNoTvShows(false);
     setTvShows([]);
-    if (inputRef.current) inputRef.current.value = "";
+    if (inputRef.current) inputRef.current.value = "gene_symbol";
   };
 
   useEffect(() => {
@@ -165,11 +172,25 @@ export function SearchBar(props) {
 
     const matchedGenes = []
     for (const [k, v] of Object.entries(Data)) {
-      if (k.toLowerCase().includes(searchQuery.toLocaleLowerCase())) {
-        matchedGenes.push(Data[k])
+      // if (k.toLowerCase().includes(searchQuery.toLocaleLowerCase())) {
+      //   matchedGenes.push(Data[k])
+      // }
+
+      for (const [key, value] of Object.entries(v)) {
+        if (!(key === "gene_symbol" || key === "hgnc_id" || 
+              key === "impc_phenotypes_homozygote" || key === "impc_phenotypes_heterozygote" || 
+              key === "omim_name" || key === "dd_name")) {
+          continue
+        }
+        if (key === searchCategory || key === "all")
+        if (value.toLocaleLowerCase().includes(searchQuery.toLocaleLowerCase())) {
+          matchedGenes.push([v, key])
+          break
+        }
       }
     }
-    // console.log("matched genes ", matchedGenes)
+    console.log("matched genes ", matchedGenes)
+    console.log(Object.keys(Data).length)
 
     if (matchedGenes.length == 0) {
       setNoTvShows(true)
@@ -192,11 +213,29 @@ export function SearchBar(props) {
       ref={parentRef}
     >
       <SearchInputContainer>
-        <SearchIcon>
-          <IoSearch />
-        </SearchIcon>
+        <div style={{ display: 'flex', justifyContent: 'center', overflow: 'hidden', paddingRight: '1em', width: 'auto'}}>
+          <div style={{display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
+            <span style={{ width: '120px', whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden' }}>{searchCategory.replace("_", " ")}</span>
+            <IoTriangle style = {{transform: 'rotate(180deg)' }} />
+          </div>
+          <label htmlFor="" style={{ display: 'none' }}>Select the gene category you want to search.</label>
+          <select name="" id="" title="Search gene" onChange={changeCategory} value={searchCategory} style={{ opacity: 0, position: 'absolute' }}>
+            <option value="all">All</option>
+            <option selected value="gene_symbol">gene symbol</option>
+            <option value="hgnc_id">hgnc id</option>
+            <option value="impc_phenotypes_homozygote">phenotypes homozygote</option>
+            <option value="impc_phenotypes_heterozygote">phenotypes heterozygote</option>
+            <option value="omim_name">omim name</option>
+            <option value="dd_name">dd name</option>
+          </select>
+        </div>
+        {!isExpanded && (
+          <SearchIcon>
+            <IoSearch />
+          </SearchIcon>
+        )}
         <SearchInput
-          placeholder="Search for gene"
+          placeholder="Search gene"
           onFocus={expandContainer}
           ref={inputRef}
           value={searchQuery}
@@ -227,21 +266,37 @@ export function SearchBar(props) {
           )}
           {!isLoading && isEmpty && !noTvShows && (
             <LoadingWrapper>
-              <WarningMessage>Start typing a gene.</WarningMessage>
+              <WarningMessage>
+                Start typing a {(searchCategory === "all") ? "gene symbol / hgnc id / phenotypes / omim name / dd name" : searchCategory.replace("_", " ")}.
+              </WarningMessage>
             </LoadingWrapper>
           )}
           {!isLoading && noTvShows && (
             <LoadingWrapper>
-              <WarningMessage>No gene found.</WarningMessage>
+              <WarningMessage>No matches in the pilot phase gene list.</WarningMessage>
             </LoadingWrapper>
           )}
           {!isLoading && !isEmpty && (
             <>
+              <THeader
+                gene="gene_symbol"
+                id="hgnc_id"
+                phenotype_hom="impc_phenotypes_homozygote"
+                phenotype_het="impc_phenotypes_heterozygote"
+                omin_name="omim_name"
+                dd_name="dd_name"
+              />
               {tvShows.map(( show ) => (
                 <TvShow
-                  key={show["hgnc_id"]}
-                  name={show["gene_symbol"]}
-                  omim={show["omim_name"]}
+                  key={show[0].hgnc_id}
+                  name={show[1]}
+                  match={show[0][show[1]]}
+                  gene={show[0]["gene_symbol"]}
+                  id={show[0]["hgnc_id"]}
+                  phenotype_hom={show[0]["impc_phenotypes_homozygote"]}
+                  phenotype_het={show[0]["impc_phenotypes_heterozygote"]}
+                  omin_name={show[0]["omim_name"]}
+                  dd_name={show[0]["dd_name"]}
                 />
               ))}
             </>

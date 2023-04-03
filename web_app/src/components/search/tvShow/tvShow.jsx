@@ -25,12 +25,13 @@ const Thumbnail = styled.div`
 
 const Name = styled.h3`
   font-family: 'Manrope', sans-serif;
-  font-size: 15px;
+  font-size: 12.5px;
+  font-weight: 600;
   color: #000;
-  margin-left: 10px;
+  padding: 5px;
   flex: 2;
   display: flex;
-  max-width: 200px;
+  max-width: 500px;
   max-height: 60px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -44,12 +45,20 @@ const Rating = styled.span`
 `;
 
 export function TvShow(props) {
-  const {key, name, omim} = props;
+  const {key, name, match, gene, id, phenotype_hom, phenotype_het, omin_name, dd_name} = props;
 
   return (
     <TvShowContainer onClick={()=>console.log("ga")}>
-      <Name>{name}</Name>
-      <Name>{omim}</Name>
+      {/* <Rating>{name}</Rating> */}
+      {/* <Name>{match.replace("|", ", ")}</Name> */}
+      <Name>{id.replace("HGNC:", "")}</Name>
+      <Name>
+        <a href={"https://www.genecards.org/cgi-bin/carddisp.pl?gene=" + gene} target="_blank" rel="noopener noreferrer" style={{ color: 'blue'}}>{gene}</a>
+      </Name>
+      <Name>{phenotype_hom.replaceAll("|", ", ")}</Name>
+      <Name>{phenotype_het.replaceAll("|", ", ")}</Name>
+      <Name>{omin_name}</Name>
+      <Name>{dd_name}</Name>
     </TvShowContainer>
   );
 }

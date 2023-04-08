@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import morphic_map from '../../assets/MorPhiC_Consortium_Map.png';
+import morphic_map from '../../assets/MorPhiC_Consortium_Map2.png';
 import './map.css';
 
 const Map = () => {
@@ -334,8 +334,12 @@ const Map = () => {
               <p>UM1HG012651</p>
               <h4>NIH RePORTER</h4>
               <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881</a>
-              <h4>Lab Website</h4>
-              <a href="www.jax.org" target="_blank" rel="noreferrer">www.jax.org</a>
+              <h4>Lab Websites</h4>
+              <ul className="lab-links">
+                <li><a href="https://www.jax.org/" target="_blank" rel="noreferrer">www.jax.org</a></li>
+                <li><a href="https://www.jax.org/research-and-faculty/research-labs/the-robson-lab" target="_blank" rel="noreferrer">https://www.jax.org/research-and-faculty/research-labs/the-robson-lab</a></li>
+                <li><a href="https://www.jax.org/research-and-faculty/faculty/william-skarnes" target="_blank" rel="noreferrer">https://www.jax.org/research-and-faculty/faculty/william-skarnes</a></li>
+              </ul>
               <h4>Contact PI/Project Leader</h4>
               <p>Paul Robson</p>
               <h4>Description</h4>

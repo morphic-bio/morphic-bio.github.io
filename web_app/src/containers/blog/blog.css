@@ -24,7 +24,7 @@
 }
 
 .morphic__blog-container_groupA {
-    flex: 0.75;
+    flex: 0.5;
     margin-right: 2rem;
 }
 
@@ -32,7 +32,7 @@
     flex: 1;
 
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
 }
 
@@ -41,9 +41,12 @@
         flex-direction: column-reverse;
     }
 
-
     .morphic__blog-container_groupA {
         margin: 2rem 0;
+    }
+
+    .morphic__blog-container_groupB {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .morphic__blog-container_groupA .morphic__blog-container_article  {

@@ -15,6 +15,7 @@ const Blog = () => (
       <div className="morphic__blog-container_groupB">
         <Article imgUrl={"https://www.feinberg.northwestern.edu/research/images/podcast/adli-360.png"} date="Dec 5, 2022" text="Identifying How Genes Function to Better Understand Cancer with Mazhar Adli, PhD" link="https://www.feinberg.northwestern.edu/research/podcast/2022/gene-function-to-understand-cancer-adli.html" />
         <Article imgUrl={"https://cancer.ucsf.edu/sites/cancer.ucsf.edu/files/styles/sf_landscape_16x9/public/images/article/luke_gilbert-186_1_0.jpeg?h=0632d6fb&itok=k8U6Jhe6"} date="Sep 27, 2022" text="NIH initiative to systematically investigate and establish function of every human gene" link="https://cancer.ucsf.edu/news/2022/09/27/nih-initiative-to-systematically-investigate-and-establish-function-of-every-human"/>
+        <Article imgUrl={blog00} date="Sep 27, 2022" text="NIH initiative to systematically investigate and establish function of every human gene" link="https://www.nih.gov/news-events/news-releases/nih-initiative-systematically-investigate-establish-function-every-human-gene" />
       </div>
     </div>
   </section>

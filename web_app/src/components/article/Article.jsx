@@ -9,7 +9,9 @@ const Article = ({ imgUrl, date, text, link }) => (
     <div className="morphic__blog-container_article-content">
       <div>
         <p>{date}</p>
-        <h3>{text}</h3>
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <h3>{text}</h3>
+        </a>
       </div>
       <a href={link} target="_blank" rel="noopener noreferrer">Read Full Article</a>
     </div>

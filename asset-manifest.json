@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5ba5504.css",
-    "main.js": "/static/js/main.89e80a24.js",
+    "main.css": "/static/css/main.f8edd1c8.css",
+    "main.js": "/static/js/main.d0fd4d63.js",
     "static/media/MorPhiC_Consortium_Map2.png": "/static/media/MorPhiC_Consortium_Map2.13f7d3876a5da245954a.png",
     "static/media/humanGenome.png": "/static/media/humanGenome.35a596b0192a34cfc67f.png",
     "static/media/logo.png": "/static/media/logo.ee23bea85da8bc635154.png",
@@ -11,11 +11,11 @@
     "static/media/blog00.jpg": "/static/media/blog00.b62f6986946ea8497597.jpg",
     "static/media/morphic_logo_v3.svg": "/static/media/morphic_logo_v3.70f75deaf601782ec450b941de971c51.svg",
     "index.html": "/index.html",
-    "main.d5ba5504.css.map": "/static/css/main.d5ba5504.css.map",
-    "main.89e80a24.js.map": "/static/js/main.89e80a24.js.map"
+    "main.f8edd1c8.css.map": "/static/css/main.f8edd1c8.css.map",
+    "main.d0fd4d63.js.map": "/static/js/main.d0fd4d63.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5ba5504.css",
-    "static/js/main.89e80a24.js"
+    "static/css/main.f8edd1c8.css",
+    "static/js/main.d0fd4d63.js"
   ]
 }

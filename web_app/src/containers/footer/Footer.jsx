@@ -21,19 +21,19 @@ const Footer = () => (
         <p>Molecular Phenotypes of Null Alleles in Cells<br /> All Rights Reserved</p>
       </section>
       <section className="morphic__footer-links_div">
-        <h4>Links</h4>
+        <h1 className="footer_heading">Links</h1>
         <p><a href="https://www.genome.gov/" target="_blank" rel="noreferrer">genome.gov</a></p>
         <p>Data</p>
         <p>Social Media</p>
       </section>
       <section className="morphic__footer-links_div">
-        <h4>About</h4>
+        <h1 className="footer_heading">About</h1>
         <p>Publications</p>
         <p>Events</p>
         <p>Labs</p>
       </section>
       <section className="morphic__footer-links_div">
-        <h4>Get in touch</h4>
+        <h1 className="footer_heading">Get in touch</h1>
         <p>morphicprogram@mail.nih.gov</p>
         <div className="morphic__footer-social-media">
           <a href="http://www.twitter.com/" target="_blank" rel="noreferrer" aria-label="Follow us Twitter"><RiTwitterFill color='#fff' size={18}/></a>

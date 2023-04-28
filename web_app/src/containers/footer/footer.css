@@ -87,7 +87,7 @@
     flex-direction: column;
 }
 
-.morphic__footer-links_div h4 {
+.morphic__footer-links_div .footer_heading {
     font-size: 14px;
     line-height: 17px;
     font-family: var(--font-family);

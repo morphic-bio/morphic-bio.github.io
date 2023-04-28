@@ -25,21 +25,10 @@ overflow: visible;
     line-height: 62px;
 }
 
-.morphic__header-content h2 {
-    font-family: var(--font-family);
-    font-weight: 800;
-    font-size: 60px;
-    line-height: 72px;
-    letter-spacing: -0.04em;
-
-    font-weight: 800;
-    font-size: 34px;
-    line-height: 45px;
-}
-
 .morphic__header-content .morphic__sub_title {
     font-family: var(--font-family);
     color: white;
+    font-size: 1.17em;
 }
 
 .morphic__header-content p {

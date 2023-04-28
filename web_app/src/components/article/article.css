@@ -42,7 +42,7 @@
     color: #fff;
 }
 
-.morphic__blog-container_article-content h3 {
+.morphic__blog-container_article-content .morphic__blog-article-heading {
     font-family: var(--font-family);
     font-size: 1rem;
     font-weight: 800;

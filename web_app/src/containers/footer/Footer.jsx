@@ -36,9 +36,9 @@ const Footer = () => (
         <h4>Get in touch</h4>
         <p>morphicprogram@mail.nih.gov</p>
         <div className="morphic__footer-social-media">
-          <a href="http://www.twitter.com/" target="_blank" rel="noreferrer"><RiTwitterFill color='#fff' size={18}/></a>
-          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><RiFacebookFill color='#fff' size={18}/></a>
-          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"><RiYoutubeFill color='#fff' size={18}/></a>
+          <a href="http://www.twitter.com/" target="_blank" rel="noreferrer" aria-label="Follow us Twitter"><RiTwitterFill color='#fff' size={18}/></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Follow us Facebook"><RiFacebookFill color='#fff' size={18}/></a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" aria-label="Follow us Youtube"><RiYoutubeFill color='#fff' size={18}/></a>
         </div>
       </section>
     </section>

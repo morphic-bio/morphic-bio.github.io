@@ -47,14 +47,14 @@ const Navbar = () => {
             <p><a href="#contact">Contact</a></p>
             <p><a href="https://www.genome.gov/" target="_blank" rel="noreferrer">genome.gov</a></p>
           </div>
-          <div className="morphic__navbar-menu_container-social">
-              <a href="http://www.twitter.com/" target="_blank" rel="noreferrer"><RiTwitterFill color='#fff' size={18}/></a>
-              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><RiFacebookFill color='#fff' size={18}/></a>
-              <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"><RiYoutubeFill color='#fff' size={18}/></a>
-          </div>
           <div className="morphic__navbar-menu_container-links-sign">
             <p>Sign in</p>
             <button type="button">Sign up</button>
+          </div>
+          <div className="morphic__navbar-menu_container-social">
+              <a href="http://www.twitter.com/" target="_blank" rel="noreferrer" aria-label="Follow us Twitter"><RiTwitterFill color='#fff' size={18}/></a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Follow us Facebook"><RiFacebookFill color='#fff' size={18}/></a>
+              <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" aria-label="Follow us Youtube"><RiYoutubeFill color='#fff' size={18}/></a>
           </div>
         </div>
         )}
@@ -62,9 +62,9 @@ const Navbar = () => {
     </div>
     <div className='morphic__social'>
         <ul className='morphic__social_list'>
-          <a href="http://www.twitter.com/" target="_blank" rel="noreferrer"><li><RiTwitterFill color='#fff' size={18}/></li></a>
-          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><li><RiFacebookFill color='#fff' size={18}/></li></a>
-          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"><li><RiYoutubeFill color='#fff' size={18}/></li></a>
+          <li><a href="http://www.twitter.com/" target="_blank" rel="noreferrer" aria-label="Follow us Twitter"><RiTwitterFill color='#fff' size={18}/></a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Follow us Facebook"><RiFacebookFill color='#fff' size={18}/></a></li>
+          <li><a href="https://www.youtube.com/" target="_blank" rel="noreferrer" aria-label="Follow us Youtube"><RiYoutubeFill color='#fff' size={18}/></a></li>
         </ul>
       </div>
     </nav>

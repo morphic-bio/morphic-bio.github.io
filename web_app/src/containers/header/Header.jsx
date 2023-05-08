@@ -1,6 +1,7 @@
 import React from 'react';
 
 import genome from '../../assets/humanGenome.png';
+import genomeSm from '../../assets/humanGenome-sm.png'
 import { SearchBar } from '../../components/search/searchBar/searchBar';
 import './header.css';
 
@@ -11,6 +12,7 @@ const Header = () => (
       <h2 className='morphic__sub_title'>Bold Predictions For Human Genomics by 2030</h2>
       <p>The biological function(s) of every human gene will be known; for non-coding elements in the human genome, such knowledge will be the rule, rather than the exception.</p>
 
+      <span style={{color: "white", margin: "2rem 0 0 0"}}> Draft gene list</span>
       <div className="morphic__header-content__input">
         <SearchBar/>
       </div>
@@ -18,7 +20,16 @@ const Header = () => (
     </div>
 
     <div className="morphic__header-image">
-      <img src={genome} alt="Human outline combined with DNA" />
+      <img 
+        src={genome} 
+        alt="Human outline combined with DNA"
+        srcSet={`
+          ${genomeSm} 256w,
+          ${genome} 996w`}
+        sizes="
+          (max-width: 600px) 480px,
+          800px"
+      />
     </div>
   </div>
 );

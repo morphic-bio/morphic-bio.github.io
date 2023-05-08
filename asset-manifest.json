@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.fd6d553b.css",
-    "main.js": "/static/js/main.9e517a37.js",
+    "main.css": "/static/css/main.48bd8eae.css",
+    "main.js": "/static/js/main.da8e17bc.js",
     "static/media/MorPhiC_Consortium_Map2.png": "/static/media/MorPhiC_Consortium_Map2.13f7d3876a5da245954a.png",
     "static/media/humanGenome.png": "/static/media/humanGenome.35a596b0192a34cfc67f.png",
     "static/media/blog_1m.webp": "/static/media/blog_1m.427b660228a21063b7f3.webp",
     "static/media/blog_2s.webp": "/static/media/blog_2s.861e89c667c8110511f6.webp",
     "static/media/logo.png": "/static/media/logo.ee23bea85da8bc635154.png",
     "static/media/blog01.jpeg": "/static/media/blog01.d90e4f4ddec93687eff9.jpeg",
+    "static/media/humanGenome-sm.png": "/static/media/humanGenome-sm.a117feec6d1347e79a4d.png",
     "static/media/blog07.jpg": "/static/media/blog07.7543a257f01752b2bbc1.jpg",
     "static/media/blog06.jpg": "/static/media/blog06.411ac171925f4f289934.jpg",
     "static/media/blog00.jpg": "/static/media/blog00.b62f6986946ea8497597.jpg",
@@ -15,11 +16,11 @@
     "static/media/blog_3l.webp": "/static/media/blog_3l.00c95322efa1ae044beb.webp",
     "static/media/blog00w.webp": "/static/media/blog00w.ceae4038bbf4bb434cc9.webp",
     "index.html": "/index.html",
-    "main.fd6d553b.css.map": "/static/css/main.fd6d553b.css.map",
-    "main.9e517a37.js.map": "/static/js/main.9e517a37.js.map"
+    "main.48bd8eae.css.map": "/static/css/main.48bd8eae.css.map",
+    "main.da8e17bc.js.map": "/static/js/main.da8e17bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd6d553b.css",
-    "static/js/main.9e517a37.js"
+    "static/css/main.48bd8eae.css",
+    "static/js/main.da8e17bc.js"
   ]
 }

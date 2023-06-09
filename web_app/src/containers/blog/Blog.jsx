@@ -42,7 +42,7 @@ const Blog = () => {
               <img src="https://physician-news.umiamihealth.org/wp-content/uploads/sites/4/2023/03/IMG_6995.jpg" alt="" />
               <div className='article-info'>
                 <h1> 
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a href="https://physician-news.umiamihealth.org/dr-stephan-schurer-enlisted-for-important-genome-research-project/" target="_blank" rel="noopener noreferrer">
                     The Molecular Phenotypes of Null Alleles in Cells program seeks to identify the purpose behind every gene.
                   </a>
                 </h1>
@@ -53,7 +53,7 @@ const Blog = () => {
               <img src="https://www.tacoma.uw.edu/sites/default/files/2023-05/uwtnews-2023-05-morphic-yueng-feature.jpg" alt="" />
               <div className='article-info'>
                 <h1>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.tacoma.uw.edu/news/bioinformatics-team-powers-international-effort-map-gene-function-0" target="_blank" rel="noopener noreferrer">
                     Bioinformatics Team Powers International Effort to Map Gene Function
                   </a>
                 </h1>
@@ -64,7 +64,7 @@ const Blog = () => {
               <img src="https://www.feinberg.northwestern.edu/research/images/podcast/adli-360.png" alt="" />
               <div className='article-info'>
                 <h1>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.feinberg.northwestern.edu/research/podcast/2022/gene-function-to-understand-cancer-adli.html" target="_blank" rel="noopener noreferrer">
                     Identifying How Genes Function to Better Understand Cancer with Mazhar Adli, PhD
                   </a>
                 </h1>
@@ -75,7 +75,7 @@ const Blog = () => {
               <img src="https://cancer.ucsf.edu/sites/cancer.ucsf.edu/files/styles/sf_landscape_16x9/public/images/article/luke_gilbert-186_1_0.jpeg?h=0632d6fb&itok=k8U6Jhe6" alt="" />
               <div className='article-info'>
                 <h1>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a href="https://cancer.ucsf.edu/news/2022/09/27/nih-initiative-to-systematically-investigate-and-establish-function-of-every-huma" target="_blank" rel="noopener noreferrer">
                     NIH initiative to systematically investigate and establish function of every human gene
                   </a>
                 </h1>
@@ -86,7 +86,7 @@ const Blog = () => {
               <img src={blog00} alt="" />
               <div className='article-info'>
                 <h1>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.nih.gov/news-events/news-releases/nih-initiative-systematically-investigate-establish-function-every-human-gene" target="_blank" rel="noopener noreferrer">
                     NIH initiative to systematically investigate and establish function of every human gene.
                   </a>
                 </h1>

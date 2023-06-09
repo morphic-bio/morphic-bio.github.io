@@ -69,8 +69,8 @@
     font-size: 1rem;
 }
 
-.selected-article {
-    background-color: var(--color-footer);
+.article-info a:hover {
+    color: var(--color-text);
 }
 
 @media screen and (max-width: 990px) {

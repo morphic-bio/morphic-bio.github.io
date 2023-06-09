@@ -75,7 +75,7 @@ const Blog = () => {
               <img src="https://cancer.ucsf.edu/sites/cancer.ucsf.edu/files/styles/sf_landscape_16x9/public/images/article/luke_gilbert-186_1_0.jpeg?h=0632d6fb&itok=k8U6Jhe6" alt="" />
               <div className='article-info'>
                 <h1>
-                  <a href="https://cancer.ucsf.edu/news/2022/09/27/nih-initiative-to-systematically-investigate-and-establish-function-of-every-huma" target="_blank" rel="noopener noreferrer">
+                  <a href="https://cancer.ucsf.edu/news/2022/09/27/nih-initiative-to-systematically-investigate-and-establish-function-of-every-human" target="_blank" rel="noopener noreferrer">
                     NIH initiative to systematically investigate and establish function of every human gene
                   </a>
                 </h1>

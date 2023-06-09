@@ -1,21 +1,34 @@
 import React from 'react';
 import './article.css';
 
-const Article = ({ imgUrl, date, text, link }) => (
-  <article className="morphic__blog-container_article">
+const Article = ({ imgUrl, date, text, link, imgWebp }) => {
+  return (<article className="morphic__blog-container_article">
     <div className="morphic__blog-container_article-image">
-      <img src={imgUrl} alt="Morphic Article Cover Image" />
+      <picture>
+        
+        <source 
+          type="image/avif"
+          srcSet={imgWebp}
+        />
+        <img
+          src={imgUrl} 
+          alt="Morphic Article Cover Image" 
+        />
+      </picture>
     </div>
     <div className="morphic__blog-container_article-content">
       <div>
-        <p>{date}</p>
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          <h1 className="morphic__blog-article-heading">{text}</h1>
-        </a>
+        <p className="morphic__blog-article-text">
+          <small className="morphic__blog-article-date">{date}</small>
+        </p>
+        <h1 className="morphic__blog-article-heading">
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            {text}
+          </a>
+        </h1>
       </div>
-      <a href={link} target="_blank" rel="noopener noreferrer">Read Full Article</a>
     </div>
   </article>
-);
+);}
 
 export default Article;

@@ -21,6 +21,7 @@
 .morphic__blog-container {
     display: flex;
     flex-direction: row;
+    max-width: 100rem;
 }
 
 .morphic__blog-container_groupA {
@@ -32,8 +33,44 @@
     flex: 1;
 
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2rem;
+}
+
+.morphic__blog-container_article:first-child {
+    /* grid-column: span 2; */
+    grid-column: span 1;
+}
+
+.blog-sidebar {
+    color: white;
+    border-top: thin solid gray;
+    height: 24rem;
+    overflow-y: auto;
+}
+
+.sidebar-article {
+    height: 6rem;
+    display: flex;
+    padding: 0.5rem 0 0.5rem 0;
+    border-bottom: thin solid gray;
+}
+.sidebar-article img {
+    padding: 0 1rem;
+    width: 20%;
+    object-fit: cover;
+}
+.article-info {
+    padding: 1rem 1rem 0 0;
+}
+
+.article-info h1 {
+    font-size: 1rem;
+}
+
+.selected-article {
+    background-color: var(--color-footer);
 }
 
 @media screen and (max-width: 990px) {
@@ -46,7 +83,7 @@
     }
 
     .morphic__blog-container_groupB {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .morphic__blog-container_groupA .morphic__blog-container_article  {
@@ -63,6 +100,10 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .morphic__blog-container_article:first-child {
+        grid-column: auto;
+    }
+
     .morphic__blog-container_groupA .morphic__blog-container_article  {
        width: 100%;
     }
@@ -74,9 +115,42 @@
 }
 
 @media screen and (max-width: 550px) {
+    .morphic__blog-container_article {
+        display: none;
+    }
+
     .morphic__blog-heading h1 {
         font-size: 34px;
         line-height: 42px;
     }
-
+    .blog-sidebar {
+        color: white;
+        border-top: thin solid gray;
+        height: 100%;
+        overflow-y: initial;
+    }
+    
+    .sidebar-article {
+        height: auto;
+        display: flex;
+        padding: 1rem 0 1rem 0;
+        border-bottom: thin solid gray;
+    }
+    .sidebar-article img {
+        padding: 0;
+        width: 30%;
+        object-fit: cover;
+    }
+    .article-info {
+        padding: 0.5rem 0 0.5rem 1rem;
+    }
+    
+    .article-info h1 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    .selected-article {
+        background-color: var(--color-footer);
+    }
 }

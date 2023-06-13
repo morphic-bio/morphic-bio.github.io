@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import morphic_map from '../../assets/MorPhiC_Consortium_Map2.png';
+import morphic_map from '../../assets/morphic_map-lg.jpg';
 import './map.css';
 
 const Map = () => {

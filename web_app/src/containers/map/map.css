@@ -1,3 +1,7 @@
+.morphic__map-container {
+    overflow-x: scroll;
+}
+
 .morphic__map-container img {
     width: 1247px;
     /* width: 100%; */

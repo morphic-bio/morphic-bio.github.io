@@ -1,0 +1,84 @@
+/* General styles for spacing and font size */
+.morphic__about-container {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.25rem;
+    max-width: 100rem;
+}
+
+.morphic__about-container h1 {
+    font-size: 4.25rem;
+    line-height: 5.33rem;
+    margin-top: 1.33rem;
+    margin-bottom: 2.67rem;
+}
+
+.morphic__about-container h2 {
+    font-size: 2.58rem;
+    line-height: 2.67rem;
+    margin-top: 1.33rem;
+    margin-bottom: 1.33rem;
+}
+
+.morphic__about-container h3 {
+    font-size: 1.58rem;
+    line-height: 2.67rem;
+    margin-top: 1.33rem;
+    margin-bottom: 0rem;
+}
+
+.morphic__about-container h4 {
+    font-size: 1rem;
+    line-height: 1.33rem;
+    margin-top: 1.33rem;
+    margin-bottom: 0rem;
+}
+
+.morphic__about-container h5 {
+    font-size: 1rem;
+    line-height: 1.33rem;
+    margin-top: 1.33rem;
+    margin-bottom: 0rem;
+}
+
+.morphic__about-container p, .morphic__about-container ul, .morphic__about-container ol {
+    margin-top: 0rem;
+    margin-bottom: 1.33rem;
+}
+
+.morphic__about-container ul ul, .morphic__about-container ol ol, .morphic__about-container ul ol, .morphic__about-container ol ul {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.morphic__about-container ul {
+  margin-left: 40px;
+  padding-left: 0;
+}
+  
+/* Additional alignments */
+
+.morphic__about-container {
+    padding: 1rem 0 4rem;
+}
+
+.morphic__about-container hr {
+    border: 1px solid;
+    margin: -1px 0;
+}
+
+.morphic__about-container a, .morphic__about-container b, .morphic__about-container i, .morphic__about-container strong {
+    line-height: 0;
+}
+
+.morphic__about-container section {
+    margin: 2rem 0;
+}
+
+@media screen and (max-width: 550px) {
+    .morphic__about-container .gradient__text {
+        font-size: 34px;
+        line-height: 42px;
+    }
+}

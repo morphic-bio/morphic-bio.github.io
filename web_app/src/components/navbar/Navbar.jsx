@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import { RiMenu3Line, RiCloseLine, RiTwitterFill, RiYoutubeFill, RiFacebookFill } from 'react-icons/ri';
 import logo from '../../assets/morphic_logo_v3.svg';
 import './navbar.css';
@@ -11,18 +12,18 @@ const Navbar = () => {
     <div className="morphic__navbar">
       <div className="morphic__navbar-links">
         <div className="morphic__navbar-links_logo">
-          <a id="img_logo" href="#wmorphic"><img src={logo} alt="Morphic Logo" /></a>
+          <Link id="img_logo" to="/"><img src={logo} alt="Morphic Logo" /></Link>
         </div>
         <div className="morphic__navbar-links_container">
-          <p><a href="#home">Home</a></p>
-          <p><a href="#events">Events</a></p>
+          <p><Link to="/">Home</Link></p>
+          <p><Link to="/events">Events</Link></p>
           <p><a href="#data">Data</a></p>
           <p><a href="#blog">Publications</a></p>
           <div className="morphic__navbar-dropdown">
             <p className="morphic__navbar-dropdown-title">About</p>
             <div className="morphic__navbar-dropdown-content">
               <p><a href="#contact">Funding: NHGRI</a></p>
-              <p><a href="#contact">Contact</a></p>
+              <p><Link to="/about-us">About Us</Link></p>
             </div>
           </div>
         </div>
@@ -40,11 +41,11 @@ const Navbar = () => {
         {toggleMenu && (
         <div className="morphic__navbar-menu_container scale-up-center">
           <div className="morphic__navbar-menu_container-links">
-            <p><a href="#Home">Home</a></p>
-            <p><a href="#events">Events</a></p>
+            <p><Link to="/">Home</Link></p>
+            <p><Link to="/events">Events</Link></p>
             <p><a href="#data">Data</a></p>
             <p><a href="#blog">Publications</a></p>
-            <p><a href="#contact">Contact</a></p>
+            <p><Link to="/about-us">About Us</Link></p>
             <p><a href="https://www.genome.gov/" target="_blank" rel="noreferrer">genome.gov</a></p>
           </div>
           <div className="morphic__navbar-menu_container-links-sign">

@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.0662123d.css",
-    "main.js": "/static/js/main.acf1f2bc.js",
-    "static/media/MorPhiC_Consortium_Map2.png": "/static/media/MorPhiC_Consortium_Map2.13f7d3876a5da245954a.png",
+    "main.css": "/static/css/main.063bd105.css",
+    "main.js": "/static/js/main.46d94359.js",
+    "static/media/morphic_map-lg.jpg": "/static/media/morphic_map-lg.a2ad6ad7dea7dc6bdc2a.jpg",
     "static/media/humanGenome.png": "/static/media/humanGenome.35a596b0192a34cfc67f.png",
     "static/media/logo.png": "/static/media/logo.ee23bea85da8bc635154.png",
     "static/media/uwtnews.avif": "/static/media/uwtnews.53fa1aaa1c178730908e.avif",
@@ -15,11 +15,11 @@
     "static/media/blog_3l.avif": "/static/media/blog_3l.5bc755960f4c35ff961e.avif",
     "static/media/blog00a.avif": "/static/media/blog00a.b25c13db7be1db13497d.avif",
     "index.html": "/index.html",
-    "main.0662123d.css.map": "/static/css/main.0662123d.css.map",
-    "main.acf1f2bc.js.map": "/static/js/main.acf1f2bc.js.map"
+    "main.063bd105.css.map": "/static/css/main.063bd105.css.map",
+    "main.46d94359.js.map": "/static/js/main.46d94359.js.map"
   },
   "entrypoints": [
-    "static/css/main.0662123d.css",
-    "static/js/main.acf1f2bc.js"
+    "static/css/main.063bd105.css",
+    "static/js/main.46d94359.js"
   ]
 }

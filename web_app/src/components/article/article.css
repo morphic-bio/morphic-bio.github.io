@@ -1,0 +1,50 @@
+.morphic__blog-container_article {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: var(--font-family);
+    overflow: hidden;
+}
+
+.morphic__blog-container_article-image {
+    overflow: hidden;
+    text-anchor: middle;
+    width: 100%;
+    height: 16rem;
+    background: var(--color-bg);
+}
+
+.morphic__blog-container_article-image img {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+.morphic__blog-container_article-content {
+    flex: 1 1 auto;
+    padding: 1rem;
+    background: var(--color-footer);
+}
+
+.morphic__blog-article-heading {
+    margin-bottom: 0.5rem;
+    font-size: 1em;
+}
+
+.morphic__blog-article-heading a:hover {
+    color: var(--color-text);
+}
+
+.morphic__blog-article-text {
+    margin-bottom: 1rem;
+}
+
+.morphic__blog-article-date {
+    opacity: 1;
+    color: antiquewhite;
+}
+
+
+.hidden {
+    display: none;
+}

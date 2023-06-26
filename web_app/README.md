@@ -71,5 +71,35 @@ Most of the components are located in `src/containers`
 * `/map` - Map of labs
 * `/blog` - News articles
 * `/footer` - Page footer
+* `/about` - About us
+* `/events` - Events
 
 nav bar is located in `src/components/navbar`
+
+### Search bar:
+Located in `/src/components/search`. 
+* `/data/gene_list.js` - Data for draft gene list. To update the data for draft gene list:
+    1. Convert spreadsheet data to json
+    2. copy the contents of the json file and paste to gene_list.js file.
+* `/searchBar` - Search bar
+
+### Consortium Map
+The map can be quickly updated by replacing the image
+1. Create a new image
+2. Save image as `moprhic_map-lg.jpg` in `web_app/src/asssets`
+
+To update with different image sizes
+1. Create a new image
+2. Save image as `moprhic_map-lg.jpg` in `web_app/src/`
+3. In `Map.jsx` set the new coordinates for each area that will be selected in the area element.
+
+The map was created using HTML Image Maps. The map element allows for creating a selectable area. In this case each lab has a corresponding area. For example, University of Washington has the following html attribrute coords="0,80,200,160" for specifying the area within the page that will be selectable. Each area has its own on click, on mouse enter and on mouse leave function.
+
+### Articles and Carousel
+Article contents located in:
+* `src/containers/blog/Blog.jsx` - News section of page
+* `src/components/article` - Individual article components
+
+The carousel uses a list to switch between articles every 15 seconds. The list of articles are in the following format `{title:"", date:"", url:"", img:"", webp:""}`.
+1. To update add a new article.
+

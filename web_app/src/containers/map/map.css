@@ -48,3 +48,9 @@
 .lab-links li {
     padding-top: 0.5rem;
 }
+
+area {
+    /* The second value here is a fallback. */
+    cursor: url(hand-index-thumb.svg), auto;
+    display: block;
+}

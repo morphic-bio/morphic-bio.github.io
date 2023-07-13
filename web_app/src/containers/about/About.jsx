@@ -32,7 +32,7 @@ const About = () => (
                 <li><p className='morphic_about-paragraph'>To be announced.</p></li>
             </ul>
         </section>
-        <p className='morphic_about-paragraph'>The MorPhiC Consortium is governed by a Steering Committee whose members include NHGRI Program Officials, and Principal Investigators. Scientific efforts are undertaken by working groups, including the Data Working Group, Experiment Working Group and the Outreach Working Group.</p>
+        <p className='morphic_about-paragraph size2'>The MorPhiC Consortium is governed by a Steering Committee whose members include NHGRI Program Officials, and Principal Investigators. Scientific efforts are undertaken by working groups, including the Data Working Group, Experiment Working Group and the Outreach Working Group.</p>
     </article>
   </section>
 );

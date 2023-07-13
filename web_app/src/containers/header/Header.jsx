@@ -2,6 +2,7 @@ import React from 'react';
 
 import genome from '../../assets/humanGenome.png';
 import genomeSm from '../../assets/humanGenome-sm.png'
+import { RiDownload2Line } from 'react-icons/ri';
 import { SearchBar } from '../../components/search/searchBar/searchBar';
 import './header.css';
 
@@ -12,7 +13,12 @@ const Header = () => (
       <h2 className='morphic__sub_title'>Bold Predictions For Human Genomics by 2030</h2>
       <p>The biological function(s) of every human gene will be known; for non-coding elements in the human genome, such knowledge will be the rule, rather than the exception.</p>
 
-      <span style={{color: "white", margin: "2rem 0 0 0"}}> Draft gene list</span>
+      <div className="searchbar_title">
+        <span>Draft gene list</span>
+        <a href="https://github.com/morphic-bio/morphic-bio.github.io/blob/main/gene_list.csv" target="_blank" rel="noopener noreferrer">
+          <span>Download full list</span><RiDownload2Line color='#fff' size={18}/>
+        </a>
+      </div>
       <div className="morphic__header-content__input">
         <SearchBar/>
       </div>

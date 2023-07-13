@@ -41,6 +41,18 @@ overflow: visible;
     margin-top: 1.5rem;
 }
 
+.searchbar_title {
+    color: white;
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    width: 34em;
+}
+
+.searchbar_title span {
+    padding-right: 0.25rem;
+}
+
 .morphic__header-content__input {
     width: 100%;
     margin: 0.5rem 0 1rem;

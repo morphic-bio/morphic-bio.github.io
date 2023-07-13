@@ -281,10 +281,10 @@ export function SearchBar(props) {
               <THeader
                 gene="gene_symbol"
                 id="hgnc_id"
-                phenotype_hom="impc_phenotypes_homozygote"
-                phenotype_het="impc_phenotypes_heterozygote"
-                omin_name="omim_name"
-                dd_name="dd_name"
+                phenotype_hom="JAX"
+                phenotype_het="MSK"
+                omin_name="NWU"
+                dd_name="UCSF"
               />
               {tvShows.map(( show ) => (
                 <TvShow
@@ -293,10 +293,10 @@ export function SearchBar(props) {
                   match={show[0][show[1]]}
                   gene={show[0]["gene_symbol"]}
                   id={show[0]["hgnc_id"]}
-                  phenotype_hom={show[0]["impc_phenotypes_homozygote"]}
-                  phenotype_het={show[0]["impc_phenotypes_heterozygote"]}
-                  omin_name={show[0]["omim_name"]}
-                  dd_name={show[0]["dd_name"]}
+                  phenotype_hom={show[0]["JAX"]}
+                  phenotype_het={show[0]["MSK"]}
+                  omin_name={show[0]["NWU"]}
+                  dd_name={show[0]["UCSF"]}
                 />
               ))}
             </>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.53c2ade4.css",
-    "main.js": "/static/js/main.46d94359.js",
+    "main.css": "/static/css/main.30492b34.css",
+    "main.js": "/static/js/main.fa643672.js",
     "static/media/morphic_map-lg.jpg": "/static/media/morphic_map-lg.a2ad6ad7dea7dc6bdc2a.jpg",
     "static/media/humanGenome.png": "/static/media/humanGenome.35a596b0192a34cfc67f.png",
     "static/media/logo.png": "/static/media/logo.ee23bea85da8bc635154.png",
@@ -14,12 +14,13 @@
     "static/media/blog_2s.avif": "/static/media/blog_2s.f4db6f5bcb24f71b08c5.avif",
     "static/media/blog_3l.avif": "/static/media/blog_3l.5bc755960f4c35ff961e.avif",
     "static/media/blog00a.avif": "/static/media/blog00a.b25c13db7be1db13497d.avif",
+    "static/media/hand-index-thumb.svg": "/static/media/hand-index-thumb.d94b0087ab37bbf13e8a.svg",
     "index.html": "/index.html",
-    "main.53c2ade4.css.map": "/static/css/main.53c2ade4.css.map",
-    "main.46d94359.js.map": "/static/js/main.46d94359.js.map"
+    "main.30492b34.css.map": "/static/css/main.30492b34.css.map",
+    "main.fa643672.js.map": "/static/js/main.fa643672.js.map"
   },
   "entrypoints": [
-    "static/css/main.53c2ade4.css",
-    "static/js/main.46d94359.js"
+    "static/css/main.30492b34.css",
+    "static/js/main.fa643672.js"
   ]
 }

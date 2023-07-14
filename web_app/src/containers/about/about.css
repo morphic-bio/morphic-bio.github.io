@@ -76,6 +76,10 @@
     margin: 2rem 0;
 }
 
+.size2 {
+    font-size: 1.25rem;
+}
+
 @media screen and (max-width: 550px) {
     .morphic__about-container .gradient__text {
         font-size: 34px;

@@ -132,6 +132,7 @@ export function SearchBar(props) {
   const [tvShows, setTvShows] = useState([]);
   const [noTvShows, setNoTvShows] = useState(false);
   const [searchCategory, setSearchCatergory] = useState("gene_symbol")
+  const selectedCategoryLabel = {all: "All", gene_symbol: "gene", hgnc_id: "hgnc id", impc_phenotypes_homozygote: "phenotypes homozygote", impc_phenotypes_heterozygote: "phenotypes heterozygote", omim_name: "omim name", dd_name: "dd name"}
 
   const isEmpty = !tvShows || tvShows.length === 0;
 
@@ -215,13 +216,13 @@ export function SearchBar(props) {
       <SearchInputContainer>
         <div style={{ display: 'flex', justifyContent: 'center', overflow: 'hidden', paddingRight: '1em', width: 'auto'}}>
           <div style={{display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
-            <span style={{ width: '120px', whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden' }}>{searchCategory.replace("_", " ")}</span>
+            <span style={{ width: '120px', whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden' }}>{selectedCategoryLabel[searchCategory]}</span>
             <IoTriangle style = {{transform: 'rotate(180deg)' }} />
           </div>
           <label htmlFor="" style={{ display: 'none' }}>Select the gene category you want to search.</label>
           <select name="" id="" title="Search gene" onChange={changeCategory} value={searchCategory} style={{ opacity: 0, position: 'absolute' }}>
             <option value="all">All</option>
-            <option selected value="gene_symbol">gene symbol</option>
+            <option selected value="gene_symbol">gene</option>
             <option value="hgnc_id">hgnc id</option>
             <option value="impc_phenotypes_homozygote">phenotypes homozygote</option>
             <option value="impc_phenotypes_heterozygote">phenotypes heterozygote</option>
@@ -279,12 +280,11 @@ export function SearchBar(props) {
           {!isLoading && !isEmpty && (
             <>
               <THeader
-                gene="gene_symbol"
-                id="hgnc_id"
-                phenotype_hom="impc_phenotypes_homozygote"
-                phenotype_het="impc_phenotypes_heterozygote"
-                omin_name="omim_name"
-                dd_name="dd_name"
+                gene="gene"
+                phenotype_hom="JAX"
+                phenotype_het="MSK"
+                omin_name="NWU"
+                dd_name="UCSF"
               />
               {tvShows.map(( show ) => (
                 <TvShow
@@ -292,11 +292,10 @@ export function SearchBar(props) {
                   name={show[1]}
                   match={show[0][show[1]]}
                   gene={show[0]["gene_symbol"]}
-                  id={show[0]["hgnc_id"]}
-                  phenotype_hom={show[0]["impc_phenotypes_homozygote"]}
-                  phenotype_het={show[0]["impc_phenotypes_heterozygote"]}
-                  omin_name={show[0]["omim_name"]}
-                  dd_name={show[0]["dd_name"]}
+                  phenotype_hom={show[0]["JAX"]}
+                  phenotype_het={show[0]["MSK"]}
+                  omin_name={show[0]["NWU"]}
+                  dd_name={show[0]["UCSF"]}
                 />
               ))}
             </>

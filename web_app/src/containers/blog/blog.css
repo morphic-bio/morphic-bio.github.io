@@ -57,16 +57,16 @@
     border-bottom: thin solid gray;
 }
 .sidebar-article img {
-    padding: 0 1rem;
     width: 20%;
     object-fit: cover;
 }
 .article-info {
-    padding: 1rem 1rem 0 0;
+    padding: 1rem 0 1rem 1rem;
+    width: 80%;
 }
 
 .article-info h1 {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .article-info a:hover {
@@ -143,6 +143,7 @@
     }
     .article-info {
         padding: 0.5rem 0 0.5rem 1rem;
+        width: 70%;
     }
     
     .article-info h1 {

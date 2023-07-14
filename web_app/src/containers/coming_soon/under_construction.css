@@ -1,0 +1,17 @@
+#under_construction {
+    height: 20rem;
+    padding: 0;
+    margin-bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#under_construction .under_construction-text {
+    padding: 0 1rem;
+    font-size: 2.58rem;
+    line-height: 2.67rem;
+    margin-top: 1.33rem;
+    margin-bottom: 1.33rem;
+}

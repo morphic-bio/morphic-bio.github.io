@@ -32,7 +32,6 @@ import React from "react";
  
    return (
      <TvShowContainer onClick={()=>console.log("ga")}>
-       <Name>{id}</Name>
        <Name>{gene}</Name>
        <Name>{phenotype_hom}</Name>
        <Name>{phenotype_het}</Name>

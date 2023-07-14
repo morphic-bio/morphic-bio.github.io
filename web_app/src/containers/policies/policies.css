@@ -1,0 +1,135 @@
+/* General styles for spacing and font size */
+.morphic__events-container {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.25rem;
+    max-width: 100rem;
+}
+
+.morphic__events-container h1 {
+    font-size: 4.25rem;
+    line-height: 5.33rem;
+    margin-top: 1.33rem;
+    margin-bottom: 2.67rem;
+}
+
+.morphic__events-container h2 {
+    font-size: 2.58rem;
+    line-height: 2.67rem;
+    margin-top: 1.33rem;
+    margin-bottom: 1.33rem;
+}
+
+.morphic__events-container h3, .morphic__event h1 {
+    font-size: 1.58rem;
+    line-height: 2.67rem;
+    margin-top: 1.33rem;
+    margin-bottom: 0rem;
+}
+
+.morphic__events-container h4, .morphic__event h2 {
+    font-size: 1rem;
+    line-height: 1.33rem;
+    margin-top: 1.33rem;
+    margin-bottom: 0rem;
+}
+
+.morphic__events-container h5, .morphic__event h3 {
+    font-size: 1rem;
+    line-height: 1.33rem;
+    margin-top: 1.33rem;
+    margin-bottom: 0rem;
+}
+
+.morphic__events-container p, .morphic__events-container ul, .morphic__events-container ol {
+    margin-top: 0rem;
+    margin-bottom: 1.33rem;
+}
+
+.morphic__events-container ul ul, .morphic__events-container ol ol, .morphic__events-container ul ol, .morphic__events-container ol ul {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+/* Additional Alignments */
+
+.morphic__events-container hr {
+    border: 1px solid;
+    margin: -1px 0;
+}
+
+.morphic__events-container a, .morphic__events-container b, .morphic__about-container i, .morphic__about-container strong {
+    line-height: 0;
+}
+
+.morphic__events-container {
+    padding: 1rem 0 4rem;
+}
+
+/* Other styles */
+
+#policies p,  #policies li {
+    font-size: 20px;
+}
+
+.morphic__policy {
+    padding-bottom: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.morphic__policy ul {
+    margin: 0 0 0 3rem;
+}
+
+.morphic__policy li {
+    margin-top: 0rem;
+    margin-bottom: 1.33rem;
+}
+
+.morphic__policy a {
+    /* color: #427bff; */
+    /* color: #457dff; */
+    color: #089bf0;
+}
+
+.morphic__policy a:hover {
+    text-decoration: underline;
+}
+
+
+.morphic__event_img-container {
+    max-width: 100%;
+    height: 15rem;
+    background: radial-gradient(circle farthest-side, rgba(3, 27, 52, 0.25), rgba(6, 48, 93, 0.25));
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.morphic__event_img {
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width: 550px) {
+    .morphic__events-container .gradient__text {
+        font-size: 34px;
+        line-height: 42px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .morphic__event {
+        padding-bottom: 4rem;
+        margin-bottom: 7rem;
+    }
+
+    .morphic__event_img-container {
+        width: 50rem;
+        height: 25rem;
+        background: radial-gradient(circle farthest-side, rgba(3, 27, 52, 0.25), rgba(6, 48, 93, 0.25));
+    }
+}

@@ -8,3 +8,5 @@ export { default as Map } from './map/Map';
 
 export { default as About } from './about/About'
 export { default as Events } from './events/Events'
+export { default as Policies } from './policies/Policies'
+export { default as UnderConstruction } from './coming_soon/UnderConstruction';

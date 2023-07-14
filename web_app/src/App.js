@@ -1,5 +1,5 @@
 import React from 'react';
-import { Footer, Blog, Whatmorphic, Header, Map, About, Events } from './containers';
+import { Footer, Blog, Whatmorphic, Header, Map, About, Events, Policies, UnderConstruction } from './containers';
 import { Navbar } from './components';
 
 import './App.css';
@@ -10,6 +10,9 @@ const App = () => (
     <Route path="/" element={<HomePage />}></Route>
     <Route path="about-us" element={<AboutUs />}></Route>
     <Route path="events" element={<Event />}></Route>
+    <Route path="data" element={<UnderConstructionPage />}></Route>
+    <Route path="publications" element={<UnderConstructionPage />}></Route>
+    <Route path="policies" element={<Policy />}></Route>
   </Routes>
 );
 
@@ -43,6 +46,26 @@ const Event = () => (
     <header className="gradient__bg">
       <Navbar />
       <Events />
+    </header>
+    <Footer />
+  </div>
+);
+
+const Policy = () => (
+  <div className="App">
+    <header className="gradient__bg">
+      <Navbar />
+      <Policies />
+    </header>
+    <Footer />
+  </div>
+);
+
+const UnderConstructionPage = () => (
+  <div className="App">
+    <header className="gradient__bg">
+      <Navbar />
+      <UnderConstruction />
     </header>
     <Footer />
   </div>

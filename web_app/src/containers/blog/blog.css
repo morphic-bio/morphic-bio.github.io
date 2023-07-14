@@ -62,6 +62,7 @@
 }
 .article-info {
     padding: 1rem 0 1rem 1rem;
+    width: 80%;
 }
 
 .article-info h1 {
@@ -142,6 +143,7 @@
     }
     .article-info {
         padding: 0.5rem 0 0.5rem 1rem;
+        width: 70%;
     }
     
     .article-info h1 {

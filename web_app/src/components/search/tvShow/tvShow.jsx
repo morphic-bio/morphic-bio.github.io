@@ -45,13 +45,12 @@ const Rating = styled.span`
 `;
 
 export function TvShow(props) {
-  const {key, name, match, gene, id, phenotype_hom, phenotype_het, omin_name, dd_name} = props;
+  const {key, name, match, gene, phenotype_hom, phenotype_het, omin_name, dd_name} = props;
 
   return (
     <TvShowContainer onClick={()=>console.log("ga")}>
       {/* <Rating>{name}</Rating> */}
       {/* <Name>{match.replace("|", ", ")}</Name> */}
-      <Name>{id.replace("HGNC:", "")}</Name>
       <Name>
         <a href={"https://www.genecards.org/cgi-bin/carddisp.pl?gene=" + gene} target="_blank" rel="noopener noreferrer" style={{ color: 'blue'}}>{gene}</a>
       </Name>

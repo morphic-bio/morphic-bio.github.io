@@ -279,8 +279,7 @@ export function SearchBar(props) {
           {!isLoading && !isEmpty && (
             <>
               <THeader
-                gene="gene_symbol"
-                id="hgnc_id"
+                gene="gene"
                 phenotype_hom="JAX"
                 phenotype_het="MSK"
                 omin_name="NWU"
@@ -292,7 +291,6 @@ export function SearchBar(props) {
                   name={show[1]}
                   match={show[0][show[1]]}
                   gene={show[0]["gene_symbol"]}
-                  id={show[0]["hgnc_id"]}
                   phenotype_hom={show[0]["JAX"]}
                   phenotype_het={show[0]["MSK"]}
                   omin_name={show[0]["NWU"]}

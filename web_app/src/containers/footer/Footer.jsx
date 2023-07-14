@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import logo from '../../assets/morphic_logo_v3.svg';
 import { RiTwitterFill, RiYoutubeFill, RiFacebookFill } from 'react-icons/ri';
 import './footer.css';
@@ -23,13 +24,13 @@ const Footer = () => (
       <section className="morphic__footer-links_div">
         <h1 className="footer_heading">Links</h1>
         <p><a href="https://www.genome.gov/" target="_blank" rel="noreferrer">genome.gov</a></p>
-        <p>Data</p>
+        <p><Link to="/data">Data</Link></p>
         <p>Social Media</p>
       </section>
       <section className="morphic__footer-links_div">
         <h1 className="footer_heading">About</h1>
-        <p>Publications</p>
-        <p>Events</p>
+        <p><Link to="/publications">Publications</Link></p>
+        <p><Link to="/events">Events</Link></p>
         <p>Labs</p>
       </section>
       <section className="morphic__footer-links_div">

@@ -236,7 +236,7 @@ export function SearchBar(props) {
           </SearchIcon>
         )}
         <SearchInput
-          placeholder="Search gene"
+          placeholder="Search gene (e.g. SMAD4)"
           onFocus={expandContainer}
           ref={inputRef}
           value={searchQuery}

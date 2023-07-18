@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import { RiMenu3Line, RiCloseLine, RiTwitterFill, RiYoutubeFill, RiFacebookFill } from 'react-icons/ri';
 import logo from '../../assets/morphic_logo_v3.svg';
 import './navbar.css';
@@ -15,7 +16,7 @@ const Navbar = () => {
           <Link id="img_logo" to="/"><img src={logo} alt="Morphic homepage" /></Link>
         </div>
         <div className="morphic__navbar-links_container">
-          <p><a href="#blog">News</a></p>
+          <p><HashLink smooth to="/#news">News</HashLink></p>
           <p><Link to="/events">Events</Link></p>
           <p><Link to="/data">Data</Link></p>
           <p><Link to="/publications">Publications</Link></p>
@@ -42,7 +43,7 @@ const Navbar = () => {
         {toggleMenu && (
         <div className="morphic__navbar-menu_container scale-up-center">
           <div className="morphic__navbar-menu_container-links">
-            <p><a href="#blog">News</a></p>
+            <p><a href="#news">News</a></p>
             <p><Link to="/events">Events</Link></p>
             <p><Link to="/data">Data</Link></p>
             <p><Link to="/publications">Publications</Link></p>

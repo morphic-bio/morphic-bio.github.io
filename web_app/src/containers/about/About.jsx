@@ -11,7 +11,7 @@ const About = () => (
         <p className='morphic_about-paragraph mb-1'>The Molecular Phenotypes of Null Alleles in Cells (MorPhiC) program was established in 2022.</p>
         <h2>Phase 1</h2>
         <p className='morphic_about-paragraph'>Components for Phase 1 of the MorPhiC Consortium include the following:</p>
-        <section>
+        <section id="DPC">
             <h3 className='morphic_about-paragraph'>Data Production Centers (DPCs)</h3>
             <ul>
                 <li><p className='morphic_about-paragraph'><span>Mazhar Adli, Ph.D.</span> Northwestern University Feinberg School of Medicine, Chicago. Molecular and cellular characterization of essential human genes.</p></li>
@@ -20,13 +20,13 @@ const About = () => (
                 <li><p className='morphic_about-paragraph'><span>Paul Robson, Ph.D.</span> Jackson Laboratory, Farmington, Connecticut. JAX MorPhiC data production center.</p></li>
             </ul>
         </section>
-        <section>
+        <section id="DRACC">
             <h3 className='morphic_about-paragraph'>Data Resource and Administrative Coordinating Center (DRACC)</h3>
             <ul>
                 <li><p className='morphic_about-paragraph'><span>Stephan Schürer, Ph.D.</span> University of Miami. MorPhiC data resource and administrative coordinating center.</p></li>
             </ul>
         </section>
-        <section>
+        <section id="DAV">
             <h3 className='morphic_about-paragraph'>Data Analysis and Validation Centers (DAVs)</h3>
             <ul>
                 <li><p className='morphic_about-paragraph'>To be announced.</p></li>

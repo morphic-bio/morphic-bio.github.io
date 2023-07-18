@@ -31,6 +31,10 @@
     margin-bottom: 0.25rem;
 }
 
+.morphic__features-container__feature-title:hover div {
+    background: white;
+}
+
 .morphic__features-container_feature-text {
     flex: 2;
     max-width: 390px;

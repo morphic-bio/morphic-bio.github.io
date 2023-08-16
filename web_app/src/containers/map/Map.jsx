@@ -316,20 +316,20 @@ const Map = () => {
           )}
           {isFullNWUCDesc && (
             <div className="lab-overview">
-            <h4>NIH Grant Number</h4>
-            <p>UM1HG012649</p>
-            <h4>NIH RePORTER</h4>
-            <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517781#details" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517781#details</a>
-            <h4>Lab Websites</h4>
-            <ul className='lab-links'>
-              <li><a href="www.adlilab.org" target="_blank" rel="noopener noreferrer">www.adlilab.org</a></li>
-              <li><a href="yuelab.org" target="_blank" rel="noreferrer">yuelab.org</a></li>
-            </ul>
-            <h4>Contact PI/Project Leader</h4>
-            <p>Adli, Mazhar</p>
-            <h4>Description</h4>
-            <p>Using modern genomic technologies, machine learning, and CRISPR genome editing to identify biomarkers and pathological variants in human diseases</p>
-          </div>
+              <h4>NIH Grant Number</h4>
+              <p>UM1HG012649</p>
+              <h4>NIH RePORTER</h4>
+              <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517781#details" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517781#details</a>
+              <h4>Lab Websites</h4>
+              <ul className="lab-links">
+                <li><a href="https://adlilab.org/" target="_blank" rel="noopener noreferrer">www.adlilab.org</a></li>
+                <li><a href="http://yuelab.org/" target="_blank" rel="noopener noreferrer">yuelab.org</a></li>
+              </ul>
+              <h4>Contact PI/Project Leader</h4>
+              <p>Adli, Mazhar</p>
+              <h4>Description</h4>
+              <p>Using modern genomic technologies, machine learning, and CRISPR genome editing to identify biomarkers and pathological variants in human diseases</p>
+            </div>
           )}
           {isFullJacksonLabDesc && (
             <div className="lab-overview">

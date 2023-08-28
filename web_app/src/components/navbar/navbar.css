@@ -72,7 +72,7 @@
     cursor: pointer;
 }
 
-.morphic__navbar-genome a {
+.morphic__navbar-genome a, .morphic__navbar-submit a {
     color: #fff;
     font-family: var(--font-family);
     font-weight: 500;
@@ -81,6 +81,10 @@
 
     margin: 0 1rem;
     cursor: pointer;
+}
+
+.morphic__navbar-submit a:hover {
+    color: var(--color-text);
 }
 
 .morphic__navbar-sign button,

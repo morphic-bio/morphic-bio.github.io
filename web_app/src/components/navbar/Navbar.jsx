@@ -30,6 +30,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      <div className="morphic__navbar-submit">
+        <a href="https://github.com/morphic-bio/morphic-documentation/wiki/MorPhiC-Data-Contribution-Guide" target="_blank" rel="noopener noreferrer">Submit</a>
+      </div>
       <div className="morphic__navbar-genome">
         <a href="https://www.genome.gov/" target="_blank" rel="noreferrer">genome.gov</a>
       </div>

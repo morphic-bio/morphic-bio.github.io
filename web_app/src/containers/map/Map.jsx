@@ -357,6 +357,7 @@ const Map = () => {
               <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10518021" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10518021</a>
               <h4>Lab Websites</h4>
               <ul className="lab-links">
+                <li><a href="https://morphic.mskcc.org/" target="_blank" rel="noopener noreferrer">https://morphic.mskcc.org/</a></li>
                 <li><a href="https://www.mskcc.org/research/ski/labs/danwei-huangfu" target="_blank" rel="noreferrer">https://www.mskcc.org/research/ski/labs/danwei-huangfu</a></li>
                 <li><a href="https://www.mskcc.org/research/ski/labs/lorenz-studer" target="_blank" rel="noreferrer">https://www.mskcc.org/research/ski/labs/lorenz-studer</a></li>
                 <li><a href="https://www.mskcc.org/research/ski/labs/thomas-vierbuchen" target="_blank" rel="noreferrer">https://www.mskcc.org/research/ski/labs/thomas-vierbuchen</a></li>

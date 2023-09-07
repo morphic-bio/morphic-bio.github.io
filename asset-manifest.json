@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.db6f0334.css",
-    "main.js": "/static/js/main.9014e2e8.js",
+    "main.js": "/static/js/main.685f709f.js",
     "static/media/morphic_map-lg.jpg": "/static/media/morphic_map-lg.a2ad6ad7dea7dc6bdc2a.jpg",
     "static/media/humanGenome.png": "/static/media/humanGenome.35a596b0192a34cfc67f.png",
     "static/media/logo.png": "/static/media/logo.ee23bea85da8bc635154.png",
@@ -17,10 +17,10 @@
     "static/media/hand-index-thumb.svg": "/static/media/hand-index-thumb.d94b0087ab37bbf13e8a.svg",
     "index.html": "/index.html",
     "main.db6f0334.css.map": "/static/css/main.db6f0334.css.map",
-    "main.9014e2e8.js.map": "/static/js/main.9014e2e8.js.map"
+    "main.685f709f.js.map": "/static/js/main.685f709f.js.map"
   },
   "entrypoints": [
     "static/css/main.db6f0334.css",
-    "static/js/main.9014e2e8.js"
+    "static/js/main.685f709f.js"
   ]
 }

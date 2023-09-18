@@ -19,22 +19,28 @@ const Navbar = () => {
           <p><HashLink smooth to="/#news">News</HashLink></p>
           <p><Link to="/events">Events</Link></p>
           <p><Link to="/data">Data</Link></p>
+          <div className="morphic__navbar-dropdown">
+            <p className="morphic__navbar-dropdown-title">Tools</p>
+            <div className="morphic__navbar-dropdown-content">
+              <p><a href="https://morphic-genelist-app.shinyapps.io/shiny_genesetexplore/" target="_blank" rel="noopener noreferrer">Draft Gene List</a></p>
+              <p><a href="https://github.com/morphic-bio" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+            </div>
+          </div>
           <p><Link to="/publications">Publications</Link></p>
           <div className="morphic__navbar-dropdown">
             <p className="morphic__navbar-dropdown-title">About</p>
             <div className="morphic__navbar-dropdown-content">
+            <p className="morphic__navbar-genome_link"><a href="https://www.genome.gov/" target="_blank" rel="noopener noreferrer">genome.gov</a></p>
               <p><a href="#contact">Funding: NHGRI</a></p>
               <p><Link to="/policies">Policies</Link></p>
               <p><Link to="/about-us">About Us</Link></p>
+              
             </div>
           </div>
         </div>
       </div>
       <div className="morphic__navbar-submit">
         <a href="https://github.com/morphic-bio/morphic-documentation/wiki/MorPhiC-Data-Contribution-Guide" target="_blank" rel="noopener noreferrer">Submit</a>
-      </div>
-      <div className="morphic__navbar-genome">
-        <a href="https://www.genome.gov/" target="_blank" rel="noreferrer">genome.gov</a>
       </div>
       <div className="morphic__navbar-sign">
         <button type="button">Sign up</button>

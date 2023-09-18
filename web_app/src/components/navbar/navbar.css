@@ -72,7 +72,7 @@
     cursor: pointer;
 }
 
-.morphic__navbar-genome a, .morphic__navbar-submit a {
+.morphic__navbar-submit a {
     color: #fff;
     font-family: var(--font-family);
     font-weight: 500;
@@ -167,7 +167,11 @@
 
 .morphic__navbar-dropdown:hover .morphic__navbar-dropdown-content {
     display: block;
-  }
+}
+
+.morphic__navbar-dropdown-content .morphic__navbar-genome_link {
+    text-transform: none;
+}
 
 .morphic__navbar-menu_container-social {
     padding-top: 2.5rem;
@@ -179,10 +183,6 @@
 
 @media screen and (max-width: 1050px) {
     .morphic__social {
-        display: none;
-    }
-
-    .morphic__navbar-genome {
         display: none;
     }
 

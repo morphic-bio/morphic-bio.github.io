@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="morphic__navbar-submit">
-        <a href="https://github.com/morphic-bio/morphic-documentation/wiki/MorPhiC-Data-Contribution-Guide" target="_blank" rel="noopener noreferrer">Submit</a>
+        <a href="https://github.com/morphic-bio/morphic-documentation/wiki/MorPhiC-Data-Contribution-Guide" target="_blank" rel="noopener noreferrer">Submit Data</a>
       </div>
       <div className="morphic__navbar-sign">
         <button type="button">Sign up</button>

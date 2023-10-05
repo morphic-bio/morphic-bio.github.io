@@ -14,6 +14,7 @@ const Map = () => {
     });
 
     const [ isUW, setIsUW ] = useState(false)
+    const [ isFH, setIsFH ] = useState(false)
     const [ isGilbert, setIsGilbert ] = useState(false)
     const [ isStanford, setIsStanford ] = useState(false)
     const [ isNWUC, setIsNWUC ] = useState(false)
@@ -25,6 +26,7 @@ const Map = () => {
 
     const [ isFullDesc, setIsFullDesc ] = useState(false)
     const [ isFullUWDesc, setIsFullUWDesc ] = useState(false)
+    const [ isFullFHDesc, setIsFullFHDesc ] = useState(false)
     const [ isFullStanfordDesc, setIsFullStanfordDesc ] = useState(false)
     const [ isFullNWUCDesc, setIsFullNWUCDesc ] = useState(false)
     const [ isFullJacksonLabDesc, setIsFullJacksonLabDesc ] = useState(false)
@@ -56,6 +58,12 @@ const Map = () => {
     }
     const hideUWOverview = (event) => {
       setIsUW(false)
+    }
+    const showFHOverview = (event) => {
+      setIsFH(true)
+    }
+    const hideFHOverview = (event) => {
+      setIsFH(false)
     }
     const showGilbertLabOverview = (event) => {
       setIsGilbert(true)
@@ -110,7 +118,21 @@ const Map = () => {
       setIsFullDesc(!isFullDesc)
 
       setIsFullUWDesc(false)
+      setIsFullFHDesc(false)
       setIsFullStanfordDesc(false)
+      setIsFullNWUCDesc(false)
+      setIsFullJacksonLabDesc(false)
+      setIsFullSloanKetteringDesc(false)
+      setIsFullUMiamiDesc(false)
+      setIsFullEBIDesc(false)
+      setIsFullQMULDesc(false)
+    }
+    const showFullFHDesc = (event) => {
+      setIsFullFHDesc(!isFullFHDesc)
+
+      setIsFullStanfordDesc(false)
+      setIsFullUWDesc(false)
+      setIsFullDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
       setIsFullSloanKetteringDesc(false)
@@ -122,6 +144,7 @@ const Map = () => {
       setIsFullStanfordDesc(!isFullStanfordDesc)
 
       setIsFullUWDesc(false)
+      setIsFullFHDesc(false)
       setIsFullDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
@@ -134,6 +157,7 @@ const Map = () => {
       setIsFullUWDesc(!isFullUWDesc)
 
       setIsFullDesc(false)
+      setIsFullFHDesc(false)
       setIsFullStanfordDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
@@ -147,6 +171,7 @@ const Map = () => {
 
       setIsFullUWDesc(false)
       setIsFullDesc(false)
+      setIsFullFHDesc(false)
       setIsFullStanfordDesc(false)
       setIsFullJacksonLabDesc(false)
       setIsFullSloanKetteringDesc(false)
@@ -159,6 +184,7 @@ const Map = () => {
 
       setIsFullUWDesc(false)
       setIsFullDesc(false)
+      setIsFullFHDesc(false)
       setIsFullStanfordDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullSloanKetteringDesc(false)
@@ -171,6 +197,7 @@ const Map = () => {
 
       setIsFullUWDesc(false)
       setIsFullDesc(false)
+      setIsFullFHDesc(false)
       setIsFullStanfordDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
@@ -184,6 +211,7 @@ const Map = () => {
 
       setIsFullUWDesc(false)
       setIsFullDesc(false)
+      setIsFullFHDesc(false)
       setIsFullStanfordDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
@@ -196,6 +224,7 @@ const Map = () => {
 
       setIsFullUWDesc(false)
       setIsFullDesc(false)
+      setIsFullFHDesc(false)
       setIsFullStanfordDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
@@ -208,6 +237,7 @@ const Map = () => {
 
       setIsFullUWDesc(false)
       setIsFullDesc(false)
+      setIsFullFHDesc(false)
       setIsFullStanfordDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
@@ -220,7 +250,8 @@ const Map = () => {
       <section className="morphic__map section__padding" id="map">
         <div className="morphic__map-container">
             <map name="moreinfo">
-                <area shape="rect" coords="0,80,200,160" href="#whatmorphic" alt="UW Yeung Lab" onClick={showFullUWDesc} onMouseEnter={showUWOverview} onMouseLeave={hideUWOverview} />
+                <area shape="rect" coords="0,80,200,147" href="#whatmorphic" alt="UW Yeung Lab" onClick={showFullUWDesc} onMouseEnter={showUWOverview} onMouseLeave={hideUWOverview} />
+                <area shape="rect" coords="50,155,200,197" href="#whatmorphic" alt="Fred Hutch Cancer Center Lab" onClick={showFullFHDesc} onMouseEnter={showFHOverview} onMouseLeave={hideFHOverview} />
                 <area shape="rect" coords={ height !== 0 && width !== 0 ? "0," + 0.5 * height + "," + 0.065 * width + "," + 0.6 * height : "0,230,82,276"} href="#whatmorphic" onClick={showFullUCSFDesc} onMouseEnter={showGilbertLabOverview} onMouseLeave={hideGilbertLabOverview} alt="Gilbert Lab" />
                 <area shape="rect" coords="0,282,220,341" href="#whatmorphic" onClick={showFullStanfordDesc} onMouseEnter={showStanfordOverview} onMouseLeave={hideStanfordOverview} alt="Stanford Lab" />
                 <area shape="rect" coords="265,165,395,270" href="#whatmorphic" alt="NORTHWESTERN UNIVERSITY AT CHICAGO" onClick={showFullNWUCDesc} onMouseEnter={showNWUCOverview} onMouseLeave={hideNWUCOverview} />
@@ -253,6 +284,16 @@ const Map = () => {
               <a href="https://reporter.nih.gov/search/0Vl49Afb50KdwhUX5tzEEw/project-details/10519442" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/0Vl49Afb50KdwhUX5tzEEw/project-details/10519442</a>
               <h4>Contact PI/Project Leader</h4>
               <p>Ka Yee Yeung</p>
+            </div>
+          )}
+          {(isFH && (!isFullFHDesc)) && (
+            <div className="lab-overview">
+              <h4>NIH Grant Number</h4>
+              <p>1U01HG013177-01</p>
+              <h4>NIH RePORTER</h4>
+              <a href="https://reporter.nih.gov/search/oIfrWWjJok-fQJ5z7YR03w/project-details/10733165" target="_blank" rel="noopener noreferrer">https://reporter.nih.gov/search/oIfrWWjJok-fQJ5z7YR03w/project-details/10733165</a>
+              <h4>Contact PI/Project Leader</h4>
+              <p>Wei Sun</p>
             </div>
           )}
           {(isStanford && (!isFullStanfordDesc)) && (
@@ -352,6 +393,24 @@ const Map = () => {
             <h4>Description</h4>
             <p>The Yeung Lab focuses on the development of optimized methods and cloud-based software tools for the analyses of big biomedical data. Our platform Biodepot-workflow-builder (Bwb) allows biomedical scientists to create, share and reproducibly execute bioinformatics workflows in a point-and-click user interface. Bwb supports RNA-seq, DNA-seq, nanopore and image processing workflows. </p>
           </div>
+          )}
+          {isFullFHDesc && (
+            <div className="lab-overview">
+              <h4>NIH Grant Number</h4>
+              <p>1U01HG013177-01</p>
+              <h4>NIH RePORTER</h4>
+              <a href="https://reporter.nih.gov/search/oIfrWWjJok-fQJ5z7YR03w/project-details/10733165" target="_blank" rel="noopener noreferrer">https://reporter.nih.gov/search/oIfrWWjJok-fQJ5z7YR03w/project-details/10733165</a>
+              <h4>Lab Websites</h4>
+              <ul className="lab-links">
+                <li>Wei Sun: <a href="https://www.fredhutch.org/en/faculty-lab-directory/sun-wei.html" target="_blank" rel="noopener noreferrer">https://www.fredhutch.org/en/faculty-lab-directory/sun-wei.html</a></li>
+                <li>Li Hsu: <a href="https://www.fredhutch.org/en/faculty-lab-directory/hsu-li.html" target="_blank" rel="noopener noreferrer">https://www.fredhutch.org/en/faculty-lab-directory/hsu-li.html</a></li>
+                <li>Ali Shojaie: <a href="http://faculty.washington.edu/ashojaie/" target="_blank" rel="noopener noreferrer">http://faculty.washington.edu/ashojaie/</a></li>
+              </ul>
+              <h4>Contact PI/Project Leader</h4>
+              <p>Wei Sun</p>
+              <h4>Description</h4>
+              <p>Project Narrative MorPhiC consortium will deliver rich resources of molecular and cellular phenotypes before and after gene knockout using in vitro cellular systems. We will develop statistical methods to combine MorPhiC resources and omic data in human phenotype studies to infer gene functions in diverse settings and identify potential causal genes of human phenotypes. Our methods pave the way to use MorPhiC resources to study the impact of gene loss on complex phenotypes.</p>
+            </div>
           )}
           {isFullStanfordDesc && (
             <div className="lab-overview">

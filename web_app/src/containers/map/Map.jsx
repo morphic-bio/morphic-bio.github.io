@@ -359,6 +359,12 @@ const Map = () => {
               <p>1U01HG013176-01</p>
               <h4>NIH RePORTER</h4>
               <a href="https://reporter.nih.gov/search/Dp5l7GFxJkalwB2Oebe9gg/project-details/10733164" target="_blank" rel="noopener noreferrer">https://reporter.nih.gov/search/Dp5l7GFxJkalwB2Oebe9gg/project-details/10733164</a>
+              <h4>Lab Websites</h4>
+              <ul className="lab-links">
+                <li><a href="https://www.engreitzlab.org/" target="_blank" rel="noopener noreferrer">https://www.engreitzlab.org/</a></li>
+                <li><a href="https://kundajelab.stanford.edu/" target="_blank" rel="noopener noreferrer">https://kundajelab.stanford.edu/</a></li>
+                <li><a href="https://www.devo-evo.com/" target="_blank" rel="noopener noreferrer">https://www.devo-evo.com/</a></li>
+              </ul>
               <h4>Contact PI/Project Leader</h4>
               <p>Jesse Engreitz</p>
               <h4>Description</h4>

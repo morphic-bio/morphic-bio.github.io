@@ -15,6 +15,7 @@ const Map = () => {
 
     const [ isUW, setIsUW ] = useState(false)
     const [ isGilbert, setIsGilbert ] = useState(false)
+    const [ isStanford, setIsStanford ] = useState(false)
     const [ isNWUC, setIsNWUC ] = useState(false)
     const [ isJacksonLab, setIsJacksonLab ] = useState(false)
     const [ isSloanKettering, setIsSloanKettering ] = useState(false)
@@ -24,6 +25,7 @@ const Map = () => {
 
     const [ isFullDesc, setIsFullDesc ] = useState(false)
     const [ isFullUWDesc, setIsFullUWDesc ] = useState(false)
+    const [ isFullStanfordDesc, setIsFullStanfordDesc ] = useState(false)
     const [ isFullNWUCDesc, setIsFullNWUCDesc ] = useState(false)
     const [ isFullJacksonLabDesc, setIsFullJacksonLabDesc ] = useState(false)
     const [ isFullSloanKetteringDesc, setIsFullSloanKetteringDesc ] = useState(false)
@@ -60,6 +62,12 @@ const Map = () => {
     }
     const hideGilbertLabOverview = (event) => {
       setIsGilbert(false)
+    }
+    const showStanfordOverview = (event) => {
+      setIsStanford(true)
+    }
+    const hideStanfordOverview = (event) => {
+      setIsStanford(false)
     }
     const showNWUCOverview = (event) => {
       setIsNWUC(true)
@@ -102,6 +110,19 @@ const Map = () => {
       setIsFullDesc(!isFullDesc)
 
       setIsFullUWDesc(false)
+      setIsFullStanfordDesc(false)
+      setIsFullNWUCDesc(false)
+      setIsFullJacksonLabDesc(false)
+      setIsFullSloanKetteringDesc(false)
+      setIsFullUMiamiDesc(false)
+      setIsFullEBIDesc(false)
+      setIsFullQMULDesc(false)
+    }
+    const showFullStanfordDesc = (event) => {
+      setIsFullStanfordDesc(!isFullStanfordDesc)
+
+      setIsFullUWDesc(false)
+      setIsFullDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
       setIsFullSloanKetteringDesc(false)
@@ -113,6 +134,7 @@ const Map = () => {
       setIsFullUWDesc(!isFullUWDesc)
 
       setIsFullDesc(false)
+      setIsFullStanfordDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
       setIsFullSloanKetteringDesc(false)
@@ -125,6 +147,7 @@ const Map = () => {
 
       setIsFullUWDesc(false)
       setIsFullDesc(false)
+      setIsFullStanfordDesc(false)
       setIsFullJacksonLabDesc(false)
       setIsFullSloanKetteringDesc(false)
       setIsFullUMiamiDesc(false)
@@ -136,6 +159,7 @@ const Map = () => {
 
       setIsFullUWDesc(false)
       setIsFullDesc(false)
+      setIsFullStanfordDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullSloanKetteringDesc(false)
       setIsFullUMiamiDesc(false)
@@ -147,6 +171,7 @@ const Map = () => {
 
       setIsFullUWDesc(false)
       setIsFullDesc(false)
+      setIsFullStanfordDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
       setIsFullUMiamiDesc(false)
@@ -159,6 +184,7 @@ const Map = () => {
 
       setIsFullUWDesc(false)
       setIsFullDesc(false)
+      setIsFullStanfordDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
       setIsFullSloanKetteringDesc(false)
@@ -170,6 +196,7 @@ const Map = () => {
 
       setIsFullUWDesc(false)
       setIsFullDesc(false)
+      setIsFullStanfordDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
       setIsFullSloanKetteringDesc(false)
@@ -181,6 +208,7 @@ const Map = () => {
 
       setIsFullUWDesc(false)
       setIsFullDesc(false)
+      setIsFullStanfordDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
       setIsFullSloanKetteringDesc(false)
@@ -193,7 +221,8 @@ const Map = () => {
         <div className="morphic__map-container">
             <map name="moreinfo">
                 <area shape="rect" coords="0,80,200,160" href="#whatmorphic" alt="UW Yeung Lab" onClick={showFullUWDesc} onMouseEnter={showUWOverview} onMouseLeave={hideUWOverview} />
-                <area shape="rect" coords={ height !== 0 && width !== 0 ? "0," + 0.5 * height + "," + 0.18 * width + "," + 0.74 * height : "0,230,220,340"} href="#whatmorphic" onClick={showFullUCSFDesc} onMouseEnter={showGilbertLabOverview} onMouseLeave={hideGilbertLabOverview} alt="Gilbert Lab" />
+                <area shape="rect" coords={ height !== 0 && width !== 0 ? "0," + 0.5 * height + "," + 0.065 * width + "," + 0.6 * height : "0,230,82,276"} href="#whatmorphic" onClick={showFullUCSFDesc} onMouseEnter={showGilbertLabOverview} onMouseLeave={hideGilbertLabOverview} alt="Gilbert Lab" />
+                <area shape="rect" coords="0,282,220,341" href="#whatmorphic" onClick={showFullStanfordDesc} onMouseEnter={showStanfordOverview} onMouseLeave={hideStanfordOverview} alt="Stanford Lab" />
                 <area shape="rect" coords="265,165,395,270" href="#whatmorphic" alt="NORTHWESTERN UNIVERSITY AT CHICAGO" onClick={showFullNWUCDesc} onMouseEnter={showNWUCOverview} onMouseLeave={hideNWUCOverview} />
                 <area shape="rect" coords="470,170,630,220" href="#whatmorphic" alt="JACKSON LABORATORY" onClick={showFullJacksonLabDesc}  onMouseEnter={showJacksonLabOverview} onMouseLeave={hideJacksonLabOverview} />
                 <area shape="rect" coords="435,250,640,310" href="#whatmorphic" alt="SLOAN-KETTERING INST CAN RESEARCH" onClick={showFullSloanKetteringDesc} onMouseEnter={showSloanKetteringOverview} onMouseLeave={hideSloanKetteringOverview} />
@@ -224,6 +253,16 @@ const Map = () => {
               <a href="https://reporter.nih.gov/search/0Vl49Afb50KdwhUX5tzEEw/project-details/10519442" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/0Vl49Afb50KdwhUX5tzEEw/project-details/10519442</a>
               <h4>Contact PI/Project Leader</h4>
               <p>Ka Yee Yeung</p>
+            </div>
+          )}
+          {(isStanford && (!isFullStanfordDesc)) && (
+            <div className="lab-overview">
+              <h4>NIH Grant Number</h4>
+              <p>1U01HG013176-01</p>
+              <h4>NIH RePORTER</h4>
+              <a href="https://reporter.nih.gov/search/Dp5l7GFxJkalwB2Oebe9gg/project-details/10733164" target="_blank" rel="noopener noreferrer">https://reporter.nih.gov/search/Dp5l7GFxJkalwB2Oebe9gg/project-details/10733164</a>
+              <h4>Contact PI/Project Leader</h4>
+              <p>Jesse Engreitz</p>
             </div>
           )}
           {isNWUC && (!isFullNWUCDesc) && (
@@ -313,6 +352,18 @@ const Map = () => {
             <h4>Description</h4>
             <p>The Yeung Lab focuses on the development of optimized methods and cloud-based software tools for the analyses of big biomedical data. Our platform Biodepot-workflow-builder (Bwb) allows biomedical scientists to create, share and reproducibly execute bioinformatics workflows in a point-and-click user interface. Bwb supports RNA-seq, DNA-seq, nanopore and image processing workflows. </p>
           </div>
+          )}
+          {isFullStanfordDesc && (
+            <div className="lab-overview">
+              <h4>NIH Grant Number</h4>
+              <p>1U01HG013176-01</p>
+              <h4>NIH RePORTER</h4>
+              <a href="https://reporter.nih.gov/search/Dp5l7GFxJkalwB2Oebe9gg/project-details/10733164" target="_blank" rel="noopener noreferrer">https://reporter.nih.gov/search/Dp5l7GFxJkalwB2Oebe9gg/project-details/10733164</a>
+              <h4>Contact PI/Project Leader</h4>
+              <p>Jesse Engreitz</p>
+              <h4>Description</h4>
+              <p>This proposed MorPhiC Data Analysis and Validation Center will utilize the innovative methods our team has developed (V2G2P, BPNet, DeepLift, monocle2/3, scribe, dynamo, spateo) to integrate multi-layer CRISPR, single-cell, imaging, and human genetics data. Together with the MorPhiC Consortium, our study will enable building a Catalog of Cellular Programs across cell types, ensure the robustness and interoperability of MorPhiC data, demonstrate its utility in identifying pathways for human diseases, and plan for an expansion of the MorPhiC project to study all human genes.</p>
+            </div>
           )}
           {isFullNWUCDesc && (
             <div className="lab-overview">

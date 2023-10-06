@@ -268,6 +268,7 @@ const Map = () => {
 
           {(isGilbert && (!isFullDesc)) && (
             <div className="lab-overview">
+              <span className="dpc-badge">DPC</span>
               <h4>NIH Grant Number</h4>
               <p>UM1HG012660</p>
               <h4>NIH RePORTER</h4>
@@ -278,6 +279,7 @@ const Map = () => {
           )}
           {(isUW && (!isFullUWDesc)) && (
             <div className="lab-overview">
+              <span className="dracc-badge">DRACC</span>
               <h4>NIH Grant Number</h4>
               <p>U24HG012674</p>
               <h4>NIH RePORTER</h4>
@@ -288,6 +290,7 @@ const Map = () => {
           )}
           {(isFH && (!isFullFHDesc)) && (
             <div className="lab-overview">
+              <span className="dav-badge">DAV</span>
               <h4>NIH Grant Number</h4>
               <p>1U01HG013177-01</p>
               <h4>NIH RePORTER</h4>
@@ -298,6 +301,7 @@ const Map = () => {
           )}
           {(isStanford && (!isFullStanfordDesc)) && (
             <div className="lab-overview">
+              <span className="dav-badge">DAV</span>
               <h4>NIH Grant Number</h4>
               <p>1U01HG013176-01</p>
               <h4>NIH RePORTER</h4>
@@ -308,6 +312,7 @@ const Map = () => {
           )}
           {isNWUC && (!isFullNWUCDesc) && (
             <div className="lab-overview">
+              <span className="dpc-badge">DPC</span>
               <h4>NIH Grant Number</h4>
               <p>UM1HG012649</p>
               <h4>NIH RePORTER</h4>
@@ -317,17 +322,31 @@ const Map = () => {
             </div>
           )}
           {isJacksonLab && (!isFullJacksonLabDesc) && (
-            <div className="lab-overview">
-              <h4>NIH Grant Number</h4>
-              <p>UM1HG012651</p>
-              <h4>NIH RePORTER</h4>
-              <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881</a>
-              <h4>Contact PI/Project Leader</h4>
-              <p>Robson, Paul</p>
+            <div>
+              <div className="lab-overview">
+                <span className="dpc-badge">DPC</span>
+                <h4>NIH Grant Number</h4>
+                <p>UM1HG012651</p>
+                <h4>NIH RePORTER</h4>
+                <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881</a>
+                <h4>Contact PI/Project Leader</h4>
+                <p>Robson, Paul</p>
+              </div>
+              <div className="lab-overview">
+                <span className="dav-badge">DAV</span>
+                <h4>NIH Grant Number</h4>
+                <p>UM1HG012651</p>
+                <h4>NIH RePORTER</h4>
+                <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881</a>
+                <h4>Contact PI/Project Leader</h4>
+                <p>Robson, Paul</p>
+              </div>
             </div>
+            
           )}
           {isSloanKettering && (!isFullSloanKetteringDesc) && (
             <div className="lab-overview">
+              <span className="dpc-badge">DPC</span>
               <h4>NIH Grant Number</h4>
               <p>UM1HG012654</p>
               <h4>NIH RePORTER</h4>
@@ -338,6 +357,7 @@ const Map = () => {
           )}
           {isUMiami && (!isFullUMiamiDesc) && (
             <div className="lab-overview">
+              <span className="dracc-badge">DRACC</span>
               <h4>NIH Grant Number</h4>
               <p>U24HG012674</p>
               <h4>NIH RePORTER</h4>
@@ -348,6 +368,7 @@ const Map = () => {
           )}
           {isEBI && (!isFullEBIDesc) && (
             <div className="lab-overview">
+              <span className="dracc-badge">DRACC</span>
               <h4>NIH Grant Number</h4>
               <p>1U24HG012674-01</p>
               <h4>NIH RePORTER</h4>
@@ -358,6 +379,7 @@ const Map = () => {
           )}
           {isQMUL && (!isFullQMULDesc) && (
             <div className="lab-overview">
+              <span className="dracc-badge">DRACC</span>
               <h4>NIH Grant Number</h4>
               <p>U24HG012674</p>
               <h4>NIH RePORTER</h4>
@@ -370,6 +392,7 @@ const Map = () => {
 
           {isFullDesc && (
             <div className="lab-overview">
+              <span className="dpc-badge">DPC</span>
               <h4>NIH Grant Number</h4>
               <p>UM1HG012660</p>
               <h4>NIH RePORTER</h4>
@@ -384,18 +407,20 @@ const Map = () => {
           )}
           {isFullUWDesc && (
             <div className="lab-overview">
-            <h4>NIH Grant Number</h4>
-            <p>U24HG012674</p>
-            <h4>NIH RePORTER</h4>
-            <a href="https://reporter.nih.gov/project-details/10519442" target="_blank" rel="noreferrer">https://reporter.nih.gov/project-details/10519442</a>
-            <h4>Contact PI/Project Leader</h4>
-            <p>Ka Yee Yeung</p>
-            <h4>Description</h4>
-            <p>The Yeung Lab focuses on the development of optimized methods and cloud-based software tools for the analyses of big biomedical data. Our platform Biodepot-workflow-builder (Bwb) allows biomedical scientists to create, share and reproducibly execute bioinformatics workflows in a point-and-click user interface. Bwb supports RNA-seq, DNA-seq, nanopore and image processing workflows. </p>
-          </div>
+              <span className="dracc-badge">DRACC</span>
+              <h4>NIH Grant Number</h4>
+              <p>U24HG012674</p>
+              <h4>NIH RePORTER</h4>
+              <a href="https://reporter.nih.gov/project-details/10519442" target="_blank" rel="noreferrer">https://reporter.nih.gov/project-details/10519442</a>
+              <h4>Contact PI/Project Leader</h4>
+              <p>Ka Yee Yeung</p>
+              <h4>Description</h4>
+              <p>The Yeung Lab focuses on the development of optimized methods and cloud-based software tools for the analyses of big biomedical data. Our platform Biodepot-workflow-builder (Bwb) allows biomedical scientists to create, share and reproducibly execute bioinformatics workflows in a point-and-click user interface. Bwb supports RNA-seq, DNA-seq, nanopore and image processing workflows. </p>
+            </div>
           )}
           {isFullFHDesc && (
             <div className="lab-overview">
+              <span className="dav-badge">DAV</span>
               <h4>NIH Grant Number</h4>
               <p>1U01HG013177-01</p>
               <h4>NIH RePORTER</h4>
@@ -414,6 +439,7 @@ const Map = () => {
           )}
           {isFullStanfordDesc && (
             <div className="lab-overview">
+              <span className="dav-badge">DAV</span>
               <h4>NIH Grant Number</h4>
               <p>1U01HG013176-01</p>
               <h4>NIH RePORTER</h4>
@@ -432,6 +458,7 @@ const Map = () => {
           )}
           {isFullNWUCDesc && (
             <div className="lab-overview">
+              <span className="dpc-badge">DPC</span>
               <h4>NIH Grant Number</h4>
               <p>UM1HG012649</p>
               <h4>NIH RePORTER</h4>
@@ -448,25 +475,47 @@ const Map = () => {
             </div>
           )}
           {isFullJacksonLabDesc && (
-            <div className="lab-overview">
-              <h4>NIH Grant Number</h4>
-              <p>UM1HG012651</p>
-              <h4>NIH RePORTER</h4>
-              <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881</a>
-              <h4>Lab Websites</h4>
-              <ul className="lab-links">
-                <li><a href="https://www.jax.org/" target="_blank" rel="noreferrer">www.jax.org</a></li>
-                <li><a href="https://www.jax.org/research-and-faculty/research-labs/the-robson-lab" target="_blank" rel="noreferrer">https://www.jax.org/research-and-faculty/research-labs/the-robson-lab</a></li>
-                <li><a href="https://www.jax.org/research-and-faculty/faculty/william-skarnes" target="_blank" rel="noreferrer">https://www.jax.org/research-and-faculty/faculty/william-skarnes</a></li>
-              </ul>
-              <h4>Contact PI/Project Leader</h4>
-              <p>Paul Robson</p>
-              <h4>Description</h4>
-              <p>Knowledge of the function of every human gene is necessary for determining the roles and relationships of genes and regulatory elements in various normal and disease-associated biological pathways and networks. In the JAX MorPhiC Data Production Center, we will leverage the state-of-the-art cellular engineering, single-cell, and metabolomics capabilities of The Jackson Laboratory to comprehensively catalog the phenotypes of 250 null mutations in human induced pluripotent stem cells differentiated into extra-embryonic and neuroectodermal lineages. By focusing on these early embryonic lineages, we will gain important insight into multiple biological processes, including neurodevelopmental disorders and those impacting later life.</p>
+            <div className="lab-overview_container">
+              <div className="lab-overview">
+                <span className="dpc-badge">DPC</span>
+                <h4>NIH Grant Number</h4>
+                <p>UM1HG012651</p>
+                <h4>NIH RePORTER</h4>
+                <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881</a>
+                <h4>Lab Websites</h4>
+                <ul className="lab-links">
+                  <li><a href="https://www.jax.org/" target="_blank" rel="noreferrer">www.jax.org</a></li>
+                  <li><a href="https://www.jax.org/research-and-faculty/research-labs/the-robson-lab" target="_blank" rel="noreferrer">https://www.jax.org/research-and-faculty/research-labs/the-robson-lab</a></li>
+                  <li><a href="https://www.jax.org/research-and-faculty/faculty/william-skarnes" target="_blank" rel="noreferrer">https://www.jax.org/research-and-faculty/faculty/william-skarnes</a></li>
+                </ul>
+                <h4>Contact PI/Project Leader</h4>
+                <p>Paul Robson</p>
+                <h4>Description</h4>
+                <p>Knowledge of the function of every human gene is necessary for determining the roles and relationships of genes and regulatory elements in various normal and disease-associated biological pathways and networks. In the JAX MorPhiC Data Production Center, we will leverage the state-of-the-art cellular engineering, single-cell, and metabolomics capabilities of The Jackson Laboratory to comprehensively catalog the phenotypes of 250 null mutations in human induced pluripotent stem cells differentiated into extra-embryonic and neuroectodermal lineages. By focusing on these early embryonic lineages, we will gain important insight into multiple biological processes, including neurodevelopmental disorders and those impacting later life.</p>
+              </div>
+              <div className="lab-overview">
+                <span className="dav-badge">DAV</span>
+                <h4>NIH Grant Number</h4>
+                <p>UM1HG012651</p>
+                <h4>NIH RePORTER</h4>
+                <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881</a>
+                <h4>Lab Websites</h4>
+                <ul className="lab-links">
+                  <li><a href="https://www.jax.org/" target="_blank" rel="noreferrer">www.jax.org</a></li>
+                  <li><a href="https://www.jax.org/research-and-faculty/research-labs/the-robson-lab" target="_blank" rel="noreferrer">https://www.jax.org/research-and-faculty/research-labs/the-robson-lab</a></li>
+                  <li><a href="https://www.jax.org/research-and-faculty/faculty/william-skarnes" target="_blank" rel="noreferrer">https://www.jax.org/research-and-faculty/faculty/william-skarnes</a></li>
+                </ul>
+                <h4>Contact PI/Project Leader</h4>
+                <p>Paul Robson</p>
+                <h4>Description</h4>
+                <p>Knowledge of the function of every human gene is necessary for determining the roles and relationships of genes and regulatory elements in various normal and disease-associated biological pathways and networks. In the JAX MorPhiC Data Production Center, we will leverage the state-of-the-art cellular engineering, single-cell, and metabolomics capabilities of The Jackson Laboratory to comprehensively catalog the phenotypes of 250 null mutations in human induced pluripotent stem cells differentiated into extra-embryonic and neuroectodermal lineages. By focusing on these early embryonic lineages, we will gain important insight into multiple biological processes, including neurodevelopmental disorders and those impacting later life.</p>
+              </div>
             </div>
+            
           )}
           {isFullSloanKetteringDesc && (
             <div className="lab-overview">
+              <span className="dpc-badge">DPC</span>
               <h4>NIH Grant Number</h4>
               <p>UM1HG012654</p>
               <h4>NIH RePORTER</h4>
@@ -487,6 +536,7 @@ const Map = () => {
           )}
           {isFullUMiamiDesc && (
             <div className="lab-overview">
+              <span className="dracc-badge">DRACC</span>
               <h4>NIH Grant Number</h4>
               <p>U24HG012674</p>
               <h4>NIH RePORTER</h4>
@@ -501,6 +551,7 @@ const Map = () => {
           )}
           {isFullEBIDesc && (
             <div className="lab-overview">
+              <span className="dracc-badge">DRACC</span>
               <h4>NIH Grant Number</h4>
               <p>1U24HG012674-01</p>
               <h4>NIH RePORTER</h4>
@@ -515,6 +566,7 @@ const Map = () => {
           )}
           {isFullQMULDesc && (
             <div className="lab-overview">
+              <span className="dracc-badge">DRACC</span>
               <h4>NIH Grant Number</h4>
               <p>U24HG012674</p>
               <h4>NIH RePORTER</h4>

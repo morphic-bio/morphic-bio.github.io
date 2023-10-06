@@ -31,7 +31,7 @@ const About = () => (
             <ul>
                 <li><p className='morphic_about-paragraph'><span>Wei Sun, Ph.D.</span> Fred Hutchinson Cancer Center. Statistical Methods for Inferring Gene-Phenotype Associations Using Omic Data from Gene Knockout and Human Phenotype Studies.</p></li>
                 <li><p className='morphic_about-paragraph'><span>Jesse Engreitz, Ph.D.</span> Stanford University. MorPhiC: Constructing a Catalog of Cellular Programs to Identify and Annotate Human Disease Genes.</p></li>
-                <li><p className='morphic_about-paragraph'><span>Sheng Li, Ph.D.</span> Jackson Laboratory.</p></li>
+                <li><p className='morphic_about-paragraph'><span>Sheng Li, Ph.D.</span> Jackson Laboratory. Multi-omic phenotyping of human transcriptional regulators.</p></li>
             </ul>
         </section>
         <p className='morphic_about-paragraph size2'>The MorPhiC Consortium is governed by a Steering Committee whose members include NHGRI Program Officials, and Principal Investigators. Scientific efforts are undertaken by working groups, including the Data Working Group, Experiment Working Group and the Outreach Working Group.</p>

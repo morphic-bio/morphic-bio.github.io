@@ -34,6 +34,16 @@ const About = () => (
                 <li><p className='morphic_about-paragraph'><span>Sheng Li, Ph.D.</span> Jackson Laboratory. Multi-omic phenotyping of human transcriptional regulators.</p></li>
             </ul>
         </section>
+        <section id="ESC">
+            <h3 className='morphic_about-paragraph'>External Scientific Committee (ESC)</h3>
+            <ul>
+                <li><p className='morphic_about-paragraph'><span>Brenda Andrews, Ph.D</span> University of Toronto.</p></li>
+                <li><p className='morphic_about-paragraph'><span>Prashant Mali, Ph.D.</span> University of California, San Diego.</p></li>
+                <li><p className='morphic_about-paragraph'><span>Nancy Cox, Ph.D.</span> Vanderbilt University.</p></li>
+                <li><p className='morphic_about-paragraph'><span>Ali Mortazavi, Ph.D.</span> University of California, Irvine.</p></li>
+                <li><p className='morphic_about-paragraph'><span>Jessica Li, Ph.D.</span> University of California, Los Angeles.</p></li>
+            </ul>
+        </section>
         <p className='morphic_about-paragraph size2'>The MorPhiC Consortium is governed by a Steering Committee whose members include NHGRI Program Officials, and Principal Investigators. Scientific efforts are undertaken by working groups, including the Data Working Group, Experiment Working Group and the Outreach Working Group.</p>
     </article>
   </section>

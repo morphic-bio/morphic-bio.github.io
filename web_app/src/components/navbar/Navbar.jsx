@@ -22,7 +22,7 @@ const Navbar = () => {
           <div className="morphic__navbar-dropdown">
             <p className="morphic__navbar-dropdown-title">Tools</p>
             <div className="morphic__navbar-dropdown-content">
-              <p><a href="https://morphic-genelist-app.shinyapps.io/shiny_genesetexplore/" target="_blank" rel="noopener noreferrer">Draft Gene List</a></p>
+              <p><a href="https://whri-phenogenomics.shinyapps.io/morphic_gene_list/" target="_blank" rel="noopener noreferrer">Draft Gene List</a></p>
               <p><a href="https://github.com/morphic-bio" target="_blank" rel="noopener noreferrer">GitHub</a></p>
             </div>
           </div>

@@ -103,3 +103,10 @@ Article contents located in:
 The carousel uses a list to switch between articles every 15 seconds. The list of articles are in the following format `{title:"", date:"", url:"", img:"", webp:""}`.
 1. To update add a new article.
 
+## Troubleshooting
+### Deploying React App
+Sometimes deployment gets stuck.
+* Solution: run the following command to update caniuse-lite browserslist. Then deploy the react app.
+    ```shell
+    $ npm update caniuse-lite browserslist
+    ```

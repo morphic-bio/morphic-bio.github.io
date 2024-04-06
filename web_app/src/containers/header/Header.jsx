@@ -2,8 +2,7 @@ import React from 'react';
 
 import genome from '../../assets/humanGenome.png';
 import genomeSm from '../../assets/humanGenome-sm.png'
-import { RiDownload2Line } from 'react-icons/ri';
-import { SearchBar } from '../../components/search/searchBar/searchBar';
+import { RiArrowRightLine } from 'react-icons/ri';
 import './header.css';
 
 const Header = () => (
@@ -12,15 +11,20 @@ const Header = () => (
       <h1 className='morphic__full_title gradient__text'>Molecular Phenotypes of Null Alleles in Cells (MorPhiC)</h1>
       <h2 className='morphic__sub_title'>Bold Predictions For Human Genomics by 2030</h2>
       <p>The biological function(s) of every human gene will be known; for non-coding elements in the human genome, such knowledge will be the rule, rather than the exception.</p>
-
-      <div className="searchbar_title">
-        <span>Draft gene list</span>
-        <a href="https://github.com/morphic-bio/morphic-bio.github.io/blob/main/gene_list.csv" target="_blank" rel="noopener noreferrer">
-          <span>Download full list</span><RiDownload2Line color='#fff' size={18}/>
+      <div className="morphic__header-callout">
+        <a className="callout-btn" href="https://whri-phenogenomics.shinyapps.io/morphic_gene_list/" target="_blank" rel="noopener noreferrer">
+          <div className="callout-btn-content">
+            <div className="callout-btn-text">
+              Browse/Search/Visualize/Download
+            </div>
+            <div className="callout-btn-subtext">
+              Gene List
+            </div>
+          </div>
+          <div className="callout-btn-icon">
+            <RiArrowRightLine color='#fff' size={24}/>
+          </div>
         </a>
-      </div>
-      <div className="morphic__header-content__input">
-        <SearchBar/>
       </div>
 
     </div>

@@ -16,6 +16,30 @@
     background-color: #031B34;
     color: white;
 }
+.morphic__map-description .dpc-badge {
+    color: #4F79A9;
+    background-color: #4F79A9;
+    color: white;
+    border: thin solid #4F79A9;
+    border-radius: 4px;
+    padding: 0 0.4rem;
+}
+.morphic__map-description .dracc-badge {
+    color: #F28E2C;
+    background-color: #F28E2C;
+    color: white;
+    border: thin solid #F28E2C;
+    border-radius: 4px;
+    padding: 0 0.4rem;
+}
+.morphic__map-description .dav-badge {
+    color: #A34C7B;
+    background-color: #A34C7B;
+    color: white;
+    border: thin solid #A34C7B;
+    border-radius: 4px;
+    padding: 0 0.4rem;
+}
 .lab-overview {
     padding: 1rem 1.5rem;
 }
@@ -53,4 +77,15 @@ area {
     /* The second value here is a fallback. */
     cursor: url(hand-index-thumb.svg), auto;
     display: block;
+}
+
+@media (min-width: 1200px)
+{
+    .lab-overview_container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .lab-overview {
+        width: 50%;
+    }
 }

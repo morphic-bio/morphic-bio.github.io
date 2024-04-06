@@ -25,7 +25,7 @@ const Blog = () => {
   }, [])
 
   return (
-    <section className="morphic__blog section__padding" id="blog">
+    <section className="morphic__blog section__padding" id="news">
       <div className="morphic__blog-heading">
         <h1 className="gradient__text">News</h1>
       </div>

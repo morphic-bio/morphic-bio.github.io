@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import { RiMenu3Line, RiCloseLine, RiTwitterFill, RiYoutubeFill, RiFacebookFill } from 'react-icons/ri';
 import logo from '../../assets/morphic_logo_v3.svg';
 import './navbar.css';
@@ -15,22 +16,31 @@ const Navbar = () => {
           <Link id="img_logo" to="/"><img src={logo} alt="Morphic homepage" /></Link>
         </div>
         <div className="morphic__navbar-links_container">
-          <p><a href="#blog">News</a></p>
+          <p><HashLink smooth to="/#news">News</HashLink></p>
           <p><Link to="/events">Events</Link></p>
           <p><Link to="/data">Data</Link></p>
+          <div className="morphic__navbar-dropdown">
+            <p className="morphic__navbar-dropdown-title">Tools</p>
+            <div className="morphic__navbar-dropdown-content">
+              <p><a href="https://whri-phenogenomics.shinyapps.io/morphic_gene_list/" target="_blank" rel="noopener noreferrer">Draft Gene List</a></p>
+              <p><a href="https://github.com/morphic-bio" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+            </div>
+          </div>
           <p><Link to="/publications">Publications</Link></p>
           <div className="morphic__navbar-dropdown">
             <p className="morphic__navbar-dropdown-title">About</p>
             <div className="morphic__navbar-dropdown-content">
+            <p className="morphic__navbar-genome_link"><a href="https://www.genome.gov/" target="_blank" rel="noopener noreferrer">genome.gov</a></p>
               <p><a href="#contact">Funding: NHGRI</a></p>
               <p><Link to="/policies">Policies</Link></p>
               <p><Link to="/about-us">About Us</Link></p>
+              
             </div>
           </div>
         </div>
       </div>
-      <div className="morphic__navbar-genome">
-        <a href="https://www.genome.gov/" target="_blank" rel="noreferrer">genome.gov</a>
+      <div className="morphic__navbar-submit">
+        <a href="https://github.com/morphic-bio/morphic-documentation/wiki/MorPhiC-Data-Contribution-Guide" target="_blank" rel="noopener noreferrer">Submit Data</a>
       </div>
       <div className="morphic__navbar-sign">
         <button type="button">Sign up</button>
@@ -42,7 +52,7 @@ const Navbar = () => {
         {toggleMenu && (
         <div className="morphic__navbar-menu_container scale-up-center">
           <div className="morphic__navbar-menu_container-links">
-            <p><a href="#blog">News</a></p>
+            <p><a href="#news">News</a></p>
             <p><Link to="/events">Events</Link></p>
             <p><Link to="/data">Data</Link></p>
             <p><Link to="/publications">Publications</Link></p>

@@ -14,7 +14,9 @@ const Map = () => {
     });
 
     const [ isUW, setIsUW ] = useState(false)
+    const [ isFH, setIsFH ] = useState(false)
     const [ isGilbert, setIsGilbert ] = useState(false)
+    const [ isStanford, setIsStanford ] = useState(false)
     const [ isNWUC, setIsNWUC ] = useState(false)
     const [ isJacksonLab, setIsJacksonLab ] = useState(false)
     const [ isSloanKettering, setIsSloanKettering ] = useState(false)
@@ -24,6 +26,8 @@ const Map = () => {
 
     const [ isFullDesc, setIsFullDesc ] = useState(false)
     const [ isFullUWDesc, setIsFullUWDesc ] = useState(false)
+    const [ isFullFHDesc, setIsFullFHDesc ] = useState(false)
+    const [ isFullStanfordDesc, setIsFullStanfordDesc ] = useState(false)
     const [ isFullNWUCDesc, setIsFullNWUCDesc ] = useState(false)
     const [ isFullJacksonLabDesc, setIsFullJacksonLabDesc ] = useState(false)
     const [ isFullSloanKetteringDesc, setIsFullSloanKetteringDesc ] = useState(false)
@@ -55,11 +59,23 @@ const Map = () => {
     const hideUWOverview = (event) => {
       setIsUW(false)
     }
+    const showFHOverview = (event) => {
+      setIsFH(true)
+    }
+    const hideFHOverview = (event) => {
+      setIsFH(false)
+    }
     const showGilbertLabOverview = (event) => {
       setIsGilbert(true)
     }
     const hideGilbertLabOverview = (event) => {
       setIsGilbert(false)
+    }
+    const showStanfordOverview = (event) => {
+      setIsStanford(true)
+    }
+    const hideStanfordOverview = (event) => {
+      setIsStanford(false)
     }
     const showNWUCOverview = (event) => {
       setIsNWUC(true)
@@ -102,6 +118,34 @@ const Map = () => {
       setIsFullDesc(!isFullDesc)
 
       setIsFullUWDesc(false)
+      setIsFullFHDesc(false)
+      setIsFullStanfordDesc(false)
+      setIsFullNWUCDesc(false)
+      setIsFullJacksonLabDesc(false)
+      setIsFullSloanKetteringDesc(false)
+      setIsFullUMiamiDesc(false)
+      setIsFullEBIDesc(false)
+      setIsFullQMULDesc(false)
+    }
+    const showFullFHDesc = (event) => {
+      setIsFullFHDesc(!isFullFHDesc)
+
+      setIsFullStanfordDesc(false)
+      setIsFullUWDesc(false)
+      setIsFullDesc(false)
+      setIsFullNWUCDesc(false)
+      setIsFullJacksonLabDesc(false)
+      setIsFullSloanKetteringDesc(false)
+      setIsFullUMiamiDesc(false)
+      setIsFullEBIDesc(false)
+      setIsFullQMULDesc(false)
+    }
+    const showFullStanfordDesc = (event) => {
+      setIsFullStanfordDesc(!isFullStanfordDesc)
+
+      setIsFullUWDesc(false)
+      setIsFullFHDesc(false)
+      setIsFullDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
       setIsFullSloanKetteringDesc(false)
@@ -113,6 +157,8 @@ const Map = () => {
       setIsFullUWDesc(!isFullUWDesc)
 
       setIsFullDesc(false)
+      setIsFullFHDesc(false)
+      setIsFullStanfordDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
       setIsFullSloanKetteringDesc(false)
@@ -125,6 +171,8 @@ const Map = () => {
 
       setIsFullUWDesc(false)
       setIsFullDesc(false)
+      setIsFullFHDesc(false)
+      setIsFullStanfordDesc(false)
       setIsFullJacksonLabDesc(false)
       setIsFullSloanKetteringDesc(false)
       setIsFullUMiamiDesc(false)
@@ -136,6 +184,8 @@ const Map = () => {
 
       setIsFullUWDesc(false)
       setIsFullDesc(false)
+      setIsFullFHDesc(false)
+      setIsFullStanfordDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullSloanKetteringDesc(false)
       setIsFullUMiamiDesc(false)
@@ -147,6 +197,8 @@ const Map = () => {
 
       setIsFullUWDesc(false)
       setIsFullDesc(false)
+      setIsFullFHDesc(false)
+      setIsFullStanfordDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
       setIsFullUMiamiDesc(false)
@@ -159,6 +211,8 @@ const Map = () => {
 
       setIsFullUWDesc(false)
       setIsFullDesc(false)
+      setIsFullFHDesc(false)
+      setIsFullStanfordDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
       setIsFullSloanKetteringDesc(false)
@@ -170,6 +224,8 @@ const Map = () => {
 
       setIsFullUWDesc(false)
       setIsFullDesc(false)
+      setIsFullFHDesc(false)
+      setIsFullStanfordDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
       setIsFullSloanKetteringDesc(false)
@@ -181,6 +237,8 @@ const Map = () => {
 
       setIsFullUWDesc(false)
       setIsFullDesc(false)
+      setIsFullFHDesc(false)
+      setIsFullStanfordDesc(false)
       setIsFullNWUCDesc(false)
       setIsFullJacksonLabDesc(false)
       setIsFullSloanKetteringDesc(false)
@@ -192,8 +250,10 @@ const Map = () => {
       <section className="morphic__map section__padding" id="map">
         <div className="morphic__map-container">
             <map name="moreinfo">
-                <area shape="rect" coords="0,80,200,160" href="#whatmorphic" alt="UW Yeung Lab" onClick={showFullUWDesc} onMouseEnter={showUWOverview} onMouseLeave={hideUWOverview} />
-                <area shape="rect" coords={ height !== 0 && width !== 0 ? "0," + 0.5 * height + "," + 0.18 * width + "," + 0.74 * height : "0,230,220,340"} href="#whatmorphic" onClick={showFullUCSFDesc} onMouseEnter={showGilbertLabOverview} onMouseLeave={hideGilbertLabOverview} alt="Gilbert Lab" />
+                <area shape="rect" coords="0,80,200,147" href="#whatmorphic" alt="UW Yeung Lab" onClick={showFullUWDesc} onMouseEnter={showUWOverview} onMouseLeave={hideUWOverview} />
+                <area shape="rect" coords="50,155,200,197" href="#whatmorphic" alt="Fred Hutch Cancer Center Lab" onClick={showFullFHDesc} onMouseEnter={showFHOverview} onMouseLeave={hideFHOverview} />
+                <area shape="rect" coords={ height !== 0 && width !== 0 ? "0," + 0.5 * height + "," + 0.065 * width + "," + 0.6 * height : "0,230,82,276"} href="#whatmorphic" onClick={showFullUCSFDesc} onMouseEnter={showGilbertLabOverview} onMouseLeave={hideGilbertLabOverview} alt="Gilbert Lab" />
+                <area shape="rect" coords="0,282,220,341" href="#whatmorphic" onClick={showFullStanfordDesc} onMouseEnter={showStanfordOverview} onMouseLeave={hideStanfordOverview} alt="Stanford Lab" />
                 <area shape="rect" coords="265,165,395,270" href="#whatmorphic" alt="NORTHWESTERN UNIVERSITY AT CHICAGO" onClick={showFullNWUCDesc} onMouseEnter={showNWUCOverview} onMouseLeave={hideNWUCOverview} />
                 <area shape="rect" coords="470,170,630,220" href="#whatmorphic" alt="JACKSON LABORATORY" onClick={showFullJacksonLabDesc}  onMouseEnter={showJacksonLabOverview} onMouseLeave={hideJacksonLabOverview} />
                 <area shape="rect" coords="435,250,640,310" href="#whatmorphic" alt="SLOAN-KETTERING INST CAN RESEARCH" onClick={showFullSloanKetteringDesc} onMouseEnter={showSloanKetteringOverview} onMouseLeave={hideSloanKetteringOverview} />
@@ -208,6 +268,7 @@ const Map = () => {
 
           {(isGilbert && (!isFullDesc)) && (
             <div className="lab-overview">
+              <span className="dpc-badge">DPC</span>
               <h4>NIH Grant Number</h4>
               <p>UM1HG012660</p>
               <h4>NIH RePORTER</h4>
@@ -218,6 +279,7 @@ const Map = () => {
           )}
           {(isUW && (!isFullUWDesc)) && (
             <div className="lab-overview">
+              <span className="dracc-badge">DRACC</span>
               <h4>NIH Grant Number</h4>
               <p>U24HG012674</p>
               <h4>NIH RePORTER</h4>
@@ -226,8 +288,31 @@ const Map = () => {
               <p>Ka Yee Yeung</p>
             </div>
           )}
+          {(isFH && (!isFullFHDesc)) && (
+            <div className="lab-overview">
+              <span className="dav-badge">DAV</span>
+              <h4>NIH Grant Number</h4>
+              <p>1U01HG013177-01</p>
+              <h4>NIH RePORTER</h4>
+              <a href="https://reporter.nih.gov/search/oIfrWWjJok-fQJ5z7YR03w/project-details/10733165" target="_blank" rel="noopener noreferrer">https://reporter.nih.gov/search/oIfrWWjJok-fQJ5z7YR03w/project-details/10733165</a>
+              <h4>Contact PI/Project Leader</h4>
+              <p>Wei Sun</p>
+            </div>
+          )}
+          {(isStanford && (!isFullStanfordDesc)) && (
+            <div className="lab-overview">
+              <span className="dav-badge">DAV</span>
+              <h4>NIH Grant Number</h4>
+              <p>1U01HG013176-01</p>
+              <h4>NIH RePORTER</h4>
+              <a href="https://reporter.nih.gov/search/Dp5l7GFxJkalwB2Oebe9gg/project-details/10733164" target="_blank" rel="noopener noreferrer">https://reporter.nih.gov/search/Dp5l7GFxJkalwB2Oebe9gg/project-details/10733164</a>
+              <h4>Contact PI/Project Leader</h4>
+              <p>Jesse Engreitz</p>
+            </div>
+          )}
           {isNWUC && (!isFullNWUCDesc) && (
             <div className="lab-overview">
+              <span className="dpc-badge">DPC</span>
               <h4>NIH Grant Number</h4>
               <p>UM1HG012649</p>
               <h4>NIH RePORTER</h4>
@@ -237,17 +322,31 @@ const Map = () => {
             </div>
           )}
           {isJacksonLab && (!isFullJacksonLabDesc) && (
-            <div className="lab-overview">
-              <h4>NIH Grant Number</h4>
-              <p>UM1HG012651</p>
-              <h4>NIH RePORTER</h4>
-              <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881</a>
-              <h4>Contact PI/Project Leader</h4>
-              <p>Robson, Paul</p>
+            <div>
+              <div className="lab-overview">
+                <span className="dpc-badge">DPC</span>
+                <h4>NIH Grant Number</h4>
+                <p>UM1HG012651</p>
+                <h4>NIH RePORTER</h4>
+                <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881</a>
+                <h4>Contact PI/Project Leader</h4>
+                <p>Robson, Paul</p>
+              </div>
+              <div className="lab-overview">
+                <span className="dav-badge">DAV</span>
+                <h4>NIH Grant Number</h4>
+                <p>UM1HG012651</p>
+                <h4>NIH RePORTER</h4>
+                <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881</a>
+                <h4>Contact PI/Project Leader</h4>
+                <p>Robson, Paul</p>
+              </div>
             </div>
+            
           )}
           {isSloanKettering && (!isFullSloanKetteringDesc) && (
             <div className="lab-overview">
+              <span className="dpc-badge">DPC</span>
               <h4>NIH Grant Number</h4>
               <p>UM1HG012654</p>
               <h4>NIH RePORTER</h4>
@@ -258,6 +357,7 @@ const Map = () => {
           )}
           {isUMiami && (!isFullUMiamiDesc) && (
             <div className="lab-overview">
+              <span className="dracc-badge">DRACC</span>
               <h4>NIH Grant Number</h4>
               <p>U24HG012674</p>
               <h4>NIH RePORTER</h4>
@@ -268,6 +368,7 @@ const Map = () => {
           )}
           {isEBI && (!isFullEBIDesc) && (
             <div className="lab-overview">
+              <span className="dracc-badge">DRACC</span>
               <h4>NIH Grant Number</h4>
               <p>1U24HG012674-01</p>
               <h4>NIH RePORTER</h4>
@@ -278,6 +379,7 @@ const Map = () => {
           )}
           {isQMUL && (!isFullQMULDesc) && (
             <div className="lab-overview">
+              <span className="dracc-badge">DRACC</span>
               <h4>NIH Grant Number</h4>
               <p>U24HG012674</p>
               <h4>NIH RePORTER</h4>
@@ -290,6 +392,7 @@ const Map = () => {
 
           {isFullDesc && (
             <div className="lab-overview">
+              <span className="dpc-badge">DPC</span>
               <h4>NIH Grant Number</h4>
               <p>UM1HG012660</p>
               <h4>NIH RePORTER</h4>
@@ -304,59 +407,122 @@ const Map = () => {
           )}
           {isFullUWDesc && (
             <div className="lab-overview">
-            <h4>NIH Grant Number</h4>
-            <p>U24HG012674</p>
-            <h4>NIH RePORTER</h4>
-            <a href="https://reporter.nih.gov/project-details/10519442" target="_blank" rel="noreferrer">https://reporter.nih.gov/project-details/10519442</a>
-            <h4>Contact PI/Project Leader</h4>
-            <p>Ka Yee Yeung</p>
-            <h4>Description</h4>
-            <p>The Yeung Lab focuses on the development of optimized methods and cloud-based software tools for the analyses of big biomedical data. Our platform Biodepot-workflow-builder (Bwb) allows biomedical scientists to create, share and reproducibly execute bioinformatics workflows in a point-and-click user interface. Bwb supports RNA-seq, DNA-seq, nanopore and image processing workflows. </p>
-          </div>
+              <span className="dracc-badge">DRACC</span>
+              <h4>NIH Grant Number</h4>
+              <p>U24HG012674</p>
+              <h4>NIH RePORTER</h4>
+              <a href="https://reporter.nih.gov/project-details/10519442" target="_blank" rel="noreferrer">https://reporter.nih.gov/project-details/10519442</a>
+              <h4>Contact PI/Project Leader</h4>
+              <p>Ka Yee Yeung</p>
+              <h4>Description</h4>
+              <p>The Yeung Lab focuses on the development of optimized methods and cloud-based software tools for the analyses of big biomedical data. Our platform Biodepot-workflow-builder (Bwb) allows biomedical scientists to create, share and reproducibly execute bioinformatics workflows in a point-and-click user interface. Bwb supports RNA-seq, DNA-seq, nanopore and image processing workflows. </p>
+            </div>
+          )}
+          {isFullFHDesc && (
+            <div className="lab-overview">
+              <span className="dav-badge">DAV</span>
+              <h4>NIH Grant Number</h4>
+              <p>1U01HG013177-01</p>
+              <h4>NIH RePORTER</h4>
+              <a href="https://reporter.nih.gov/search/oIfrWWjJok-fQJ5z7YR03w/project-details/10733165" target="_blank" rel="noopener noreferrer">https://reporter.nih.gov/search/oIfrWWjJok-fQJ5z7YR03w/project-details/10733165</a>
+              <h4>Lab Websites</h4>
+              <ul className="lab-links">
+                <li>Wei Sun: <a href="https://www.fredhutch.org/en/faculty-lab-directory/sun-wei.html" target="_blank" rel="noopener noreferrer">https://www.fredhutch.org/en/faculty-lab-directory/sun-wei.html</a></li>
+                <li>Li Hsu: <a href="https://www.fredhutch.org/en/faculty-lab-directory/hsu-li.html" target="_blank" rel="noopener noreferrer">https://www.fredhutch.org/en/faculty-lab-directory/hsu-li.html</a></li>
+                <li>Ali Shojaie: <a href="http://faculty.washington.edu/ashojaie/" target="_blank" rel="noopener noreferrer">http://faculty.washington.edu/ashojaie/</a></li>
+              </ul>
+              <h4>Contact PI/Project Leader</h4>
+              <p>Wei Sun</p>
+              <h4>Description</h4>
+              <p>Project Narrative MorPhiC consortium will deliver rich resources of molecular and cellular phenotypes before and after gene knockout using in vitro cellular systems. We will develop statistical methods to combine MorPhiC resources and omic data in human phenotype studies to infer gene functions in diverse settings and identify potential causal genes of human phenotypes. Our methods pave the way to use MorPhiC resources to study the impact of gene loss on complex phenotypes.</p>
+            </div>
+          )}
+          {isFullStanfordDesc && (
+            <div className="lab-overview">
+              <span className="dav-badge">DAV</span>
+              <h4>NIH Grant Number</h4>
+              <p>1U01HG013176-01</p>
+              <h4>NIH RePORTER</h4>
+              <a href="https://reporter.nih.gov/search/Dp5l7GFxJkalwB2Oebe9gg/project-details/10733164" target="_blank" rel="noopener noreferrer">https://reporter.nih.gov/search/Dp5l7GFxJkalwB2Oebe9gg/project-details/10733164</a>
+              <h4>Lab Websites</h4>
+              <ul className="lab-links">
+                <li><a href="https://www.engreitzlab.org/" target="_blank" rel="noopener noreferrer">https://www.engreitzlab.org/</a></li>
+                <li><a href="https://kundajelab.stanford.edu/" target="_blank" rel="noopener noreferrer">https://kundajelab.stanford.edu/</a></li>
+                <li><a href="https://www.devo-evo.com/" target="_blank" rel="noopener noreferrer">https://www.devo-evo.com/</a></li>
+              </ul>
+              <h4>Contact PI/Project Leader</h4>
+              <p>Jesse Engreitz</p>
+              <h4>Description</h4>
+              <p>This proposed MorPhiC Data Analysis and Validation Center will utilize the innovative methods our team has developed (V2G2P, BPNet, DeepLift, monocle2/3, scribe, dynamo, spateo) to integrate multi-layer CRISPR, single-cell, imaging, and human genetics data. Together with the MorPhiC Consortium, our study will enable building a Catalog of Cellular Programs across cell types, ensure the robustness and interoperability of MorPhiC data, demonstrate its utility in identifying pathways for human diseases, and plan for an expansion of the MorPhiC project to study all human genes.</p>
+            </div>
           )}
           {isFullNWUCDesc && (
             <div className="lab-overview">
-            <h4>NIH Grant Number</h4>
-            <p>UM1HG012649</p>
-            <h4>NIH RePORTER</h4>
-            <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517781#details" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517781#details</a>
-            <h4>Lab Websites</h4>
-            <ul className='lab-links'>
-              <li><a href="www.adlilab.org" target="_blank" rel="noopener noreferrer">www.adlilab.org</a></li>
-              <li><a href="yuelab.org" target="_blank" rel="noreferrer">yuelab.org</a></li>
-            </ul>
-            <h4>Contact PI/Project Leader</h4>
-            <p>Adli, Mazhar</p>
-            <h4>Description</h4>
-            <p>Using modern genomic technologies, machine learning, and CRISPR genome editing to identify biomarkers and pathological variants in human diseases</p>
-          </div>
-          )}
-          {isFullJacksonLabDesc && (
-            <div className="lab-overview">
+              <span className="dpc-badge">DPC</span>
               <h4>NIH Grant Number</h4>
-              <p>UM1HG012651</p>
+              <p>UM1HG012649</p>
               <h4>NIH RePORTER</h4>
-              <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881</a>
+              <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517781#details" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517781#details</a>
               <h4>Lab Websites</h4>
               <ul className="lab-links">
-                <li><a href="https://www.jax.org/" target="_blank" rel="noreferrer">www.jax.org</a></li>
-                <li><a href="https://www.jax.org/research-and-faculty/research-labs/the-robson-lab" target="_blank" rel="noreferrer">https://www.jax.org/research-and-faculty/research-labs/the-robson-lab</a></li>
-                <li><a href="https://www.jax.org/research-and-faculty/faculty/william-skarnes" target="_blank" rel="noreferrer">https://www.jax.org/research-and-faculty/faculty/william-skarnes</a></li>
+                <li><a href="https://adlilab.org/" target="_blank" rel="noopener noreferrer">www.adlilab.org</a></li>
+                <li><a href="http://yuelab.org/" target="_blank" rel="noopener noreferrer">yuelab.org</a></li>
               </ul>
               <h4>Contact PI/Project Leader</h4>
-              <p>Paul Robson</p>
+              <p>Adli, Mazhar</p>
               <h4>Description</h4>
-              <p>Knowledge of the function of every human gene is necessary for determining the roles and relationships of genes and regulatory elements in various normal and disease-associated biological pathways and networks. In the JAX MorPhiC Data Production Center, we will leverage the state-of-the-art cellular engineering, single-cell, and metabolomics capabilities of The Jackson Laboratory to comprehensively catalog the phenotypes of 250 null mutations in human induced pluripotent stem cells differentiated into extra-embryonic and neuroectodermal lineages. By focusing on these early embryonic lineages, we will gain important insight into multiple biological processes, including neurodevelopmental disorders and those impacting later life.</p>
+              <p>Using modern genomic technologies, machine learning, and CRISPR genome editing to identify biomarkers and pathological variants in human diseases</p>
             </div>
+          )}
+          {isFullJacksonLabDesc && (
+            <div className="lab-overview_container">
+              <div className="lab-overview">
+                <span className="dpc-badge">DPC</span>
+                <h4>NIH Grant Number</h4>
+                <p>UM1HG012651</p>
+                <h4>NIH RePORTER</h4>
+                <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881</a>
+                <h4>Lab Websites</h4>
+                <ul className="lab-links">
+                  <li><a href="https://www.jax.org/" target="_blank" rel="noreferrer">www.jax.org</a></li>
+                  <li><a href="https://www.jax.org/research-and-faculty/research-labs/the-robson-lab" target="_blank" rel="noreferrer">https://www.jax.org/research-and-faculty/research-labs/the-robson-lab</a></li>
+                  <li><a href="https://www.jax.org/research-and-faculty/faculty/william-skarnes" target="_blank" rel="noreferrer">https://www.jax.org/research-and-faculty/faculty/william-skarnes</a></li>
+                </ul>
+                <h4>Contact PI/Project Leader</h4>
+                <p>Paul Robson</p>
+                <h4>Description</h4>
+                <p>Knowledge of the function of every human gene is necessary for determining the roles and relationships of genes and regulatory elements in various normal and disease-associated biological pathways and networks. In the JAX MorPhiC Data Production Center, we will leverage the state-of-the-art cellular engineering, single-cell, and metabolomics capabilities of The Jackson Laboratory to comprehensively catalog the phenotypes of 250 null mutations in human induced pluripotent stem cells differentiated into extra-embryonic and neuroectodermal lineages. By focusing on these early embryonic lineages, we will gain important insight into multiple biological processes, including neurodevelopmental disorders and those impacting later life.</p>
+              </div>
+              <div className="lab-overview">
+                <span className="dav-badge">DAV</span>
+                <h4>NIH Grant Number</h4>
+                <p>UM1HG012651</p>
+                <h4>NIH RePORTER</h4>
+                <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10517881</a>
+                <h4>Lab Websites</h4>
+                <ul className="lab-links">
+                  <li><a href="https://www.jax.org/" target="_blank" rel="noreferrer">www.jax.org</a></li>
+                  <li><a href="https://www.jax.org/research-and-faculty/research-labs/the-robson-lab" target="_blank" rel="noreferrer">https://www.jax.org/research-and-faculty/research-labs/the-robson-lab</a></li>
+                  <li><a href="https://www.jax.org/research-and-faculty/faculty/william-skarnes" target="_blank" rel="noreferrer">https://www.jax.org/research-and-faculty/faculty/william-skarnes</a></li>
+                </ul>
+                <h4>Contact PI/Project Leader</h4>
+                <p>Paul Robson</p>
+                <h4>Description</h4>
+                <p>Knowledge of the function of every human gene is necessary for determining the roles and relationships of genes and regulatory elements in various normal and disease-associated biological pathways and networks. In the JAX MorPhiC Data Production Center, we will leverage the state-of-the-art cellular engineering, single-cell, and metabolomics capabilities of The Jackson Laboratory to comprehensively catalog the phenotypes of 250 null mutations in human induced pluripotent stem cells differentiated into extra-embryonic and neuroectodermal lineages. By focusing on these early embryonic lineages, we will gain important insight into multiple biological processes, including neurodevelopmental disorders and those impacting later life.</p>
+              </div>
+            </div>
+            
           )}
           {isFullSloanKetteringDesc && (
             <div className="lab-overview">
+              <span className="dpc-badge">DPC</span>
               <h4>NIH Grant Number</h4>
               <p>UM1HG012654</p>
               <h4>NIH RePORTER</h4>
               <a href="https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10518021" target="_blank" rel="noreferrer">https://reporter.nih.gov/search/fEYSskefXkKWXanvDf3JSA/project-details/10518021</a>
               <h4>Lab Websites</h4>
               <ul className="lab-links">
+                <li><a href="https://morphic.mskcc.org/" target="_blank" rel="noopener noreferrer">https://morphic.mskcc.org/</a></li>
                 <li><a href="https://www.mskcc.org/research/ski/labs/danwei-huangfu" target="_blank" rel="noreferrer">https://www.mskcc.org/research/ski/labs/danwei-huangfu</a></li>
                 <li><a href="https://www.mskcc.org/research/ski/labs/lorenz-studer" target="_blank" rel="noreferrer">https://www.mskcc.org/research/ski/labs/lorenz-studer</a></li>
                 <li><a href="https://www.mskcc.org/research/ski/labs/thomas-vierbuchen" target="_blank" rel="noreferrer">https://www.mskcc.org/research/ski/labs/thomas-vierbuchen</a></li>
@@ -370,6 +536,7 @@ const Map = () => {
           )}
           {isFullUMiamiDesc && (
             <div className="lab-overview">
+              <span className="dracc-badge">DRACC</span>
               <h4>NIH Grant Number</h4>
               <p>U24HG012674</p>
               <h4>NIH RePORTER</h4>
@@ -384,6 +551,7 @@ const Map = () => {
           )}
           {isFullEBIDesc && (
             <div className="lab-overview">
+              <span className="dracc-badge">DRACC</span>
               <h4>NIH Grant Number</h4>
               <p>1U24HG012674-01</p>
               <h4>NIH RePORTER</h4>
@@ -398,6 +566,7 @@ const Map = () => {
           )}
           {isFullQMULDesc && (
             <div className="lab-overview">
+              <span className="dracc-badge">DRACC</span>
               <h4>NIH Grant Number</h4>
               <p>U24HG012674</p>
               <h4>NIH RePORTER</h4>

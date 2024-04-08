@@ -1,6 +1,4 @@
-# homepage
-Basic repository with documentation, useful information and links related to the MorPHiC project.
+# MorPhiC Consortium Website
+Welcome to the MorPhiC Website. 
 
-The main information that the user will see is [here](index.md): this is the `homepage`
-
-
+https://morphic.bio/

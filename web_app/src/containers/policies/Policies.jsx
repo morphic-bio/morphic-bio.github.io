@@ -7,7 +7,7 @@ const Policies = () => (
       <h1 className="gradient__text">Policies</h1>
     </div>
     <article  className="morphic__policy">
-      <p>The following policies were approved by the MorPhiC Steering Committee on July 5, 2023.</p>
+      <p>The following policies were approved by the MorPhiC Steering Committee.</p>
       <div className="morphic__event_description">
         <ul>
           <li><a href="https://github.com/morphic-bio/morphic-bio.github.io/blob/main/Policies/Morphic%20Code%20of%20Conduct%20for%20Events.pdf" target="_blank" rel="noopener noreferrer">Code of Conduct</a></li>

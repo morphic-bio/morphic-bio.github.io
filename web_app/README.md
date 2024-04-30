@@ -60,11 +60,14 @@ The content and features of the page are sepearted by React components as `.jsx`
 **NOTE:** We are using functional React components and not class-based components. If you are looking for online React resources or are trying to including React code found online, make sure it is functional-based React.
 
 ### Updating Icon and Logo:
-Quick replacement of the folowwing files will update icon or logo.
+Quick replacement of the folowing files with the same name and image type will update icon or logo.
 * `/public/favicon.png` - favicon
 * `src/assets/morphic_logo_v3.svg` - Page logo
 
-### Updating sections of page:
+### Routes
+Routes for each pages can be found in `App.js`. For this project React HashRouter was as to work with GitHub Pages, this can be changed in `index.js`.
+
+### Updating sections of a page:
 Most of the components are located in `src/containers`
 * `/header` - Page title and search bar
 * `/whatmorphic` - Description overview of Morphic
@@ -73,6 +76,8 @@ Most of the components are located in `src/containers`
 * `/footer` - Page footer
 * `/about` - About us
 * `/events` - Events
+* `/policies` - Policies
+* `coming_soon` - Under Construction
 
 nav bar is located in `src/components/navbar`
 

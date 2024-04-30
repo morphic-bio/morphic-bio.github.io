@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Article from '../../components/article/Article';
-import { blog00, blog00a, blog_1m, blog_2s, blog_3l, uwtnews } from './imports';
+import { blog00, blog00_sm, blog00a, blog_1m, blog_2s, blog_3l, uwtnews, uwtnews_sm, nunews_sm, umnews_sm } from './imports';
 import './blog.css';
 
 const Blog = () => {
@@ -39,7 +39,7 @@ const Blog = () => {
             link={articles[currElement].url} />
           <div className='blog-sidebar'>
             <article className='sidebar-article'>
-              <img src="https://physician-news.umiamihealth.org/wp-content/uploads/sites/4/2023/03/IMG_6995.jpg" alt="" />
+              <img src={umnews_sm} alt="" />
               <div className='article-info'>
                 <h1> 
                   <a href="https://physician-news.umiamihealth.org/dr-stephan-schurer-enlisted-for-important-genome-research-project/" target="_blank" rel="noopener noreferrer">
@@ -50,7 +50,7 @@ const Blog = () => {
               </div>
             </article>
             <article className='sidebar-article'>
-              <img src="https://www.tacoma.uw.edu/sites/default/files/2023-05/uwtnews-2023-05-morphic-yueng-feature.jpg" alt="" />
+              <img src={uwtnews_sm} alt="" />
               <div className='article-info'>
                 <h1>
                   <a href="https://www.tacoma.uw.edu/news/bioinformatics-team-powers-international-effort-map-gene-function-0" target="_blank" rel="noopener noreferrer">
@@ -61,7 +61,7 @@ const Blog = () => {
               </div>
             </article>
             <article className='sidebar-article'>
-              <img src="https://www.feinberg.northwestern.edu/research/images/podcast/adli-360.png" alt="" />
+              <img src={nunews_sm} alt="" />
               <div className='article-info'>
                 <h1>
                   <a href="https://www.feinberg.northwestern.edu/research/podcast/2022/gene-function-to-understand-cancer-adli.html" target="_blank" rel="noopener noreferrer">
@@ -83,7 +83,7 @@ const Blog = () => {
               </div>
             </article>
             <article className='sidebar-article'>
-              <img src={blog00} alt="" />
+              <img src={blog00_sm} alt="" />
               <div className='article-info'>
                 <h1>
                   <a href="https://www.nih.gov/news-events/news-releases/nih-initiative-systematically-investigate-establish-function-every-human-gene" target="_blank" rel="noopener noreferrer">

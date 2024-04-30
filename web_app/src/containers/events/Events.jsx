@@ -1,5 +1,6 @@
 import React from 'react';
 import './events.css';
+import morphic_event from '../../assets/morphic_event.webp';
 
 const Events = () => (
   <section className="section__margin morphic__events-container" id="about-us">
@@ -12,7 +13,16 @@ const Events = () => (
         <p>January 31st -February 1st, 2023. Hyatt Regency Bethesda, MD.</p>
       </div>
       <div className="morphic__event_img-container">
-        <img className="morphic__event_img" src="https://physician-news.umiamihealth.org/wp-content/uploads/sites/4/2023/03/morphic-group-3-mar23-4032x3024-1-768x396.jpg" alt="Group picture from MorPhiC Consortium Kick-off Meeting" />
+        <picture>
+          <source 
+            type="image/webp"
+            srcSet={morphic_event}
+          />
+          <img
+            src="https://i0.wp.com/news.med.miami.edu/wp-content/uploads/2023/05/morphic-group-3-mar23-4032x3024-1-300x155-1.jpg"
+            alt="Morphic Article Cover Image" 
+          />
+        </picture>
       </div>
       <div className="morphic_event_border"></div>
     </article>
@@ -23,17 +33,6 @@ const Events = () => (
         <p>June 26 - Jun 27, 2023 (tentative).</p>
       </div>
     </article>
-
-    {/* <div className="morphic__events-container">
-        <div className='morphic__events-heading'>
-            <h1 className="gradient__text">Events</h1>
-        </div>
-        <p className='morphic_events-paragraph'><span>MorPhiC Consortium Kick-off Meeting.</span> January 31st -February 1st, 2023. Hyatt Regency Bethesda, MD.</p>
-        <div>
-            <img src="https://physician-news.umiamihealth.org/wp-content/uploads/sites/4/2023/03/morphic-group-3-mar23-4032x3024-1-768x396.jpg" alt="" />
-        </div>
-        <p className='morphic_events-paragraph'><span>MorPhiC Consortium Virtual Meeting.</span> June 26 - Jun 27, 2023(tentative).</p>
-    </div> */}
   </section>
 );
 

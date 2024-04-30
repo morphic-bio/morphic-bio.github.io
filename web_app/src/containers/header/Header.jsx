@@ -36,9 +36,6 @@ const Header = () => (
         srcSet={`
           ${genomeSm} 256w,
           ${genome} 996w`}
-        sizes="
-          (max-width: 600px) 480px,
-          800px"
       />
     </div>
   </div>

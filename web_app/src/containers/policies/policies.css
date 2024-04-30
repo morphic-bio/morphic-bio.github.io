@@ -97,16 +97,6 @@
     text-decoration: underline;
 }
 
-
-.morphic__event_img-container {
-    max-width: 100%;
-    height: 15rem;
-    background: radial-gradient(circle farthest-side, rgba(3, 27, 52, 0.25), rgba(6, 48, 93, 0.25));
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
 .morphic__event_img {
     height: 100%;
     display: block;
@@ -125,11 +115,5 @@
     .morphic__event {
         padding-bottom: 4rem;
         margin-bottom: 7rem;
-    }
-
-    .morphic__event_img-container {
-        width: 50rem;
-        height: 25rem;
-        background: radial-gradient(circle farthest-side, rgba(3, 27, 52, 0.25), rgba(6, 48, 93, 0.25));
     }
 }

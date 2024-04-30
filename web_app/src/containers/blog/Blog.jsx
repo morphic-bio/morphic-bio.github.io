@@ -39,7 +39,7 @@ const Blog = () => {
             link={articles[currElement].url} />
           <div className='blog-sidebar'>
             <article className='sidebar-article'>
-              <img src={umnews_sm} alt="" />
+              <img src={umnews_sm} width="156" height="80" alt="" />
               <div className='article-info'>
                 <h1> 
                   <a href="https://physician-news.umiamihealth.org/dr-stephan-schurer-enlisted-for-important-genome-research-project/" target="_blank" rel="noopener noreferrer">
@@ -50,7 +50,7 @@ const Blog = () => {
               </div>
             </article>
             <article className='sidebar-article'>
-              <img src={uwtnews_sm} alt="" />
+              <img src={uwtnews_sm} width="156" height="80" alt="" />
               <div className='article-info'>
                 <h1>
                   <a href="https://www.tacoma.uw.edu/news/bioinformatics-team-powers-international-effort-map-gene-function-0" target="_blank" rel="noopener noreferrer">
@@ -61,7 +61,7 @@ const Blog = () => {
               </div>
             </article>
             <article className='sidebar-article'>
-              <img src={nunews_sm} alt="" />
+              <img src={nunews_sm} width="156" height="80" alt="" />
               <div className='article-info'>
                 <h1>
                   <a href="https://www.feinberg.northwestern.edu/research/podcast/2022/gene-function-to-understand-cancer-adli.html" target="_blank" rel="noopener noreferrer">
@@ -72,7 +72,7 @@ const Blog = () => {
               </div>
             </article>
             <article className='sidebar-article'>
-              <img src="https://cancer.ucsf.edu/sites/cancer.ucsf.edu/files/styles/sf_landscape_16x9/public/images/article/luke_gilbert-186_1_0.jpeg?h=0632d6fb&itok=k8U6Jhe6" alt="" />
+              <img src="https://cancer.ucsf.edu/sites/cancer.ucsf.edu/files/styles/sf_landscape_16x9/public/images/article/luke_gilbert-186_1_0.jpeg?h=0632d6fb&itok=k8U6Jhe6" width="156" height="80" alt="" />
               <div className='article-info'>
                 <h1>
                   <a href="https://cancer.ucsf.edu/news/2022/09/27/nih-initiative-to-systematically-investigate-and-establish-function-of-every-human" target="_blank" rel="noopener noreferrer">
@@ -83,7 +83,7 @@ const Blog = () => {
               </div>
             </article>
             <article className='sidebar-article'>
-              <img src={blog00_sm} alt="" />
+              <img src={blog00_sm} width="156" height="80" alt="" />
               <div className='article-info'>
                 <h1>
                   <a href="https://www.nih.gov/news-events/news-releases/nih-initiative-systematically-investigate-establish-function-every-human-gene" target="_blank" rel="noopener noreferrer">

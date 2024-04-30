@@ -58,6 +58,7 @@
 }
 .sidebar-article img {
     width: 20%;
+    height: auto;
     object-fit: cover;
 }
 .article-info {

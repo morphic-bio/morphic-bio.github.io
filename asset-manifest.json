@@ -1,26 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.51732fda.css",
-    "main.js": "/static/js/main.3ea5afa0.js",
+    "main.css": "/static/css/main.0b770e48.css",
+    "main.js": "/static/js/main.46431e58.js",
     "static/media/morphic_map-lg.jpg": "/static/media/morphic_map-lg.3348cd9d59a97610b962.jpg",
     "static/media/humanGenome.png": "/static/media/humanGenome.35a596b0192a34cfc67f.png",
-    "static/media/logo.png": "/static/media/logo.ee23bea85da8bc635154.png",
+    "static/media/uwtnews_lg.jpeg": "/static/media/uwtnews_lg.cf56b81efaae5319591f.jpeg",
+    "static/media/nunews_sm.png": "/static/media/nunews_sm.b1235c7b82f153148ffc.png",
     "static/media/uwtnews.avif": "/static/media/uwtnews.53fa1aaa1c178730908e.avif",
-    "static/media/blog01.jpeg": "/static/media/blog01.d90e4f4ddec93687eff9.jpeg",
+    "static/media/umnews_sm.jpg": "/static/media/umnews_sm.d8b230b7559153d24921.jpg",
     "static/media/humanGenome-sm.png": "/static/media/humanGenome-sm.a117feec6d1347e79a4d.png",
     "static/media/blog00.jpg": "/static/media/blog00.b62f6986946ea8497597.jpg",
     "static/media/blog_1m.avif": "/static/media/blog_1m.a66f746b3b6f7a86d9be.avif",
     "static/media/morphic_logo_v3.svg": "/static/media/morphic_logo_v3.70f75deaf601782ec450b941de971c51.svg",
+    "static/media/uwtnews_sm.jpeg": "/static/media/uwtnews_sm.ad2bfdfa6672e2a033c4.jpeg",
     "static/media/blog_2s.avif": "/static/media/blog_2s.f4db6f5bcb24f71b08c5.avif",
     "static/media/blog_3l.avif": "/static/media/blog_3l.5bc755960f4c35ff961e.avif",
+    "static/media/blog00_sm.jpg": "/static/media/blog00_sm.05abe3defeabfeb107aa.jpg",
     "static/media/blog00a.avif": "/static/media/blog00a.b25c13db7be1db13497d.avif",
+    "static/media/morphic_event.webp": "/static/media/morphic_event.866f68556847c970a267.webp",
     "static/media/hand-index-thumb.svg": "/static/media/hand-index-thumb.d94b0087ab37bbf13e8a.svg",
     "index.html": "/index.html",
-    "main.51732fda.css.map": "/static/css/main.51732fda.css.map",
-    "main.3ea5afa0.js.map": "/static/js/main.3ea5afa0.js.map"
+    "main.0b770e48.css.map": "/static/css/main.0b770e48.css.map",
+    "main.46431e58.js.map": "/static/js/main.46431e58.js.map"
   },
   "entrypoints": [
-    "static/css/main.51732fda.css",
-    "static/js/main.3ea5afa0.js"
+    "static/css/main.0b770e48.css",
+    "static/js/main.46431e58.js"
   ]
 }
